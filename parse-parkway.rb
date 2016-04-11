@@ -7,12 +7,13 @@ require 'date'
 db = SQLite3::Database.new "box-office"
 
 FILE_NAME = 'parkway-report.txt'
-DATE_RANGE_REGEX = /\d{1,2}\/\d{1,2}\/\d{1,2}-\d{1,2}\/\d{1,2}\/\d{1,2}/
+DATE_RANGE_REGEX = /\d{1,2}\/\d{1,2}\/\d{2,4}[-\s]+\d{1,2}\/\d{1,2}\/\d{2,4}/
 
-#expects content to be of form: MM/DD/YY-MM/DD/YY
+#expects content to be of form: MM/DD/YY-MM/DD/YY or MM/DD/YYYY-MM/DD/YYYY
 #returns a Date object
 def get_start_date content
-  parse_date= content.scan(/\d{2}/)
+  start_date_text = content.split('-')[0].strip
+  parse_date= start_date_text.split('/')
   year = 2000 + parse_date[2].to_i
   month = parse_date[0].to_i
   day = parse_date[1].to_i
@@ -54,6 +55,7 @@ while lines_num < lines.length do
     db.execute('INSERT OR REPLACE INTO parkway_daily_performance(movie_id, date, gross) VALUES (?,?,?)', movie_id, (start_date + index -1).to_s, data[index].to_i )
     movie_total += data[index].to_i
   end
+  binding.pry if data[8].to_i != movie_total
   raise 'Row Parsing error' if data[8].to_i != movie_total
   grand_total += movie_total
 end
