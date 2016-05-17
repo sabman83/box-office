@@ -15,11 +15,16 @@ files.forEach(function(name, index, array) {
   console.log('processing ', name);
   var workbook = XLSX.readFile(path + name);
   //console.log(workbook.SheetNames[0]);
-  var sheet1 = workbook.Sheets['Sheet1'];
-  var data = XLSX.utils.sheet_to_csv(sheet1);
-  var date = name.match(/\d{1,2}[\.\:]\d{1,2}[\.\:]\d{2,4}/g)[0];
-  fs.writeFile(path + 'parkway-'+ date +'.txt', data, function(err){
-    if(!err) return;
-    console.log('Error processing', name);
+  var sheets = workbook.SheetNames;
+  sheets.forEach(function(sheetName) {
+    var sheet = workbook.Sheets[sheetName];
+    var data = XLSX.utils.sheet_to_csv(sheet);
+    if(data.length == 0) return;
+
+    var date = name.match(/\d{1,2}[\.\:]\d{1,2}[\.\:]\d{2,4}/g)[0];
+    fs.writeFile(path + 'parkway-'+ date +'.txt', data, function(err){
+      if(!err) return;
+      console.log('Error processing', name);
+    });
   });
 });
