@@ -3,6 +3,7 @@ require 'pp'
 require 'sqlite3'
 require 'pry'
 require 'date'
+require 'fileutils'
 
 db = SQLite3::Database.new "box-office"
 
@@ -50,6 +51,7 @@ files.each do |file_name|
     break if data[0].length == 0
     movie_name = data[0].strip
     movie_id = create_and_fetch_id(movie_name)
+    binding.pry if data.length > (7+1+1) #7 days of the week, movie name, total
     raise 'Error in row' if data.length > (7+1+1) #7 days of the week, movie name, total
     movie_total =  0
     for index in 1..7 do
@@ -65,9 +67,14 @@ files.each do |file_name|
     lines_num += 1
     break if lines_num >= lines.length
   end
-  next if lines_num >= lines.length
+  if lines_num >= lines.length
+    FileUtils.mv(file_name, './data/corrected_parkway_data/'+file_name.split('/')[-1])
+    next
+  end
   grand_total_from_data = lines[lines_num].chomp.split(',')[-1]
+  binding.pry if grand_total_from_data.to_i != grand_total
   raise 'Parse Error on grand total' if grand_total_from_data.to_i != grand_total
+  FileUtils.mv(file_name, './data/corrected_parkway_data/'+file_name.split('/')[-1])
 end
 db.close
 
