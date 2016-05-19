@@ -8,14 +8,19 @@ require 'fileutils'
 db = SQLite3::Database.new "box-office"
 
 files = Dir["./data/parkway-*.txt"]
-DATE_RANGE_REGEX = /\d{1,2}\/\d{1,2}\/\d{2,4}[-\s]+\d{1,2}\/\d{1,2}\/\d{2,4}/
-
+DATE_RANGE_REGEX = /\d{1,2}\/\d{1,2}\/\d{2,4}[-\s]+\d{1,2}\/\d{1,2}\/\d{2,4}|\d{1,2}\/\d{1,2}[-\s]+\d{1,2}\/\d{1,2}\/\d{2,4}/
 #expects content to be of form: MM/DD/YY-MM/DD/YY or MM/DD/YYYY-MM/DD/YYYY
 #returns a Date object
 def get_start_date content
   start_date_text = content.split('-')[0].strip
   parse_date= start_date_text.split('/')
-  year = 2000 + parse_date[2].to_i
+  if parse_date.length < 3
+    end_date_text = content.split('-')[1].strip
+    parse_end_date = end_date_text.split('/')
+    year = 2000 + parse_end_date[2].to_i
+  else
+    year = 2000 + parse_date[2].to_i
+  end
   month = parse_date[0].to_i
   day = parse_date[1].to_i
   Date.new(year, month, day)
