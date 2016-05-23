@@ -18,8 +18,16 @@ def get_start_date content
     end_date_text = content.split('-')[1].strip
     parse_end_date = end_date_text.split('/')
     year = 2000 + parse_end_date[2].to_i
+    binding.pry
   else
-    year = 2000 + parse_date[2].to_i
+    if parse_date[2].size == 2
+      add_year = 2000
+    elsif parse_date[2].size == 4
+      add_year = 0
+    else
+      raise 'Error parsing date'
+    end
+    year = add_year + parse_date[2].to_i
   end
   month = parse_date[0].to_i
   day = parse_date[1].to_i
