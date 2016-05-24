@@ -1,0 +1,18 @@
+02/22/13 - 02/28/13,FRIDAY,SATURDAY,SUNDAY,MONDAY,TUESDAY,WEDNESDAY,THURSDAY,WEEKLY GROSSES
+DJANGO UNCHAINED,594 ,1141,90 ,129 ,222 ,738 ,435 ,3349
+THE MASTER,252 ,769 ,78 ,96 ,46 ,144 ,,1385
+WRECK-IT RALPH,146 ,263 ,,54 ,,23 ,141 ,627 
+JOHN DIES AT THE END,286 ,350 ,,,148,24 ,234,1042
+TEXAS CHAINSAW MASSACRE 2,124 ,44 ,,,,,,168
+PINK FLOYD THE WALL,,78 ,,,,,,78
+56 UP,,,,,498 ,,,498
+BLUE VELVET,,,,,,,432 ,432
+,,,,,,,,0
+,,,,,,,,0
+,,,,,,,,0
+,,,,,,,,0
+,,,,,,,,0
+,,,,,,,,0
+,,,,,,,,0
+,,,,EMAIL this form nightly - with the entire week's numbers filled in to: faxusa@rentrak.com,,,,7579
+ACCT # 8875 (The New Parkway Theater),,,,,,,,
