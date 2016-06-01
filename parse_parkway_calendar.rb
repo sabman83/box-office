@@ -45,47 +45,65 @@ service.client_options.application_name = APPLICATION_NAME
 service.authorization = authorize
 
 # Fetch the next 10 events for the user
-parkway_1_calendar_id = 'thenewparkway.com_25uhqvcd5conik66ephgqe7j28@group.calendar.google.com'
-parkway_2_calendar_id = 'thenewparkway.com_ighfjtidsap0o4oaubh7nfnqq0@group.calendar.google.com'
-starting_date  = Time.new(2012,12,22).to_datetime
-IMDB_PRICE_REGEX = /(tt\d+)[\s\S]*Admission Price:.*\$(\d+)/
-response_1 = service.list_events(parkway_1_calendar_id,
-                               max_results: 100,
+theater_1_calendar_id = 'thenewparkway.com_25uhqvcd5conik66ephgqe7j28@group.calendar.google.com'
+theater_2_calendar_id = 'thenewparkway.com_ighfjtidsap0o4oaubh7nfnqq0@group.calendar.google.com'
+start_date  = Time.new(2012,12,22).to_datetime
+end_date  = Time.new(2016,03,31).to_datetime
+IMDB_REGEX = /(tt\d+)/
+PRICE_REGEX = /[\s\S]*Admission Price:.*\$(\d+)/
+response_1 = service.list_events(theater_1_calendar_id,
+                               max_results: 2500,
                                single_events: true,
                                order_by: 'startTime',
-                               time_max: (starting_date + 1).rfc3339,
-                               time_min: (starting_date).rfc3339)
+                               time_max: (end_date).rfc3339,
+                               time_min: (start_date).rfc3339)
 
-response_2 = service.list_events(parkway_2_calendar_id,
-                               max_results: 100,
+response_2 = service.list_events(theater_2_calendar_id,
+                               max_results: 2500,
                                single_events: true,
                                order_by: 'startTime',
-                               time_max: (starting_date + 1).rfc3339,
-                               time_min: (starting_date).rfc3339)
+                               time_min: (start_date).rfc3339,
+                               time_max: (end_date).rfc3339)
 
 
 puts "Upcoming events:"
 puts "No upcoming events found in theater 1" if response_1.items.empty?
 puts "No upcoming events found in theater 2" if response_2.items.empty?
 
-movies = {}
-//TODO: refactror and user imdb_id instead of name to build hash
-response_1.items.each do |event|
+puts "NEXT PAGE TOKEN", response_1.next_page_token
+response = response_1.items + response_2.items
+previous_price = 6
+response.each do |event|
+    movies = {}
     start = event.start.date || event.start.date_time
-    puts "SUMMARY: #{event.summary} - DESCRIPTION: #{event.description} (#{start})"
-    movie_info = event.description.match(IMDB_PRICE_REGEX)
-    movies[event.summary.strip] ||= {}
-    movies[event.summary.strip]['imdb_id'] = movie_info[1]
-    movies[event.summary.strip]['shows'] = movies[event.summary.strip]['shows'].nil? ? 1
-                                                                                     : movies[event.summary.strip]['shows'] + 1
+    #puts "SUMMARY: #{event.summary} - DESCRIPTION: #{event.description} (#{start})"
+    imdb_id = event.description.match(IMDB_REGEX) unless event.description.nil?
+    price = event.description.match(PRICE_REGEX) unless event.description.nil?
+    movie_name = event.summary.strip
+    if imdb_id.nil?
+      puts "No IMDB id found",event.summary
+      imdb_id = movie_name
+    else
+      imdb_id = imdb_id[1]
+    end
+    if price.nil?
+      puts 'No Price found for', event.summary
+      price = previous_price
+    else
+      previous_price = price
+      price = price[1]
+    end
+    imdb_id = imdb_id[1]
+    movies[imdb_id] ||= {}
+    movies[imdb_id]['name'] = movie_name
+    movies[imdb_id]['price'] = price || previous_price
+    if start.class.to_s == 'DateTime'
+      movies[imdb_id]['time'] = start.strftime('%H:%M')
+      movies[imdb_id]['date'] = start.to_date.to_s
+    else
+      movies[imdb_id]['time'] = '00:00'
+      movies[imdb_id]['date'] = start.to_s
+    end
+    movies[imdb_id]['theater'] = event.organizer.email == theater_1_calendar_id ? 1 : 2
+    #puts movies
 end
-response_2.items.each do |event|
-    start = event.start.date || event.start.date_time
-    puts "SUMMARY: #{event.summary} - DESCRIPTION: #{event.description} (#{start})"
-    movie_info = event.description.match(IMDB_PRICE_REGEX)
-    movies[event.summary.strip] ||= {}
-    movies[event.summary.strip]['imdb_id'] = movie_info[1]
-    movies[event.summary.strip]['shows'] = movies[event.summary.strip]['shows'].nil? ? 1
-                                                                                     : movies[event.summary.strip]['shows'] + 1
-end
-puts movies
