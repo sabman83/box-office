@@ -1,7 +1,8 @@
 require 'google/apis/calendar_v3'
 require 'googleauth'
 require 'googleauth/stores/file_token_store'
-
+require 'date'
+require 'pry'
 require 'fileutils'
 
 OOB_URI = 'urn:ietf:wg:oauth:2.0:oob'
@@ -46,20 +47,45 @@ service.authorization = authorize
 # Fetch the next 10 events for the user
 parkway_1_calendar_id = 'thenewparkway.com_25uhqvcd5conik66ephgqe7j28@group.calendar.google.com'
 parkway_2_calendar_id = 'thenewparkway.com_ighfjtidsap0o4oaubh7nfnqq0@group.calendar.google.com'
-
-all_calendars = service.list_calendar_lists
-all_calendars.items.each do |cal|
-  puts 'id: ', cal.id, 'description: ', cal.description
-end
-response = service.list_events(parkway_1_calendar_id,
-                               max_results: 10,
+starting_date  = Time.new(2012,12,22).to_datetime
+IMDB_PRICE_REGEX = /(tt\d+)[\s\S]*Admission Price:.*\$(\d+)/
+response_1 = service.list_events(parkway_1_calendar_id,
+                               max_results: 100,
                                single_events: true,
                                order_by: 'startTime',
-                               time_min: Time.now.iso8601)
+                               time_max: (starting_date + 1).rfc3339,
+                               time_min: (starting_date).rfc3339)
+
+response_2 = service.list_events(parkway_2_calendar_id,
+                               max_results: 100,
+                               single_events: true,
+                               order_by: 'startTime',
+                               time_max: (starting_date + 1).rfc3339,
+                               time_min: (starting_date).rfc3339)
+
 
 puts "Upcoming events:"
-puts "No upcoming events found" if response.items.empty?
-response.items.each do |event|
+puts "No upcoming events found in theater 1" if response_1.items.empty?
+puts "No upcoming events found in theater 2" if response_2.items.empty?
+
+movies = {}
+//TODO: refactror and user imdb_id instead of name to build hash
+response_1.items.each do |event|
     start = event.start.date || event.start.date_time
-    puts "#{event.summary} - #{event.description} (#{start})"
+    puts "SUMMARY: #{event.summary} - DESCRIPTION: #{event.description} (#{start})"
+    movie_info = event.description.match(IMDB_PRICE_REGEX)
+    movies[event.summary.strip] ||= {}
+    movies[event.summary.strip]['imdb_id'] = movie_info[1]
+    movies[event.summary.strip]['shows'] = movies[event.summary.strip]['shows'].nil? ? 1
+                                                                                     : movies[event.summary.strip]['shows'] + 1
 end
+response_2.items.each do |event|
+    start = event.start.date || event.start.date_time
+    puts "SUMMARY: #{event.summary} - DESCRIPTION: #{event.description} (#{start})"
+    movie_info = event.description.match(IMDB_PRICE_REGEX)
+    movies[event.summary.strip] ||= {}
+    movies[event.summary.strip]['imdb_id'] = movie_info[1]
+    movies[event.summary.strip]['shows'] = movies[event.summary.strip]['shows'].nil? ? 1
+                                                                                     : movies[event.summary.strip]['shows'] + 1
+end
+puts movies
