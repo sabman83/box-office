@@ -46,9 +46,16 @@ service.authorization = authorize
 
 # Show the user's labels
 user_id = 'me'
-result = service.get_user_message(user_id, '154f35420ffadd33')
-#result = service.list_user_messages(user_id, label_ids: ['Label_27'])
-binding.pry
-puts "Labels:"
-puts "No labels found" if result.labels.empty?
-result.labels.each { |label| puts "- #{label.name}" }
+#result = service.get_user_message(user_id, '154f35420ffadd33')
+result = service.list_user_messages(user_id, label_ids: ['Label_27'], max_results: 1000)
+result.messages.each do |msg|
+  message = service.get_user_message(user_id, msg.id, fields: 'id,payload(parts(body/attachmentId,filename))')
+  message.payload.parts.each do |part|
+    next if part.body.nil?
+    attch = service.get_user_message_attachment(user_id, msg.id, part.body.attachment_id)
+    next unless part.filename.include? 'branch'
+    File.open('data/other_box_office_reports/' + part.filename, 'wb') do |f|
+      f.write(attch.data)
+    end
+  end
+end
