@@ -1,33 +1,46 @@
 inspect = require('eyes').inspector({maxLength:20000});
 var fs = require('fs');
+var async = require("async");
 var pdf_extract = require('pdf-extract');
-var absolute_path_to_pdf = '/home/sabman/Downloads/branch_area_20151127_SF.pdf'
+var absolute_path = '/home/sabman/Projects/box-office/data/other_box_office_reports/'
+var absolute_write_path = '/home/sabman/Projects/box-office/data/corrected_box_office_reports/'
+var files = fs.readdirSync(absolute_path);
 var options = {
     type: 'text'  // extract the actual text in the pdf file
 }
-var processor = pdf_extract(absolute_path_to_pdf, options, function(err) {
-    if (err) {
-          return errorCallback(err);
-            }
-});
-
-var showText = function(arg1, arg2) {
-
-  console.log('Completed scanning file');
-  fs.writeFile('./report-20151127.txt', arg2, function(err){
-    console.log(err);
-  });
-};
 
 var errorCallback = function(err) {
-  console.log(err);
-};
+  if(err) console.log('ERROR! : ', err);
+}
 
-processor.on('complete', function(data) {
-    inspect(data.text_pages, 'extracted text pages');
-      showText(null, data.text_pages);
-});
-processor.on('error', function(err) {
-    inspect(err, 'error while extracting pages');
-      return errorCallback(err);
-});
+var q = async.queue(function(file, cb) {
+
+  console.log('Parsing', absolute_path+file);
+  fullFilePath = absolute_path +  file;
+
+  var parser = pdf_extract(fullFilePath, options, errorCallback);
+
+  parser.on('complete',function(data){
+    console.log('Finished parsing');
+    fs.writeFile(absolute_write_path + file + '.txt', data.text_pages, function(err) {
+      if(err) console.log('error writing to file', err);
+    });
+    cb();
+  });
+
+  parser.on('error',function(err){
+    if(err) console.log('Error parsing', err);
+    cb();
+  });
+
+}, 1);
+
+q.push(files);
+
+
+
+
+
+
+
+

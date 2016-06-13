@@ -1,0 +1,25 @@
+{
+  "name": "box-office",
+  "version": "1.0.0",
+  "description": "'Analyzing box office data for New Parkway'",
+  "main": "''",
+  "dependencies": {
+    "async": "^2.0.0-rc.6",
+    "eyes": "^0.1.8",
+    "pdf-extract": "^1.0.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "''"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabman83/box-office.git"
+  },
+  "author": "'Sebastin Kolman'",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sabman83/box-office/issues"
+  },
+  "homepage": "https://github.com/sabman83/box-office#readme"
+}

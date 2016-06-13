@@ -44,7 +44,8 @@ def ignore_theater name
   list = ['INDRP - El Campanil Theatre - Antioch, CA',
    'PE - El Rey Theatre - Chico, CA',
    'Castro',
-   'INDLF'
+   'INDLF',
+   'EXSV - Highland Park 3 - Highland Park, CA'
   ]
   list.each do |v|
     return true if name.include?(v)
@@ -53,7 +54,7 @@ def ignore_theater name
 end
 
 
-FILE_NAME = 'report-20160212.txt'
+FILE_NAME = 'reports.txt'
 THEATERS = []
 THEATERS_REGEX = /[A-Z0-9]{2,5} - .*? - .*?, [A-Z]{2}/
 DATE_REGEX = /(\d{1,2})\/(\d{1,2})\/(\d{4}) -/
@@ -76,7 +77,7 @@ File.open(FILE_NAME) do |f|
     end
   end
 end
-raise 'ERROR IN THEATER NAMES' if THEATERS.size != num_of_totals
+puts 'ERROR IN THEATER NAMES' if THEATERS.size != num_of_totals
 
 THEATERS.each do |t|
   result = db.execute('SELECT * FROM THEATERS WHERE name = ?', t)
