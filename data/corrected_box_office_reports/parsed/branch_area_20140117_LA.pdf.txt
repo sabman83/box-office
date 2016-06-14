@@ -1404,12 +1404,12 @@
   5 Inside Llewyn Davis               203       469      628      1,300      2,916      -55%          307      -       -       -     1,607    3,906    38,478
       Total                         6,532     9,533     6,454    22,519                              5,177     -       -       -    27,696            130,202
  PACF - Vineland 4 DI - City Of Industry, CA
-  1 Ride Along                      5,334     8,395     3,918    17,647           -                  1,017     -       -       -    18,664        -    18,664
-  8 * Frozen                          903     2,880     1,626     5,409           -                   198      -       -       -     5,607        -    55,004
-  1 Devil's Due                     1,434     2,264     1,149     4,847           -                   273      -       -       -     5,120        -     5,120
-  2 Lone Survivor                   1,728       831      537      3,096           -                   111      -       -       -     3,207        -    12,711
-  1 Jack Ryan: Shadow Recruit         492     1,002      714      2,208           -                   155      -       -       -     2,363        -     2,363
-  3 Paranormal Activity: The Ma       519       327      252      1,098           -                    36      -       -       -     1,134        -    25,375
+  1 Ride Along                      5,334     8,395     3,918    17,647           -       -          1,017     -       -       -    18,664        -    18,664
+  8 * Frozen                          903     2,880     1,626     5,409           -       -           198      -       -       -     5,607        -    55,004
+  1 Devil's Due                     1,434     2,264     1,149     4,847           -       -           273      -       -       -     5,120        -     5,120
+  2 Lone Survivor                   1,728       831      537      3,096           -       -           111      -       -       -     3,207        -    12,711
+  1 Jack Ryan: Shadow Recruit         492     1,002      714      2,208           -       -           155      -       -       -     2,363        -     2,363
+  3 Paranormal Activity: The Ma       519       327      252      1,098           -       -            36      -       -       -     1,134        -    25,375
 
 
                                                                 Copyright 2014 Rentrak Corporation
@@ -1424,8 +1424,8 @@
                                                              WKEND WKEND                                                        WEEK WEEK CUME
  WK                                  FRI       SAT     SUN GROSS GROSS                     %       MON       TUE   WED    THU   TOTAL GROSS GROSS
  PACF - Vineland 4 DI - City Of Industry, CA (continued)
-  5 * Anchorman 2                     531       351       90     972     -                            126      -      -     -     1,098        -    41,339
-  2 Legend Of Hercules, The           225       270      324     819     -                             18      -      -     -       837        -     6,951
+  5 * Anchorman 2                     531       351       90     972     -        -        -         126      -      -     -     1,098        -    41,339
+  2 Legend Of Hercules, The           225       270      324     819     -        -        -           18      -      -     -       837        -     6,951
       Total                        11,166    16,320    8,610  36,096                                 1,934     -      -     -    38,030            167,527
  DANZ - Mission Tiki 4 DI|# - Montclair, CA
   1 Ride Along #                    5,345     6,444    3,310  15,099     -                            863      -      -     -    15,962        -    15,962

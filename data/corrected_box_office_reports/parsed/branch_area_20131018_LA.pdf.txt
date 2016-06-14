@@ -1238,14 +1238,14 @@
   2 * After Tiller                       -       13       53        66          84      -21%         -     -     -     -       66      84        150
       Total                         4,799     7,114     5,927   17,840                               -     -     -     -   17,840             77,264
  PACF - Vineland 4 DI - City Of Industry, CA
-  1 Carrie                          3,189     3,384     1,881    8,454            -                  -     -     -     -    8,454        -     8,454
-  3 Gravity                         1,146     2,577      912     4,635            -                  -     -     -     -    4,635        -    25,261
-  4 Cloudy With A Chance Of Mea 1,461         1,458      909     3,828            -                  -     -     -     -    3,828        -    36,061
-  1 Escape Plan                       804     1,677      504     2,985            -                  -     -     -     -    2,985        -     2,985
-  2 Captain Phillips                  384       720      198     1,302            -                  -     -     -     -    1,302        -     8,853
-  3 Runner Runner                     360       516      216     1,092            -                  -     -     -     -    1,092        -    12,766
-  2 Machete Kills                     300       552      189     1,041            -                  -     -     -     -    1,041        -     6,087
-  5 Prisoners                         306       345      243       894            -                  -     -     -     -      894        -    40,896
+  1 Carrie                          3,189     3,384     1,881    8,454            -       -          -     -     -     -    8,454        -     8,454
+  3 Gravity                         1,146     2,577      912     4,635            -       -          -     -     -     -    4,635        -    25,261
+  4 Cloudy With A Chance Of Mea     1,461     1,458      909     3,828            -       -          -     -     -     -    3,828        -    36,061
+  1 Escape Plan                       804     1,677      504     2,985            -       -          -     -     -     -    2,985        -     2,985
+  2 Captain Phillips                  384       720      198     1,302            -       -          -     -     -     -    1,302        -     8,853
+  3 Runner Runner                     360       516      216     1,092            -       -          -     -     -     -    1,092        -    12,766
+  2 Machete Kills                     300       552      189     1,041            -       -          -     -     -     -    1,041        -     6,087
+  5 Prisoners                         306       345      243       894            -       -          -     -     -     -      894        -    40,896
       Total                         7,950    11,229     5,052   24,231                               -     -     -     -   24,231            141,363
  DANZ - Mission Tiki 4 DI|# - Montclair, CA
   1 Carrie #                        2,141     1,885      561     4,587            -                  -     -     -     -    4,587        -     4,587
@@ -2888,30 +2888,7 @@
  KVH - Rustic - Idyllwild, CA
   1 Gravity                          422   1,023    506    1,951         -                      -     -     -     -    1,951        -     1,951
       Total                          422   1,023    506    1,951                                -     -     -     -    1,951              1,951
- HFB - Smith's Ranch DI - Twentynine Palms, CA
-      Captain Phillips                 -       -      -        -         -                      -     -     -     -        -        -         -
-      Cloudy With A Chance Of Mea      -       -      -        -         -                      -     -     -     -        -        -         -
-      Carrie                           -       -      -        -         -                      -     -     -     -        -        -         -
-      Runner Runner                    -       -      -        -         -                      -     -     -     -        -        -         -
-      Insidious Chapter 2              -       -      -        -         -                      -     -     -     -        -        -         -
-
-
-                                                           Copyright 2013 Rentrak Corporation
-                                                               Data valid as of: 10/21/2013
-          # denotes multi-feature/total screen gross
-          * denotes non-Friday openings                                                                                   Page 45 of 92
-,10/18/2013 - 10/24/2013 Calendar Week # 42                   Branch Complex Analysis                                     Report Date: 10/21/2013 03:15
-                                                                   Los Angeles
-
-
-                                                                       LAST                                                    THIS  LAST
-                                                                WKEND WKEND                                                   WEEK WEEK CUME
- WK                                     FRI      SAT       SUN GROSS GROSS                    %       MON   TUE   WED   THU   TOTAL GROSS GROSS
-      Total                                -           -      -      -                                  -     -     -     -       -           -
-
-
-                                                                      Santa Barbara, CA
-  WWDI - Santa Barbara DI - Goleta, CA
+ WWDI - Santa Barbara DI - Goleta, CA
    2 Gravity                        1,004        1,422      368     2,794       3,640      -23%         -     -     -     -    2,794    4,675     7,469
    4 Cloudy With A Chance Of Mea 1,004           1,422      368     2,794       3,640      -23%         -     -     -     -    2,794    4,675    16,550
      Total                          2,008        2,844      736     5,588                               -     -     -     -    5,588             24,019
@@ -2979,12 +2956,6 @@
   3 Grace Unplugged                   16      92    90      198      707    -71%                         -     -     -     -      198      925     2,706
   2 Machete Kills                    158       -     -      158    1,101    -85%                         -     -     -     -      158    1,589     1,747
     Total                          7,758  11,566 7,533   26,857                                          -     -     -     -   26,857            117,206
- PLM3 - Palm Theatre - San Luis Obispo, CA
-    Wadjda                             -       -     -        -        -                                 -     -     -     -        -        -         -
-    Muscle Shoals                      -       -     -        -        -                                 -     -     -     -        -        -         -
-    Summit, The                        -       -     -        -        -                                 -     -     -     -        -        -         -
-    Enough Said                        -       -     -        -        -                                 -     -     -     -        -        -         -
-    Total                              -       -     -        -                                          -     -     -     -        -                  -
  CALB - Sunset DI|# - San Luis Obispo, CA
   2 Gravity #                      1,796   2,046   611    4,453        -                                 -     -     -     -    4,453        -    13,083
   1 Family, The #                  1,796   2,046   611    4,453        -                                 -     -     -     -    4,453        -     4,453
@@ -4538,19 +4509,6 @@
     2 Machete Kills                      6       14      56      76           428      -82%         -     -      -     -       76      587     663
     1 Fifth Estate                      14       36      20      71              -                  -     -      -     -       71        -      71
         Total                        9,126   11,317   7,817  28,260                                 -     -    150    46   28,456          202,081
-  CLRK - Picture Show @ Superstition - Mesa, AZ
-        Monsters University              -        -       -        -             -                  -     -      -     -        -        -        -
-        Lone Ranger, The                 -        -       -        -             -                  -     -      -     -        -        -        -
-        Pacific Rim                      -        -       -        -             -                  -     -      -     -        -        -        -
-        Turbo                            -        -       -        -             -                  -     -      -     -        -        -        -
-        Smurfs 2                         -        -       -        -             -                  -     -      -     -        -        -        -
-        Red 2                            -        -       -        -             -                  -     -      -     -        -        -        -
-        You're Next                      -        -       -        -             -                  -     -      -     -        -        -        -
-        Grown Ups 2                      -        -       -        -             -                  -     -      -     -        -        -        -
-        Wolverine, The                   -        -       -        -             -                  -     -      -     -        -        -        -
-        Heat, The                        -        -       -        -             -                  -     -      -     -        -        -        -
-        Conjuring, The                   -        -       -        -             -                  -     -      -     -        -        -        -
-        Total                            -        -       -        -                                -     -      -     -        -                 -
   SILV - Super Saver Bell Road 8 - Phoenix, AZ
     3 Monsters University              573      789     513   1,875         1,821        2%         -     -      -     -    1,875    3,003    8,268
     3 Turbo                            522      651     498   1,671         1,725        -3%        -     -      -     -    1,671    2,751    7,318
@@ -5807,7 +5765,7 @@
    2 Romeo And Juliet                198          308       268       774       1,085      -28%         -     -      -     -      774    1,817     2,591
    3 Insidious Chapter 2              92          323       338       752       1,554      -51%         -     -      -     -      752    2,036     5,790
    2 Machete Kills                   227          222       288       738       2,488      -70%         -     -      -     -      738    3,345     4,083
-   6 Elysium                         140          205       223       568            -                  -     -      -     -      568      236    11,482
+   6 Elysium                         140          205       223       568           -        -          -     -      -     -      568      236    11,482
    7 Riddick                         117          214       121       452         716      -36%         -     -      -     -      452    1,313    29,166
    4 Baggage Claim                    71          186       174       432         548      -21%         -     -      -     -      432      759     5,920
        Total                       5,389         8,091     5,994   19,475                               -     -    170   264   19,909            209,628

@@ -85,8 +85,8 @@
   2 * 47 Ronin                      1,380   2,478   1,784   5,642  8,320         -32%         -     -    2,400    1,372     9,414 26,144 35,559
       Total                        74,381 110,734  86,260 271,377                             -     -   75,829   37,017   384,224        2,021,705
  ELCP - El Capitan - Hollywood, CA
-  7 Frozen                         19,072  24,158  14,159  57,389 90,045         -36%         -     -        -        -    57,389 159,5901,241,295
-      Total                        19,072  24,158  14,159  57,389                             -     -        -        -    57,389        1,241,295
+  7 Frozen                         19,072  24,158  14,159  57,389 90,045         -36%         -     -        -        -    57,389 159,590 1,241,295
+      Total                        19,072  24,158  14,159  57,389                             -     -        -        -    57,389         1,241,295
  EGYP - Egyptian - Hollywood, CA
       Raging Bull (1980)                -       -       -       -      -                      -     -        -        -         -        -          -
       Nausicaa of the Valley of W       -       -       -       -      -                      -     -        -        -         -        -          -
@@ -2945,12 +2945,6 @@
  KVH - Rustic - Idyllwild, CA
    1 Frozen                           888  1,090      321   2,299      -                          -     -        -        -     2,299        -     2,299
        Total                          888  1,090      321   2,299                                 -     -        -        -     2,299              2,299
- HFB - Smith's Ranch DI - Twentynine Palms, CA
-       Grudge Match                     -      -        -       -      -                          -     -        -        -         -        -         -
-       Total                            -      -        -       -                                 -     -        -        -         -                  -
-
-
-                                                       Santa Maria/San Luis Obispo, CA
   REG - Santa Maria Stadium 14 & RPX - Santa Maria, CA
    1 Paranormal Activity: The Ma   7,410   5,130     3,293   15,833            -                  -     -        -        -    15,833        - 15,833
    6 * Frozen                      3,588   3,296     2,138    9,022      12,942      -30%         -     -    4,347    2,187    15,556   26,070 161,419

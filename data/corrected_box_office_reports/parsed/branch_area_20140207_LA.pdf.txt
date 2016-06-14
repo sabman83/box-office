@@ -90,8 +90,8 @@
    7 * Lone Survivor                  723    495    987    2,204  4,004          -44%         -     -    519     812      3,535    6,981 275,094
        Total                       41,707 67,270 48,462 157,435                               -     -   2,149   2,904   162,488         3,044,824
  ELCP - El Capitan - Hollywood, CA
-   2 Frozen                        17,505 57,476 58,758 133,739 105,226           27%         -     -       -       - 133,739 133,7381,508,772
-       Total                       17,505 57,476 58,758 133,739                               -     -       -       - 133,739           1,508,772
+   2 Frozen                        17,505 57,476 58,758 133,739 105,226           27%         -     -       -       -   133,739  133,738 1,508,772
+       Total                       17,505 57,476 58,758 133,739                               -     -       -       -   133,739          1,508,772
  EGYP - Egyptian - Hollywood, CA
        Across The Universe              -      -      -        -      -                       -     -       -       -         -        -          -
        Total                            -      -      -        -                              -     -       -       -         -                   -
@@ -3209,12 +3209,6 @@
    1 * Captain Phillips               235     387      233    855            -                  -     -      -   100      955       -     44,507
    2 Gimme Shelter                     40     177      185    402         925      -56%         -     -      -     -      402   1,348      1,750
        Total                      10,652   18,333   13,037 42,022                               -     -    85    366   42,473            404,250
- PLM3 - Palm Theatre - San Luis Obispo, CA
-       Past, The                        -       -        -      -            -                  -     -      -     -        -        -         -
-       Labor Day                        -       -        -      -            -                  -     -      -     -        -        -         -
-       Like Father, Like Son            -       -        -      -            -                  -     -      -     -        -        -         -
-       Total                            -       -        -      -                               -     -      -     -        -                  -
-
 
                                                            Copyright 2014 Rentrak Corporation
                                                                Data valid as of: 02/10/2014
@@ -4556,21 +4550,6 @@
  HARK - Valley Art - Tempe, AZ
    1 Someone Marry Barry               66     324        184       574            -                  -     -      -     -     574         -      574
        Total                           66     324        184       574                               -     -      -     -     574                574
- WWDI - Glendale 9 DI - Glendale, AZ
-       Hobbit: The Desolation Of S      -       -           -         -           -                  -     -      -     -        -        -         -
-       Frozen                           -       -           -         -           -                  -     -      -     -        -        -         -
-       Hunger Games: Catching Fire      -       -           -         -           -                  -     -      -     -        -        -         -
-       Captain Phillips                 -       -           -         -           -                  -     -      -     -        -        -         -
-       Lego Movie, The                  -       -           -         -           -                  -     -      -     -        -        -         -
-       Jack Ryan: Shadow Recruit        -       -           -         -           -                  -     -      -     -        -        -         -
-       Monuments Men                    -       -           -         -           -                  -     -      -     -        -        -         -
-       Ride Along                       -       -           -         -           -                  -     -      -     -        -        -         -
-       That Awkward Moment              -       -           -         -           -                  -     -      -     -        -        -         -
-       Lone Survivor                    -       -           -         -           -                  -     -      -     -        -        -         -
-       Vampire Academy                  -       -           -         -           -                  -     -      -     -        -        -         -
-       American Hustle                  -       -           -         -           -                  -     -      -     -        -        -         -
-
-
                                                                 Copyright 2014 Rentrak Corporation
                                                                     Data valid as of: 02/10/2014
           # denotes multi-feature/total screen gross
@@ -4582,12 +4561,6 @@
                                                                    LAST                                                        THIS  LAST
                                                             WKEND WKEND                                                       WEEK WEEK CUME
  WK                                  FRI     SAT        SUN GROSS GROSS                    %       MON   TUE   WED    THU     TOTAL GROSS GROSS
- WWDI - Glendale 9 DI - Glendale, AZ (continued)
-       Nut Job, The                    -         -          -         -           -                  -     -      -       -         -        -        -
-       Devil's Due                     -         -          -         -           -                  -     -      -       -         -        -        -
-       Labor Day                       -         -          -         -           -                  -     -      -       -         -        -        -
-       Legend Of Hercules, The         -         -          -         -           -                  -     -      -       -         -        -        -
-       Total                           -         -          -         -                              -     -      -       -         -                 -
  HARK - Tempe Marketplace 16 - Tempe, AZ
    1 Monuments Men                 9,104    10,690      6,168    25,961           -                  -     -      -       -    25,961        - 25,961
    4 Ride Along                    2,390     4,194      2,940     9,522     15,177      -37%         -     -      -       -     9,522   19,627 142,316

@@ -88,8 +88,8 @@
    5 Jack Ryan: Shadow Recruit         362    372    610   1,344         4,737      -71%          492      -       -       -     1,836    6,500 67,883
        Total                        57,803 60,349 52,749 170,903                               35,823      -   7,529   5,814   220,067         2,972,259
   ELCP - El Capitan - Hollywood, CA
-   3 Frozen                          3,887  3,592  3,320  10,799      133,739       -91%             -     -       -       -    10,799 174,5891,560,421
-       Total                         3,887  3,592  3,320  10,799                                     -     -       -       -    10,799        1,560,421
+   3 Frozen                          3,887  3,592  3,320  10,799      133,739       -91%             -     -       -       -    10,799 174,589 1,560,421
+       Total                         3,887  3,592  3,320  10,799                                     -     -       -       -    10,799         1,560,421
   EGYP - Egyptian - Hollywood, CA
        Assassination Of Jesse Jame       -      -      -       -              -                      -     -       -       -         -        -         -
        Casablanca (re) '96               -      -      -       -              -                      -     -       -       -         -        -         -
@@ -794,21 +794,6 @@
    3 Labor Day                        461      348      387    1,196       1,554      -23%          317      -       -       -    1,513    2,274     7,636
    2 Vampire Academy                   82       41       27      150         620      -75%           29      -       -       -      179      802       981
        Total                      11,681    12,258    9,660   33,599                               6,420     -    398     222    40,639            173,788
-  TMKO - Plaza Cinema 14 - Oxnard, CA
-       Frozen                           -        -        -         -           -                      -     -       -       -        -        -         -
-       Gravity                          -        -        -         -           -                      -     -       -       -        -        -         -
-       I, Frankenstein                  -        -        -         -           -                      -     -       -       -        -        -         -
-       Lego Movie, The                  -        -        -         -           -                      -     -       -       -        -        -         -
-       About Last Night                 -        -        -         -           -                      -     -       -       -        -        -         -
-       Monuments Men                    -        -        -         -           -                      -     -       -       -        -        -         -
-       Ride Along                       -        -        -         -           -                      -     -       -       -        -        -         -
-       That Awkward Moment              -        -        -         -           -                      -     -       -       -        -        -         -
-       Lone Survivor                    -        -        -         -           -                      -     -       -       -        -        -         -
-       Vampire Academy                  -        -        -         -           -                      -     -       -       -        -        -         -
-       Labor Day                        -        -        -         -           -                      -     -       -       -        -        -         -
-       Endless Love                     -        -        -         -           -                      -     -       -       -        -        -         -
-       Winter's Tale                    -        -        -         -           -                      -     -       -       -        -        -         -
-       Total                            -        -        -         -                                  -     -       -       -        -                  -
   RGCY - Santa Paula 7 - Santa Paula, CA
    2 Lego Movie, The                1,380    2,268    1,674    5,323       8,748      -39%         1,670     -       -       -    6,992   10,698    17,691
    1 * RoboCop                        812    1,322      862    2,996            -                   374      -    197     196     3,762        -     3,762

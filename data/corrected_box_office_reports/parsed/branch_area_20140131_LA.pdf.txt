@@ -91,8 +91,8 @@
    2 I, Frankenstein                  866    837    978    2,680  6,611          -59%         -     -       -       -    2,680    8,867 11,546
        Total                       30,052 39,033 16,984   86,069                              -     -   4,288   4,954   95,310         2,896,061
  ELCP - El Capitan - Hollywood, CA
-   1 Frozen                        17,880 52,220 35,126 105,226       -                       -     -       -       - 105,226         -1,346,521
-       Total                       17,880 52,220 35,126 105,226                               -     -       -       - 105,226          1,346,521
+   1 Frozen                        17,880 52,220 35,126 105,226       -                       -     -       -       - 105,226         - 1,346,521
+       Total                       17,880 52,220 35,126 105,226                               -     -       -       - 105,226         - 1,346,521
  EGYP - Egyptian - Hollywood, CA
        Baraka (re) '02                  -      -      -        -      -                       -     -       -       -        -        -         -
        Lawrence Of Arabia (1962)        -      -      -        -      -                       -     -       -       -        -        -         -
@@ -3234,10 +3234,6 @@
  KVH - Rustic - Idyllwild, CA
   1 August: Osage County              150    233             -      383            -                  -     -      -     -     383         -      383
     Total                             150    233             -      383                               -     -      -     -     383                383
- HFB - Smith's Ranch DI - Twentynine Palms, CA
-    Ride Along                          -      -             -         -           -                  -     -      -     -        -        -         -
-    Total                               -      -             -         -                              -     -      -     -        -                  -
-
 
                                                            Santa Maria/San Luis Obispo, CA
   REG - Santa Maria Stadium 14 & RPX - Santa Maria, CA
