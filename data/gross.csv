@@ -1,4 +1,5 @@
 id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
+36,tt3170832,"ROOM - Sorry, this showing has been canceled!",,2015-11-24,2,21:25,1,8.0
 782,tt0051818,KING CREOLE (Thrillville Theater) (<a target=”_blank” href=http://brownpapertickets.com/event/543139>Purchase Tickets Online</a>),0,2014-01-09,2,21:15,1,8.0
 659,tt0063350,"NIGHT OF THE LIVING DEAD, Movie Only (Savory Cinema) (<a target=”_blank” href=http://brownpapertickets.com/event/885344>Purchase Tickets Online</a>)",0,2014-10-13,1,21:30,2,16.5
 1062,tt0065944,KING: A FILMED RECORD (<a target=”_blank” href=http://brownpapertickets.com/event/433443>Purchase Tickets Online</a>),0,2013-08-28,2,18:30,1,6.0
@@ -12,7 +13,6 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 791,tt0084237,THE LAST UNICORN (New Parkway Family Classics),0,2013-05-05,2,12:30,1,6.0
 382,tt0084269,"LOSING GROUND, presented by Black Laurel Film Series (<a target=”_blank” href=http://www.eventbrite.com/e/losing-ground-new-vanguard-of-black-women-in-film-kathleen-collins-black-laurel-film-series-04-tickets-16624095116>Purchase Tickets Online</a>)",0,2015-07-26,2,12:30,1,8.0
 877,tt0084503,PINK FLOYD THE WALL,0,2013-02-02,2,23:30,1,6.0
-197,tt0087182,DUNE (<a target=”_blank” href=http://brownpapertickets.com/event/2468834>Purchase Tickets Online</a>),0,2015-11-24,2,21:20,2,8.0
 986,tt0088128,SIXTEEN CANDLES (Parkway Classics) (<a target=”_blank” href=http://brownpapertickets.com/event/564589>Purchase Tickets Online</a>),0,2014-02-27,2,21:15,1,8.0
 598,tt0089218,GOONIES (Parkway Classics) (<a target=”_blank” href=http://brownpapertickets.com/event/543194>Purchase Tickets Online</a>),0,2014-01-16,2,21:15,1,8.0
 158,tt0089791,"PEE WEE'S BIG ADVENTURE, a benefit for Chabot Elementary - THIS EVENT IS SOLD OUT. THANK YOU!",0,2015-05-31,1,12:30,1,8.0
@@ -26,9 +26,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 1088,tt0100944,THE WITCHES (New Parkway Family Classics),0,2013-10-11,1,16:00,1,8.0
 1102,tt0105793,WAYNE'S WORLD (Staff Pick Night) (<a target=”_blank” href=http://brownpapertickets.com/event/1382135>Purchase Tickets Online</a>),0,2015-04-03,2,22:30,1,8.0
 325,tt0108448,"UNNATURAL CAUSES, co-presented by Crocker Elementary PTA",0,2015-03-10,2,18:30,1,5.0
-194,tt0118715,THE BIG LEBOWSKI (New Parkway Cult Night) (FNL) (<a target=”_blank” href=http://brownpapertickets.com/event/2412298>Purchase Tickets Online</a>),0,2015-11-20,1,22:30,1,8.0
 766,tt0162346,GHOST WORLD (Parkway Classics) (<a target=”_blank” href=http://www.brownpapertickets.com/event/433204>Purchase Tickets Online</a>),0,2013-08-15,2,21:15,1,6.0
-543,tt0245429,SPIRITED AWAY (Animation KO!) (<a target=”_blank” href=http://brownpapertickets.com/event/970082>Purchase Tickets Online</a>),0,2014-12-04,2,21:30,1,8.0
 829,tt0248845,"HEDWIG AND THE ANGRY INCH, presented by the Horizons Foundation (<a target=”_blank” href=https://www.eventbrite.com/e/an-lgbtq-pre-brunch-bash-tickets-16030558833>Purchase Tickets Online</a>)",0,2015-04-12,2,12:30,1,20.0
 494,tt0250494,LEGALLY BLONDE (<a target=”_blank” href=http://www.brownpapertickets.com/event/2266419>Purchase Tickets Online</a>),0,2015-10-11,2,12:45,1,8.0
 778,tt0265343,MONSOON WEDDING (Bollywood on 24th) (<a target=”_blank” href=http://brownpapertickets.com/event/843799>Purchase Tickets Online</a>),0,2014-09-21,2,15:00,1,8.0
@@ -45,18 +43,14 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 353,tt1020072,SELMA,0,2015-04-05,1,13:00,1,8.0
 535,tt1045658,SILVER LININGS PLAYBOOK (2 for 1 Wednesday),0,2013-05-01,2,15:30,1,6.0
 761,tt1047011,THE UNFINISHED SONG,0,2013-08-15,2,18:30,1,6.0
-266,tt1065073,BOYHOOD,0,2014-11-28,2,18:40,1,8.0
+266,tt1065073,BOYHOOD - This showing has beed cancelled.,0,2014-12-09,1,18:15,1,8.0
 400,tt1170358,THE HOBBIT: THE DESOLATION OF SMAUG,0,2014-01-27,1,13:30,1,8.0
 1056,tt1276962,HOW TO MAKE MONEY SELLING DRUGS,0,2013-08-27,2,21:30,1,6.0
 1013,tt1351685,JACK THE GIANT SLAYER,0,2013-04-12,2,16:30,1,6.0
 120,tt1392190,MAD MAX: FURY ROAD,0,2015-09-10,2,18:30,1,8.0
-188,tt1398426,STRAIGHT OUTTA COMPTON,0,2015-11-21,2,21:00,1,8.0
-188,tt1398426,STRAIGHT OUTTA COMPTON,0,2015-11-24,1,15:50,1,8.0
-188,tt1398426,STRAIGHT OUTTA COMPTON - MUST END TONIGHT!,0,2015-11-25,2,21:15,1,8.0
 290,tt1436562,"RIO, a benefit for Easter Seals (<a target=”_blank” href=http://www.afternoonmovie.eventbrite.com >Purchase Tickets Online</a>)",0,2014-09-14,2,12:30,1,2.0
 263,tt1504978,"A LOT LIKE YOU, a benefit for One World Children's Fund & Foot2Afrika (<a target=”_blank” href=https://owcf.secure.force.com/events/CnP_PaaS_EVT__EventRegistration_3?event_id=a1T160000037Z3L&pagename=Page3_Attendee_Info&Registrant=a1X16000001Z7fvEAC>Purchase Tickets Online</a>)",0,2015-08-09,2,12:30,1,10.0
 1055,tt1533081,"LOVING LAMPPOSTS, Appreciating Diversity Film Series",0,2014-10-25,2,15:00,1,8.0
-269,tt1571249,THE SKELETON TWINS,0,2014-12-01,1,19:00,1,8.0
 32,tt1579361,"CHASING ICE, co-presented by GRID Alternatives and featuring a post-film discussion (Doc Night) <a target=”_blank” href=https://ticketing.us.veezi.com/purchase/328?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>",0,2016-03-29,2,19:00,1,10.0
 356,tt1581845,"SOMEWHERE BETWEEN, presented by the Appreciating Diversity Film Series",0,2015-03-28,2,15:00,1,8.0
 20,tt1596363,THE BIG SHORT (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/544?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),0,2016-03-30,1,18:40,1,8.0
@@ -85,16 +79,11 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 1154,tt1877832,X-MEN: DAYS OF FUTURE PAST,0,2014-07-05,1,16:40,1,8.0
 23,tt1895587,SPOTLIGHT (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/546?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),0,2016-03-30,2,18:20,1,8.0
 974,tt1931388,BEWARE OF MR. BAKER (CANCELED),0,2013-02-14,1,22:00,1,6.0
-196,tt1935156,JODOROWSKY'S DUNE (Doc Night) (<a target=”_blank” href=http://brownpapertickets.com/event/2444508>Purchase Tickets Online</a>),0,2015-11-24,1,19:00,1,8.0
 1191,tt1959490,NOAH,0,2014-05-11,1,17:30,1,8.0
 305,tt1972571,A MOST WANTED MAN,0,2014-09-30,1,21:10,1,8.0
 652,tt1972571,A MOST WANTED MAN,0,2014-10-12,1,18:00,2,8.0
 652,tt1972571,A MOST WANTED MAN--MUST END TONIGHT!!,0,2014-10-13,2,21:00,1,8.0
 268,tt2015381,GUARDIANS OF THE GALAXY - THIS SHOWING HAS BEEN CANCELLED DUE TO TECHNICAL DIFFICULTIES,0,2014-11-20,1,18:30,1,8.0
-268,tt2015381,GUARDIANS OF THE GALAXY,0,2014-11-28,2,13:15,1,8.0
-268,tt2015381,GUARDIANS OF THE GALAXY,0,2014-11-29,1,15:30,1,8.0
-268,tt2015381,GUARDIANS OF THE GALAXY,0,2014-12-02,1,21:20,1,8.0
-268,tt2015381,GUARDIANS OF THE GALAXY,0,2014-12-03,1,18:15,1,8.0
 213,tt2024544,12 YEARS A SLAVE,0,2014-01-09,1,18:30,1,8.0
 216,tt2042568,INSIDE LLEWYN DAVIS,0,2014-02-26,1,18:30,1,8.0
 475,tt2064713,A BAND CALLED DEATH,0,2013-07-26,2,17:30,1,8.0
@@ -108,10 +97,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 541,tt2084970,THE IMITATION GAME,0,2015-04-08,2,18:45,1,8.0
 737,tt2084989,UPSTREAM COLOR (CANCELED),0,2013-06-04,1,21:45,1,6.0
 558,tt2094064,MUCH ADO ABOUT NOTHING,0,2013-08-27,1,21:10,1,8.0
-187,tt2096673,INSIDE OUT,0,2015-11-21,2,14:10,1,8.0
 187,tt2096673,INSIDE OUT,0,2015-11-22,1,14:10,1,8.0
-187,tt2096673,INSIDE OUT,0,2015-11-24,2,17:00,1,8.0
-187,tt2096673,INSIDE OUT,0,2015-11-25,1,14:15,1,8.0
 957,tt2097298,"MCFARLAND, USA",0,2015-04-04,2,17:30,1,8.0
 957,tt2097298,"MCFARLAND, USA",0,2015-04-07,1,18:00,1,8.0
 533,tt2101441,SPRING BREAKERS (CANCELED),0,2013-04-30,2,21:45,1,6.0
@@ -129,7 +115,6 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 1199,tt2231212,BREASTMILK--CANCELLED!!,0,2014-05-29,1,18:30,1,8.0
 241,tt2239034,"AMERICAN WINTER, presented by the Northern California Community Loan Fund",0,2013-12-11,1,17:30,1,8.0
 1058,tt2258685,THE WORLD BEFORE HER (Doc Night at The New Parkway) (<a target=”_blank” href=http://www.brownpapertickets.com/event/441975>Purchase Tickets Online</a>),0,2013-08-27,2,19:00,1,6.0
-270,tt2262227,BOOK OF LIFE,0,2014-11-30,2,15:00,1,8.0
 780,tt2280836,SWEET DREAMS,0,2014-01-09,2,19:00,1,8.0
 948,tt2302755,OLYMPUS HAS FALLEN,0,2013-05-14,1,21:15,1,6.0
 618,tt2304771,MANDELA: LONG WALK TO FREEDOM,0,2014-01-16,1,21:30,1,8.0
@@ -137,10 +122,6 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 293,tt2326554,A GIRL WALKS HOME ALONE AT NIGHT,0,2015-04-05,2,19:40,1,8.0
 293,tt2326554,A GIRL WALKS HOME ALONE AT NIGHT,0,2015-04-08,1,18:15,1,8.0
 525,tt2334649,"FRUITVALE STATION, presented by BlackOut for Human Rights with post film discussion",0,2014-11-28,1,21:10,1,8.0
-138,tt2340650,EAST SIDE SUSHI,0,2015-11-20,1,20:00,1,8.0
-138,tt2340650,"EAST SIDE SUSHI, featuring a post film Q&A with director Anthony Lucero (<a target=”_blank” href=http://brownpapertickets.com/event/2465861>Purchase Tickets Online</a>)",0,2015-11-21,1,19:00,1,10.0
-138,tt2340650,EAST SIDE SUSHI,0,2015-11-22,2,17:20,1,8.0
-138,tt2340650,EAST SIDE SUSHI,0,2015-11-23,2,19:00,1,8.0
 1101,tt2381941,FOCUS,0,2015-04-05,2,17:15,1,8.0
 1101,tt2381941,FOCUS--MUST END TONIGHT!,0,2015-04-08,2,21:15,1,8.0
 833,tt2398231,"THE HOMESMAN - Sorry, but this showing has been cancelled.",0,2015-01-14,1,18:30,1,8.0
@@ -151,28 +132,13 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 354,tt2474024,THE LAST FIVE YEARS--CANCELED!!!,0,2015-04-01,2,18:30,1,8.0
 22,tt2488496,STAR WARS: THE FORCE AWAKENS (Baby Brigade) (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/539?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),0,2016-03-28,1,18:20,1,8.0
 22,tt2488496,STAR WARS: THE FORCE AWAKENS (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/542?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),0,2016-03-29,1,20:45,1,8.0
-190,tt2510894,HOTEL TRANSYLVANIA 2,0,2015-11-20,1,16:00,1,8.0
-190,tt2510894,HOTEL TRANSYLVANIA 2,0,2015-11-21,2,12:10,1,8.0
-190,tt2510894,HOTEL TRANSYLVANIA 2,0,2015-11-22,1,12:10,1,8.0
-190,tt2510894,HOTEL TRANSYLVANIA 2,0,2015-11-23,2,15:00,1,8.0
-190,tt2510894,HOTEL TRANSYLVANIA 2,0,2015-11-24,2,15:00,1,8.0
-190,tt2510894,HOTEL TRANSYLVANIA 2 - MUST END TONIGHT!,0,2015-11-25,1,12:15,1,8.0
 837,tt2517658,THE CANAL,0,2014-11-16,2,21:10,1,8.0
 373,tt2545088,"AMERICAN PROMISE, co-presented by Appreciating Diversity Film Series",0,2014-11-29,2,15:00,1,8.0
-191,tt2554274,CRIMSON PEAK,0,2015-11-21,1,21:55,1,8.0
-191,tt2554274,CRIMSON PEAK,0,2015-11-22,1,20:50,1,8.0
-191,tt2554274,CRIMSON PEAK,0,2015-11-23,2,21:20,1,8.0
-191,tt2554274,CRIMSON PEAK - MUST END TONIGHT!,0,2015-11-25,1,16:30,1,8.0
 694,tt2555302,MATT SHEPARD IS A FRIEND OF MINE--CANCELLED DUE TO WARRIORS' BASKETBALL,0,2015-05-19,2,19:00,1,8.0
 351,tt2562232,BIRDMAN,0,2015-04-02,2,20:55,1,8.0
 351,tt2562232,BIRDMAN,0,2015-04-05,1,18:00,1,8.0
-483,tt2576852,THE TALE OF PRINCESS KAGUYA - Dubbed,0,2014-11-28,1,15:00,1,8.0
-483,tt2576852,THE TALE OF PRINCESS KAGUYA - Subtitled,0,2014-12-02,1,18:30,1,8.0
 319,tt2582802,WHIPLASH,0,2015-04-04,1,19:00,1,8.0
 987,tt2606924,"LENNY COOKE, with post film discussion moderated by Marc Spears, Marcus Thompson, and Eddie Maisonet (<a target=”_blank” href=http://brownpapertickets.com/event/571861>Purchase Tickets Online</a>)",0,2014-02-27,2,19:00,1,8.0
-670,tt2713180,FURY,0,2014-11-30,1,21:00,1,8.0
-670,tt2713180,FURY,0,2014-12-02,2,21:30,1,8.0
-670,tt2713180,FURY,0,2014-12-03,2,18:40,1,8.0
 1052,tt2759372,"CODE BLACK, a benefit for and presented by Highland Hospital (<a target=”_blank” href=http://codeblackoakland.eventbrite.com>Purchase Tickets Online</a>)",0,2014-10-26,2,12:30,1,10.0
 968,tt2782392,LITTLE SAINTS (<a target=”_blank” href=http://brownpapertickets.com/event/1418999>Purchase Tickets Online</a>),0,2015-04-03,1,20:20,1,8.0
 968,tt2782392,LITTLE SAINTS (<a target=”_blank” href=http://brownpapertickets.com/event/1419290>Purchase Tickets Online</a>),0,2015-04-07,2,21:30,1,8.0
@@ -192,16 +158,8 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 1195,tt2995810,"AFRICAN CYPHER, presented by the Fist Up Film Festival",0,2014-05-13,2,19:00,1,8.0
 665,tt3007512,THE WATER DIVINER--CANCELLED!!,0,2015-05-14,1,19:00,1,8.0
 660,tt3042792,"TONGUES OF HEAVEN, co-presented by The Center for Asian American Media, TaiwaneseAmerican.org, and North American Taiwanese Women's Association, featuring a post-film Q&A with director Anita Chang (Doc Night) (<a target=”_blank” href=http://brownpapertickets.com/event/866218>Purchase Tickets Online</a>)",0,2014-10-14,1,19:00,1,10.0
-189,tt3065132,HE NAMED ME MALALA,0,2015-11-20,2,17:00,1,8.0
-189,tt3065132,HE NAMED ME MALALA,0,2015-11-21,2,16:20,1,8.0
-189,tt3065132,HE NAMED ME MALALA,0,2015-11-23,2,17:00,1,8.0
-189,tt3065132,HE NAMED ME MALALA,0,2015-11-24,2,19:20,1,8.0
-189,tt3065132,HE NAMED ME MALALA - MUST END TONIGHT!,0,2015-11-25,2,12:45,1,8.0
 640,tt3074780,"SUPERMENSCH: THE LEGEND OF SHEP GORDON - Sorry, this showing has been CANCELLED.",0,2014-08-27,2,19:00,1,8.0
 68,tt3076658,CREED (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/229?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),0,2016-02-04,2,18:30,1,8.0
-186,tt3152624,TRAINWRECK,0,2015-11-25,1,21:35,1,8.0
-267,tt3169706,PRIDE,0,2014-11-29,1,18:15,1,8.0
-267,tt3169706,PRIDE,0,2014-11-30,2,17:15,1,8.0
 1103,tt3238136,"F-R-E-E, co-presented by The Berkeley FILM Foundation and featuring a performance by Destiny Arts and a post-film Q&A with the filmmakers (<a target=”_blank” href=http://brownpapertickets.com/event/1362582>Purchase Tickets Online</a>)",0,2015-04-07,2,19:00,1,10.0
 633,tt3268458,"THE INTERNET'S OWN BOY - Sorry, this showing has been CANCELLED.",0,2014-08-28,2,21:00,1,8.0
 656,tt3279124,LAST DAYS IN VIETNAM,0,2014-10-12,1,15:40,1,8.0
@@ -211,10 +169,6 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 663,tt3311588,VESSEL,0,2015-05-10,2,14:55,1,8.0
 663,tt3311588,VESSEL--CANCELLED!!,0,2015-05-14,2,18:30,1,8.0
 132,tt3317022,"RAISE YOUR KIDS ON SELTZER, a new feature by Daniel Kremer (<a target=”_blank” href=http://brownpapertickets.com/event/2067921>Purchase Tickets Online</a>)",0,2015-08-06,1,18:30,1,12.0
-140,tt3397884,SICARIO,0,2015-11-20,2,21:40,1,8.0
-140,tt3397884,SICARIO,0,2015-11-22,2,19:50,1,8.0
-140,tt3397884,SICARIO,0,2015-11-23,1,20:45,1,8.0
-140,tt3397884,SICARIO,0,2015-11-25,2,18:40,1,8.0
 149,tt3416742,WHAT WE DO IN THE SHADOWS--CANCELLED DUE TO WARRIORS' BASKETBALL,0,2015-05-21,1,19:00,1,8.0
 653,tt3549508,NAS: TIME IS ILLMATIC,0,2014-10-14,1,21:30,1,8.0
 653,tt3549508,NAS: TIME IS ILLMATIC,0,2014-10-15,2,21:30,1,25.0
@@ -234,10 +188,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 901,tt4229236,COBAIN: MONTAGE OF HECK - MUST END TONIGHT!,0,2015-09-09,2,20:30,1,8.0
 26,tt4263482,THE WITCH (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/540?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),0,2016-03-28,2,21:30,1,8.0
 26,tt4263482,THE WITCH (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/545?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),0,2016-03-30,1,21:30,1,8.0
-139,tt4316236,THE BLACK PANTHERS: VANGUARD OF THE REVOLUTION (Baby Brigade),0,2015-11-21,1,12:20,1,8.0
-139,tt4316236,THE BLACK PANTHERS: VANGUARD OF THE REVOLUTION,0,2015-11-22,2,14:50,1,8.0
-139,tt4316236,THE BLACK PANTHERS: VANGUARD OF THE REVOLUTION,0,2015-11-23,1,14:45,1,8.0
-139,tt4316236,THE BLACK PANTHERS: VANGUARD OF THE REVOLUTION,0,2015-11-25,2,14:45,1,8.0
+402,tt4316236,THE BLACK PANTHERS: VANGUARD OF THE REVOLUTION,0,2015-11-25,2,14:45,2,8.0
 1023,tt4372362,THREE TO INFINITY: BEYOND TWO GENDERS (Appreciating Diversity Film Series)--FREE!!,0,2015-10-03,2,15:00,1,8.0
 544,tt4448706,"THE EAR GOES TO THE SOUND: THE WORK OF LAETITIA SONAMI, presented by Renetta Sitoy (<a target=”_blank” href=http://www.brownpapertickets.com/event/1294153>Purchase Tickets Online</a>)",0,2015-03-15,2,12:30,1,6.0
 904,tt4569688,"TREASURE: FROM TRAGEDY TO TRANS JUSTICE, a benefit for Brown Boi Project (<a target=”_blank” href= http://www.eventbrite.com/e/treasure-from-tragedy-to-trans-justice-tickets-17604919789>Purchase Tickets Online</a>)",0,2015-09-06,2,12:30,1,130.0
@@ -357,6 +308,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 50,tt2293640,MINIONS,36,2015-09-18,2,16:00,1,8.0
 948,tt2302755,OLYMPUS HAS FALLEN,36,2013-05-10,1,16:30,1,6.0
 1163,tt2479800,PALO ALTO,36,2014-06-15,2,14:50,1,8.0
+988,tt0455944,THE EQUALIZER,39,2014-12-09,2,21:30,1,8.0
 341,tt1790885,ZERO DARK THIRTY,39,2013-03-18,2,21:30,1,6.0
 38,tt2338424,TUMBLEDOWN (Baby Brigade) (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/347?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),39,2016-02-20,2,12:45,1,8.0
 429,tt2396566,20 FEET FROM STARDOM,39,2014-01-17,1,17:30,1,8.0
@@ -447,6 +399,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 961,tt2802154,LEVIATHAN,48,2015-04-26,2,12:30,1,8.0
 1046,tt2891174,99 HOMES,48,2015-11-03,1,20:40,1,8.0
 1112,tt2954776,FIRST COMES LOVE (Doc Night) (<a target=”_blank” href=http://brownpapertickets.com/event/466201>Purchase Tickets Online</a>),48,2013-09-24,2,19:00,1,8.0
+189,tt3065132,HE NAMED ME MALALA,48,2015-11-20,2,17:00,1,8.0
 841,tt3263996,THE OVERNIGHTERS,48,2014-11-10,1,15:20,1,8.0
 277,tt3297554,ANIMALS,48,2015-06-06,2,21:50,1,8.0
 156,tt3660770,MONKEY KINGDOM,48,2015-06-20,2,14:40,1,8.0
@@ -466,6 +419,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 204,tt2514894,MEDORA,51,2013-11-14,2,18:30,1,8.0
 162,tt2848292,PITCH PERFECT 2,51,2015-07-13,1,16:00,1,8.0
 88,tt2446980,JOY (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/273?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>)--MUST END THIS WEEK!!,52,2016-02-09,2,21:15,1,8.0
+191,tt2554274,CRIMSON PEAK - MUST END TONIGHT!,52,2015-11-25,1,16:30,1,8.0
 779,tt3859076,TRUTH - MUST END TONIGHT!,52,2015-12-23,1,14:45,1,3.0
 833,tt2398231,THE HOMESMAN (Baby Brigade),53,2015-01-10,2,12:20,1,8.0
 186,tt3152624,TRAINWRECK,53,2015-10-26,1,20:50,1,8.0
@@ -559,6 +513,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 479,tt1822381,EVOCATEUR: THE MORTON DOWNEY JR STORY (Doc Night at The New Parkway),61,2013-07-30,2,19:00,1,8.0
 1166,tt2357291,RIO 2,61,2014-06-20,2,16:00,1,8.0
 199,tt2390361,ENOUGH SAID,61,2013-12-03,2,21:30,1,8.0
+267,tt3169706,PRIDE (Baby Brigade),61,2014-12-01,2,18:30,1,8.0
 704,tt1535109,CAPTAIN PHILLIPS,62,2013-12-02,2,20:50,1,8.0
 673,tt2294629,FROZEN,62,2014-04-15,1,18:30,1,8.0
 1160,tt2381335,FED UP,62,2014-06-17,2,21:30,1,8.0
@@ -596,6 +551,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 278,tt4157220,IRIS,64,2015-06-05,2,18:20,1,8.0
 996,tt1024648,ARGO,65,2013-04-02,1,21:20,1,6.0
 993,tt1172203,SITA SINGS THE BLUES (New Parkway Family Classics),65,2013-03-29,1,16:00,1,6.0
+188,tt1398426,STRAIGHT OUTTA COMPTON,65,2015-11-24,1,15:50,1,8.0
 1185,tt1621046,CESAR CHAVEZ,65,2014-04-27,2,20:30,1,8.0
 216,tt2042568,INSIDE LLEWYN DAVIS,65,2014-03-11,2,21:40,1,8.0
 370,tt0126029,SHREK (New Parkway Family Classics),66,2013-06-01,2,12:30,1,6.0
@@ -665,6 +621,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 1166,tt2357291,RIO 2,72,2014-06-27,2,16:00,1,8.0
 1087,tt2370248,SHORT TERM 12,72,2013-10-13,1,12:15,1,8.0
 376,tt2395427,AVENGERS: AGE OF ULTRON,72,2015-07-24,2,16:00,1,8.0
+190,tt2510894,HOTEL TRANSYLVANIA 2,72,2015-11-22,1,12:10,1,8.0
 694,tt2555302,MATT SHEPARD IS A FRIEND OF MINE,72,2015-05-16,2,16:20,1,8.0
 894,tt2639344,LOVE IS STRANGE,72,2014-10-19,1,21:15,1,8.0
 427,tt2654360,DECEPTIVE PRACTICE,72,2013-09-29,1,17:15,1,8.0
@@ -815,9 +772,11 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 342,tt1618399,THE WAITING ROOM (2 for 1 Wednesday),86,2013-03-27,2,21:40,2,6.0
 1034,tt1623205,OZ THE GREAT AND POWERFUL,86,2013-05-24,2,16:30,1,6.0
 245,tt1869716,THE EAST (Baby Brigade),86,2013-07-29,2,16:30,1,6.0
+268,tt2015381,GUARDIANS OF THE GALAXY,86,2014-12-02,1,21:20,1,8.0
 38,tt2338424,TUMBLEDOWN (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/363?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),86,2016-02-23,1,18:15,1,8.0
 1101,tt2381941,FOCUS,86,2015-04-04,1,21:30,1,8.0
 1161,tt2458776,BEARS,86,2014-05-31,1,12:30,1,8.0
+670,tt2713180,FURY,86,2014-12-02,2,21:30,1,8.0
 1198,tt2852470,THE MISSING PICTURE (Doc Night) (<a target=”_blank” href=http://brownpapertickets.com/event/686947>Purchase Tickets Online</a>),86,2014-05-27,2,19:00,1,8.0
 97,tt5428662,OSCAR SHORTS: LIVE ACTION (Baby Brigade) (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/314?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),86,2016-02-15,2,16:20,1,8.0
 861,tt0372588,"TEAM AMERICA: WORLD POLICE (Parkway Classics) <a target=""_blank"" href=""http://www.brownpapertickets.com/event/397093"">Purchase Tickets Online</a>",87,2013-07-04,1,19:00,1,6.0
@@ -827,7 +786,9 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 36,tt3170832,ROOM (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/469?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),87,2016-03-14,2,20:50,1,8.0
 39,tt3385334,NAZ AND MAALIK (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/348?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),87,2016-02-20,2,15:00,1,8.0
 28,tt5434972,FASTBALL (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/490?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),87,2016-03-27,1,15:00,1,8.0
+989,tt0071222,BLACK CHRISTMAS (Nerve Wrackin' Theater) (<a target=”_blank” href=http://brownpapertickets.com/event/970165>Purchase Tickets Online</a>),88,2014-12-06,2,15:00,1,8.0
 1220,tt0089175,FRIGHT NIGHT (Nerve Wrackin' Theater) (<a target=”_blank” href=http://brownpapertickets.com/event/740638>Purchase Tickets Online</a>),88,2014-07-19,2,15:00,1,8.0
+988,tt0455944,THE EQUALIZER,88,2014-12-08,1,21:30,1,8.0
 122,tt0470752,EX MACHINA,88,2015-06-16,2,21:15,1,8.0
 142,tt1051904,GOOSEBUMPS,88,2015-12-04,2,16:00,1,8.0
 372,tt1205537,JACK RYAN: SHADOW RECRUIT,88,2014-03-15,2,21:50,1,8.0
@@ -977,7 +938,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 139,tt4316236,THE BLACK PANTHERS: VANGUARD OF THE REVOLUTION,96,2015-12-05,1,12:50,1,8.0
 927,tt0053291,SOME LIKE IT HOT (Classic Cinema Sunday) (<a target=”_blank” href=http://brownpapertickets.com/event/607091>Purchase Tickets Online</a>),97,2014-03-30,2,15:00,1,8.0
 233,tt1454468,GRAVITY,97,2013-12-08,1,21:45,1,8.0
-269,tt1571249,THE SKELETON TWINS,97,2014-11-29,2,19:30,1,8.0
+269,tt1571249,THE SKELETON TWINS (Baby Brigade),97,2014-12-06,1,12:15,1,8.0
 234,tt1985966,CLOUDY WITH A CHANCE OF MEATBALLS 2,97,2013-12-08,1,12:45,1,8.0
 164,tt2415458,THE WOLFPACK,97,2015-07-07,2,17:00,1,8.0
 351,tt2562232,BIRDMAN,97,2015-03-17,2,21:30,1,8.0
@@ -1000,6 +961,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 887,tt1638355,THE MAN FROM U.N.C.L..E,100,2015-10-03,1,14:05,1,8.0
 526,tt1723121,WE'RE THE MILLERS,100,2013-10-09,1,21:10,1,8.0
 853,tt1905041,FAST & FURIOUS 6,100,2013-06-28,2,19:30,1,6.0
+268,tt2015381,GUARDIANS OF THE GALAXY,100,2014-12-03,1,18:15,1,8.0
 500,tt2051879,EUROPA REPORT,100,2013-09-12,1,19:00,1,8.0
 1134,tt2245003,MISS YOU ALREADY,100,2015-11-28,1,16:40,1,8.0
 854,tt2350432,FREE ANGELA & ALL POLITICAL PRISONERS,100,2013-06-29,2,17:30,1,6.0
@@ -1071,6 +1033,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 165,tt2395427,THE AVENGERS: AGE OF ULTRON,104,2015-07-15,2,16:30,2,8.0
 468,tt2402085,JIMI: ALL IS BY MY SIDE,104,2014-10-30,1,21:30,1,8.0
 63,tt2452042,THE PEANUTS MOVIE,104,2015-12-25,1,12:00,1,8.0
+190,tt2510894,HOTEL TRANSYLVANIA 2,104,2015-11-20,1,16:00,1,8.0
 484,tt2752688,ROSEWATER,104,2014-12-18,2,21:30,1,8.0
 140,tt3397884,SICARIO (Baby Brigade),104,2015-12-12,2,12:15,1,8.0
 310,tt3399112,"NO NO, A DOCKUMENTARY",104,2014-10-03,1,17:00,1,8.0
@@ -1181,6 +1144,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 869,tt2911666,JOHN WICK,112,2014-12-18,1,18:45,1,8.0
 634,tt2975578,THE PURGE: ANARCHY,112,2014-08-27,2,21:10,1,8.0
 625,tt3065132,HE NAMED ME MALALA,112,2015-11-17,1,20:50,1,8.0
+189,tt3065132,HE NAMED ME MALALA,112,2015-11-24,2,19:20,1,8.0
 753,tt3077214,SUFFRAGETTE,112,2015-12-19,1,15:50,1,8.0
 186,tt3152624,TRAINWRECK,112,2015-10-31,1,20:50,1,8.0
 444,tt3263614,"KUMIKO, THE TREASURE HUNTER",112,2015-04-28,1,18:30,1,8.0
@@ -1213,6 +1177,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 1203,tt1647668,MILLION DOLLAR ARM,116,2014-06-27,1,17:30,1,8.0
 1153,tt1954701,A COFFEE IN BERLIN,116,2014-07-29,2,21:30,1,8.0
 1153,tt1954701,A COFFEE IN BERLIN,116,2014-08-03,2,14:35,1,8.0
+190,tt2510894,HOTEL TRANSYLVANIA 2,116,2015-11-23,2,15:00,1,8.0
 267,tt3169706,PRIDE,116,2014-11-26,2,16:20,1,8.0
 149,tt3416742,WHAT WE DO IN THE SHADOWS,116,2015-06-23,2,21:15,1,8.0
 93,tt3659388,THE MARTIAN (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/272?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),116,2016-02-09,2,18:20,1,8.0
@@ -1277,6 +1242,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 369,tt2355540,CUTIE AND THE BOXER,120,2014-03-14,2,18:00,1,8.0
 165,tt2395427,THE AVENGERS: AGE OF ULTRON,120,2015-07-10,2,16:00,1,8.0
 716,tt2492916,MUSCLE SHOALS,120,2013-11-09,2,15:20,1,8.0
+190,tt2510894,HOTEL TRANSYLVANIA 2,120,2015-11-21,2,12:10,1,8.0
 675,tt2771372,VERONICA MARS,120,2014-04-13,1,15:20,1,8.0
 151,tt2788716,WELCOME TO ME - MUST END TONIGHT!,120,2015-06-02,2,21:30,1,8.0
 162,tt2848292,PITCH PERFECT 2,120,2015-06-30,2,21:30,1,8.0
@@ -1318,6 +1284,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 1074,tt2404181,BELLE,124,2014-08-03,1,15:45,1,8.0
 1161,tt2458776,BEARS,124,2014-06-17,1,18:30,1,8.0
 894,tt2639344,LOVE IS STRANGE,124,2014-10-23,1,19:00,1,8.0
+670,tt2713180,FURY,124,2014-12-11,1,21:10,1,8.0
 119,tt3079380,SPY,124,2015-08-13,2,16:30,1,8.0
 676,tt3089388,TIM'S VERMEER (Baby Brigade),124,2014-04-14,2,18:30,1,8.0
 664,tt3235888,IT FOLLOWS,124,2015-05-14,2,20:40,1,8.0
@@ -1407,8 +1374,10 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 431,tt1245492,THIS IS THE END,130,2013-10-12,1,22:20,1,8.0
 342,tt1618399,THE WAITING ROOM,130,2013-03-17,1,13:00,1,6.0
 602,tt1731141,ENDER'S GAME (Baby Brigade),130,2014-01-13,2,18:30,1,8.0
+187,tt2096673,INSIDE OUT,130,2015-11-25,1,14:15,1,8.0
 982,tt2125608,SEARCHING FOR SUGAR MAN,130,2013-02-12,1,21:30,1,6.0
 869,tt2911666,JOHN WICK,130,2014-12-17,1,21:30,1,8.0
+543,tt0245429,SPIRITED AWAY - In English (Baby Brigade),131,2014-12-08,2,18:30,1,8.0
 873,tt1866249,THE SESSIONS,131,2013-01-14,1,19:15,1,6.0
 327,tt2096673,INSIDE OUT,131,2015-10-20,1,18:30,1,8.0
 232,tt2194499,ABOUT TIME,131,2013-12-10,2,21:30,1,8.0
@@ -1429,7 +1398,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 133,tt2125435,Beasts of the Southern Wild,132,2013-01-01,1,21:15,1,6.0
 907,tt2187884,ESCAPE FROM TOMORROW,132,2013-10-18,2,18:00,1,8.0
 547,tt2209418,BEFORE MIDNIGHT,132,2013-09-19,1,21:15,1,8.0
-270,tt2262227,BOOK OF LIFE,132,2014-11-28,1,12:45,1,8.0
+270,tt2262227,BOOK OF LIFE,132,2014-12-05,1,16:00,1,8.0
 47,tt2381111,BROOKLYN (Baby Brigade) (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/467?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),132,2016-03-14,2,18:20,1,8.0
 1186,tt2425486,GLORIA,132,2014-04-30,2,21:30,1,10.0
 522,tt2452254,CLOUDS OF SILS MARIA - MUST END TONIGHT!,132,2015-06-25,2,19:00,1,8.0
@@ -1450,7 +1419,9 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 19,tt2402927,CAROL (Baby Brigade) (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/424?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),134,2016-03-07,2,18:25,1,8.0
 331,tt2719848,EVEREST,134,2015-10-25,2,15:00,2,8.0
 119,tt3079380,SPY,134,2015-08-02,2,14:25,1,8.0
+1133,tt3726704,EXPERIMENTER,134,2015-11-22,1,16:20,1,8.0
 886,tt4178092,THE GIFT,134,2015-09-27,1,20:30,1,8.0
+402,tt4316236,THE BLACK PANTHERS: VANGUARD OF THE REVOLUTION,134,2015-11-22,2,14:50,2,8.0
 947,tt0070016,CHARLOTTE'S WEB (New Parkway Family Classics),135,2013-05-10,2,16:00,1,6.0
 279,tt0087332,GHOSTBUSTERS (New Parkway Family Classics),135,2013-06-07,1,16:00,1,6.0
 44,tt0103855,THE BODYGUARD (Blast from the Past) (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/243?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),135,2016-02-25,2,21:15,1,8.0
@@ -1501,6 +1472,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 121,tt3850214,DOPE,136,2015-07-21,2,16:30,1,8.0
 710,tt0058414,"NOTHING BUT A MAN, presented by Broaklyn Film and Theater Company(<a target=”_blank” href=http://brownpapertickets.com/event/512514>Purchase Tickets Online</a>)",137,2013-12-03,1,18:30,1,10.0
 580,tt1535108,ELYSIUM,137,2013-10-22,2,21:15,1,8.0
+269,tt1571249,THE SKELETON TWINS,137,2014-12-01,1,19:00,1,8.0
 387,tt1798188,FROM UP ON POPPY HILL,137,2013-06-07,1,20:30,1,6.0
 809,tt0059742,THE SOUND OF MUSIC (New Parkway Family Classics),138,2013-04-20,2,11:00,1,6.0
 449,tt0366548,HAPPY FEET (New Parkway Family Classics),138,2013-08-23,1,16:00,1,8.0
@@ -1513,8 +1485,10 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 558,tt2094064,MUCH ADO ABOUT NOTHING,138,2013-08-20,1,18:30,1,8.0
 242,tt2179116,THE KINGS OF SUMMER,138,2013-07-23,1,18:30,1,6.0
 579,tt2215151,INEQUALITY FOR ALL,138,2013-10-27,2,17:15,1,8.0
+265,tt2267998,GONE GIRL,138,2014-12-09,1,21:10,1,8.0
 138,tt2340650,EAST SIDE SUSHI,138,2015-11-09,2,21:30,1,8.0
 447,tt2802144,KINGSMAN: THE SECRET SERVICE--MUST END TONIGHT!!,138,2015-05-12,1,20:40,1,8.0
+189,tt3065132,HE NAMED ME MALALA - MUST END TONIGHT!,138,2015-11-25,2,12:45,1,8.0
 205,tt0345950,THE SPONGEBOB SQUAREPANTS MOVIE (New Parkway Family Classics),140,2013-11-15,2,16:00,1,8.0
 214,tt0790636,DALLAS BUYERS CLUB (Baby Brigade),140,2014-04-07,2,18:30,1,8.0
 428,tt1453405,MONSTERS UNIVERSITY,140,2013-09-29,1,12:30,1,8.0
@@ -1528,7 +1502,9 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 265,tt2267998,GONE GIRL,140,2014-12-16,2,21:10,1,8.0
 404,tt2361509,THE INTERN - MUST END TONIGHT!,140,2015-11-12,2,18:50,1,8.0
 527,tt2386327,THE INSTITUTE,140,2013-10-06,2,16:30,1,8.0
+191,tt2554274,CRIMSON PEAK,140,2015-11-23,2,21:20,1,8.0
 769,tt2870756,MAGIC IN THE MOONLIGHT,140,2014-09-19,2,18:15,1,8.0
+189,tt3065132,HE NAMED ME MALALA,140,2015-11-23,2,17:00,1,8.0
 568,tt1772341,WRECK-IT RALPH,141,2013-02-28,1,18:30,1,6.0
 387,tt1798188,FROM UP ON POPPY HILL,141,2013-06-16,1,12:30,1,6.0
 47,tt2381111,BROOKLYN (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/496?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),141,2016-03-18,1,18:25,1,8.0
@@ -1604,7 +1580,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 1226,tt0082198,CONAN THE BARBARIAN (Nerve Wrackin' Theater) (<a target=”_blank” href=http://brownpapertickets.com/event/669740>Purchase Tickets Online</a>),147,2014-06-21,2,15:00,1,8.0
 697,tt0119654,MEN IN BLACK (Blockbuster Night) (<a target=”_blank” href=http://brownpapertickets.com/event/1556169>Purchase Tickets Online</a>),147,2015-05-21,1,21:15,1,8.0
 1171,tt2582846,THE FAULT IN OUR STARS,147,2014-07-13,2,16:00,1,8.0
-267,tt3169706,PRIDE (Baby Brigade),147,2014-12-01,2,18:30,1,8.0
+267,tt3169706,PRIDE,147,2014-12-08,1,19:00,1,8.0
 100,tt0068646,THE GODFATHER (Doc Night Double) (<a target=”_blank” href=http://brownpapertickets.com/event/2486573>Purchase Tickets Online</a>),148,2016-02-09,1,20:45,1,8.0
 1092,tt0081353,POPEYE (Robin Williams Tribute) (<a target=”_blank” href=http://brownpapertickets.com/event/845446>Purchase Tickets Online</a>),148,2014-09-01,2,15:00,1,8.0
 787,tt0114436,SHOWGIRLS (Crapsterpiece Theater)(<a target=”_blank” href=http://brownpapertickets.com/event/509019>Purchase Tickets Online</a>),148,2013-11-23,2,22:30,1,8.0
@@ -1673,10 +1649,13 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 447,tt2802144,KINGSMAN: THE SECET SERVICE,152,2015-04-23,2,21:10,1,8.0
 74,tt2884018,MACBETH,152,2016-01-08,1,17:00,1,8.0
 74,tt2884018,MACBETH,152,2016-01-11,1,19:00,1,8.0
+189,tt3065132,HE NAMED ME MALALA,152,2015-11-21,2,16:20,1,8.0
 281,tt3148834,THUNDER AND THE HOUSE OF MAGIC,152,2014-09-13,1,12:30,1,8.0
+1133,tt3726704,EXPERIMENTER (Baby Brigade),152,2015-11-23,1,18:40,1,8.0
 163,tt3844362,THE OVERNIGHT,152,2015-07-06,1,21:30,1,8.0
 597,tt4044364,CITIZENFOUR,152,2015-01-11,1,12:40,1,8.0
 379,tt4126304,CARTEL LAND - MUST END TONIGHT!,152,2015-07-28,2,16:30,1,8.0
+402,tt4316236,THE BLACK PANTHERS: VANGUARD OF THE REVOLUTION,152,2015-11-23,1,14:45,2,8.0
 66,tt4594834,CHI-RAQ,152,2016-01-10,2,21:00,1,8.0
 601,tt1621039,FREE BIRDS,153,2013-12-29,2,12:40,1,8.0
 602,tt1731141,ENDER'S GAME,153,2013-12-29,1,15:40,1,8.0
@@ -1691,7 +1670,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 602,tt1731141,ENDER'S GAME,155,2013-12-26,1,15:30,1,8.0
 1159,tt1935156,JODOROWSKY'S DUNE,155,2014-06-14,2,21:55,1,8.0
 547,tt2209418,BEFORE MIDNIGHT,155,2013-08-12,1,21:30,1,8.0
-267,tt3169706,PRIDE,155,2014-11-28,2,16:00,1,8.0
+267,tt3169706,PRIDE,155,2014-12-05,1,18:30,1,8.0
 1000,tt0069005,"NIGHT OF THE LEPUS (Thrillville Theater) <a target=""_blank"" href=""http://www.brownpapertickets.com/event/360892"">Purchase Tickets Online</a>",156,2013-03-31,2,18:00,1,6.0
 599,tt0091954,SID AND NANCY (Parkway Classics) (<a target=”_blank” href=http://brownpapertickets.com/event/1053922>Purchase Tickets Online</a>),156,2015-01-22,2,21:30,1,8.0
 724,tt0107048,GROUNDHOG DAY,156,2013-02-01,1,21:00,1,6.0
@@ -1765,6 +1744,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 47,tt2381111,BROOKLYN (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/473?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),160,2016-03-15,1,20:55,1,8.0
 1148,tt2382396,JOE (MUST END TONIGHT!),160,2014-05-07,1,18:30,1,8.0
 1074,tt2404181,BELLE,160,2014-07-27,2,14:50,1,8.0
+190,tt2510894,HOTEL TRANSYLVANIA 2,160,2015-11-24,2,15:00,1,8.0
 319,tt2582802,WHIPLASH,160,2015-03-19,2,21:30,1,8.0
 481,tt2624412,BOULEVARD,160,2015-08-16,2,14:50,1,8.0
 670,tt2713180,FURY,160,2014-12-14,1,20:15,1,8.0
@@ -1977,6 +1957,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 794,tt2085910,"ROOM 237 (Doc Night at The New Parkway) <a target=""_blank"" href=""http://www.brownpapertickets.com/event/378913"">Purchase Tickets Online</a>",176,2013-05-07,1,19:00,1,6.0
 547,tt2209418,BEFORE MIDNIGHT,176,2013-09-15,1,19:20,1,8.0
 200,tt2294677,IN A WORLD...,176,2013-11-24,1,12:30,1,8.0
+138,tt2340650,EAST SIDE SUSHI,176,2015-11-23,2,19:00,1,8.0
 1148,tt2382396,JOE,176,2014-05-04,2,20:05,1,8.0
 769,tt2870756,MAGIC IN THE MOONLIGHT,176,2014-09-21,1,16:35,1,8.0
 284,tt2872732,LUCY,176,2014-09-16,2,21:15,1,8.0
@@ -2070,6 +2051,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 656,tt3279124,LAST DAYS IN VIETNAM,184,2014-10-11,2,17:10,2,8.0
 352,tt3316960,STILL ALICE (Baby Brigade),184,2015-03-28,2,12:45,2,8.0
 352,tt3316960,STILL ALICE,184,2015-04-01,1,19:00,1,10.0
+140,tt3397884,SICARIO,184,2015-11-23,1,20:45,1,8.0
 65,tt3682448,BRIDGE OF SPIES,184,2015-12-25,2,13:00,1,8.0
 45,tt0096283,MY NEIGHBOR TOTORO,185,2014-12-13,2,13:00,1,8.0
 1153,tt1954701,A COFFEE IN BERLIN,185,2014-07-26,2,14:20,1,8.0
@@ -2315,7 +2297,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 971,tt2091473,PROMISED LAND (2 for 1 Wednesday),204,2013-02-13,1,18:30,1,6.0
 558,tt2094064,MUCH ADO ABOUT NOTHING,204,2013-09-05,1,20:50,1,8.0
 533,tt2101441,SPRING BREAKERS,204,2013-04-21,2,20:30,1,6.0
-270,tt2262227,BOOK OF LIFE,204,2014-11-29,2,17:10,2,8.0
+270,tt2262227,BOOK OF LIFE,204,2014-12-06,2,12:50,1,8.0
 618,tt2304771,MANDELA: LONG WALK TO FREEDOM,204,2014-01-10,2,18:00,1,8.0
 854,tt2350432,FREE ANGELA & ALL POLITICAL PRISONERS,204,2013-07-03,2,19:00,1,6.0
 447,tt2802144,KINGSMAN: THE SECRET SERVICE,204,2015-04-30,2,20:30,1,8.0
@@ -2418,17 +2400,19 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 188,tt1398426,STRAIGHT OUTTA COMPTON,213,2015-11-01,2,20:10,1,8.0
 152,tt1661199,CINDERELLA,213,2015-05-23,1,12:50,1,8.0
 217,tt1951264,THE HUNGER GAMES: CATCHING FIRE,213,2014-02-13,1,18:30,1,8.0
-268,tt2015381,GUARDIANS OF THE GALAXY,213,2014-11-30,1,16:00,1,8.0
+268,tt2015381,GUARDIANS OF THE GALAXY,213,2014-12-07,2,16:00,1,8.0
 1169,tt2301592,THE DANCE OF REALITY,213,2014-06-23,1,20:45,1,8.0
 289,tt2756032,THE ONE I LOVE (Baby Brigade),213,2014-09-15,1,18:30,1,8.0
 172,tt2870648,AMY,213,2015-10-04,2,20:40,1,8.0
 27,tt0078504,THE WIZ,214,2013-03-02,1,23:55,2,6.0
+988,tt0455944,THE EQUALIZER,214,2014-12-07,1,20:15,1,8.0
 824,tt1408101,STAR TREK INTO DARKNESS,214,2013-07-08,2,20:45,1,6.0
 1174,tt1441395,UNDER THE SKIN,214,2014-05-27,1,18:30,1,8.0
 674,tt1800241,AMERICAN HUSTLE,214,2014-04-20,1,19:50,1,8.0
 218,tt1821658,THE NUT JOB,214,2014-02-15,2,12:30,1,8.0
 1196,tt1825157,THE DOUBLE,214,2014-05-27,1,20:55,1,8.0
 213,tt2024544,12 YEARS A SLAVE,214,2014-03-07,2,18:30,1,8.0
+187,tt2096673,INSIDE OUT,214,2015-11-21,2,14:10,1,8.0
 636,tt2103281,DAWN OF THE PLANET OF THE APES,214,2014-08-18,2,21:10,1,8.0
 200,tt2294677,IN A WORLD...,214,2013-11-17,1,15:30,1,8.0
 404,tt2361509,THE INTERN,214,2015-11-08,1,20:45,1,8.0
@@ -2483,6 +2467,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 748,tt2452042,THE PEANUTS MOVIE,216,2015-12-12,2,14:45,1,8.0
 229,tt2464812,LICKS,216,2014-06-14,2,19:40,1,8.0
 559,tt2545118,BLACKFISH,216,2013-09-05,2,19:00,1,8.0
+483,tt2576852,THE TALE OF PRINCESS KAGUYA - In Japanese with English subtitles,216,2014-12-08,2,21:15,1,8.0
 151,tt2788716,WELCOME TO ME,216,2015-05-27,1,21:30,1,10.0
 637,tt2910274,OBVIOUS CHILD,216,2014-08-31,2,15:00,1,8.0
 637,tt2910274,OBVIOUS CHILD,216,2014-09-04,1,21:10,1,8.0
@@ -2491,6 +2476,8 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 676,tt3089388,TIM'S VERMEER,216,2014-04-05,2,14:50,1,8.0
 186,tt3152624,TRAINWRECK,216,2015-10-08,1,21:00,1,8.0
 964,tt3319508,SHE'S BEAUTIFUL WHEN SHE'S ANGRY--MUST END TONIGHT!!,216,2015-03-26,2,18:30,1,8.0
+1133,tt3726704,EXPERIMENTER,216,2015-11-21,1,16:45,1,8.0
+402,tt4316236,THE BLACK PANTHERS: VANGUARD OF THE REVOLUTION (Baby Brigade),216,2015-11-21,1,12:20,2,8.0
 66,tt4594834,CHI-RAQ,216,2015-12-29,2,14:15,1,8.0
 1237,tt0093822,RAISING ARIZONA (New Parkway Cult Night) (FNL) (<a target=”_blank” href=http://brownpapertickets.com/event/612270>Purchase Tickets Online</a>),217,2014-04-18,2,22:30,1,8.0
 1162,tt1714915,ONLY LOVER LEFT ALIVE,217,2014-06-12,1,21:10,1,8.0
@@ -2559,6 +2546,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 757,tt1776086,BETTIE PAGE REVEALS IT ALL! (Doc Night) (<a target=”_blank” href=http://brownpapertickets.com/event/535230>Purchase Tickets Online</a>),223,2014-01-14,2,19:00,1,8.0
 35,tt1979388,THE GOOD DINOSAUR (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/296?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),223,2016-02-13,2,13:00,1,8.0
 242,tt2179116,THE KINGS OF SUMMER,223,2013-07-27,2,17:00,1,6.0
+140,tt3397884,SICARIO,223,2015-11-20,2,21:40,1,8.0
 973,tt0022286,THE PUBLIC ENEMY ~~ SF Beer Week,224,2013-02-08,2,21:30,1,6.0
 584,tt0040068,ABBOTT AND COSTELLO MEET FRANKENSTEIN (Thrillville Theater) (<a target=”_blank” href=http://brownpapertickets.com/event/466326>Purchase Tickets Online</a>),224,2013-10-27,1,18:00,1,8.0
 1178,tt0046876,CREATURE FROM THE BLACK LAGOON (Nerve Wrackin' Theater) (<a target=”_blank” href=http://brownpapertickets.com/event/669730>Purchase Tickets Online</a>),224,2014-06-07,2,15:00,1,8.0
@@ -2721,9 +2709,11 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 364,tt0096438,WHO FRAMED ROGER RABBIT? (Blockbuster Night) (<a target=”_blank” href=http://brownpapertickets.com/event/2033627>Purchase Tickets Online</a>),235,2015-08-20,1,21:30,1,8.0
 254,tt1640718,KAHLIL GIBRAN'S THE PROPHET,235,2015-09-07,2,12:30,1,8.0
 636,tt2103281,DAWN OF THE PLANET OF THE APES,235,2014-08-24,2,17:15,1,8.0
+190,tt2510894,HOTEL TRANSYLVANIA 2 - MUST END TONIGHT!,235,2015-11-25,1,12:15,1,8.0
 161,tt3398268,WHEN MARNIE WAS THERE (In Japanese with English subtitles),235,2015-06-24,1,21:30,1,5.0
 531,tt0089907,RETURN OF THE LIVING DEAD,236,2013-10-10,1,21:30,1,8.0
 1143,tt0119116,"THE FIFTH ELEMENT (Party at the Parkway) <a target=""_blank"" href=""http://www.brownpapertickets.com/event/406336"">Purchase Tickets Online</a>",236,2013-06-23,2,21:00,1,6.0
+543,tt0245429,SPIRITED AWAY - In English,236,2014-12-10,1,18:15,1,8.0
 1082,tt0338348,THE POLAR EXPRESS (New Parkway Family Classics),236,2013-12-20,2,16:00,1,8.0
 125,tt0903657,LOVE & MERCY,236,2015-08-13,1,18:30,1,8.0
 371,tt1322269,AUGUST: OSAGE COUNTY,236,2014-03-12,1,18:30,1,8.0
@@ -2742,6 +2732,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 637,tt2910274,OBVIOUS CHILD,236,2014-08-06,2,21:20,1,8.0
 465,tt2980648,THE HUNDRED FOOT JOURNEY,236,2014-10-26,2,18:00,1,8.0
 267,tt3169706,PRIDE,236,2014-11-14,2,17:45,1,8.0
+267,tt3169706,PRIDE,236,2014-12-11,1,18:30,1,8.0
 841,tt3263996,"THE OVERNIGHTERS, featuring a post-film Q&A with director Jesse Moss (<a target=”_blank” href=http://brownpapertickets.com/event/923291>Purchase Tickets Online</a>)",236,2014-11-09,2,15:00,1,10.0
 149,tt3416742,WHAT WE DO IN THE SHADOWS,236,2015-06-05,2,20:20,1,8.0
 597,tt4044364,CITIZENFOUR (Baby Brigade),236,2015-01-05,2,18:30,1,8.0
@@ -2826,6 +2817,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 121,tt3850214,DOPE,243,2015-08-24,1,19:05,1,8.0
 237,tt1311071,KILL YOUR DARLINGS,244,2013-12-04,2,21:30,1,8.0
 371,tt1322269,AUGUST: OSAGE COUNTY,244,2014-03-09,2,17:10,2,8.0
+269,tt1571249,THE SKELETON TWINS,244,2014-12-10,2,19:00,1,8.0
 269,tt1571249,THE SKELETON TWINS,244,2014-12-13,2,17:10,1,8.0
 296,tt1865505,SONG OF THE SEA,244,2015-04-26,2,15:30,1,8.0
 1154,tt1877832,X-MEN: DAYS OF FUTURE PAST (MUST END TONIGHT!!),244,2014-08-07,1,20:55,1,8.0
@@ -2926,6 +2918,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 626,tt2340650,EAST SIDE SUSHI,252,2015-11-18,2,18:30,1,8.0
 199,tt2390361,ENOUGH SAID,252,2013-12-01,1,19:15,1,8.0
 229,tt2464812,LICKS,252,2014-06-15,2,21:20,1,8.0
+483,tt2576852,THE TALE OF PRINCESS KAGUYA - Subtitled,252,2014-12-02,1,18:30,1,8.0
 331,tt2719848,EVEREST,252,2015-10-27,2,18:45,1,8.0
 753,tt3077214,SUFFRAGETTE,252,2015-12-16,2,21:10,1,8.0
 685,tt0083929,FAST TIMES AT RIDGEMONT HIGH (Parkway Classics) (<a target=”_blank” href=http://brownpapertickets.com/event/543208>Purchase Tickets Online</a>),253,2014-01-30,2,21:15,1,8.0
@@ -3032,9 +3025,11 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 566,tt2306745,SOUND CITY,260,2013-02-15,1,21:30,1,6.0
 165,tt2395427,AVENGERS: AGE OF ULTRON,260,2015-07-22,1,15:45,1,8.0
 1163,tt2479800,PALO ALTO,260,2014-06-08,1,15:20,1,8.0
+670,tt2713180,FURY,260,2014-12-03,2,18:40,1,8.0
 1135,tt3979094,"IN THE  IMAGE: PALESTINIAN WOMEN CAPTURE THE OCCUPATION, co-presented by the Berkeley FILM Foundation and featuring a post-film Q&A with the filmmakers Judith Montell and Emmy Scharlatt (Doc Night) (<a target=”_blank” href=http://brownpapertickets.com/event/2461570>Purchase Tickets Online</a>)",260,2015-12-01,2,19:00,1,10.0
 1047,tt0120611,BLADE (Halloween) (<a target=”_blank” href=http://brownpapertickets.com/event/2420695>Purchase Tickets Online</a>),261,2015-10-31,2,19:20,1,8.0
 327,tt2096673,INSIDE OUT,261,2015-10-11,1,14:50,1,8.0
+187,tt2096673,INSIDE OUT,261,2015-11-24,2,17:00,1,8.0
 1059,tt0119572,LOVE JONES (Party at the Parkway) (<a target=”_blank” href=http://www.brownpapertickets.com/event/441786>Purchase Tickets Online</a>),262,2013-08-25,1,20:30,1,8.0
 824,tt1408101,STAR TREK INTO DARKNESS,262,2013-07-13,2,15:15,2,6.0
 288,tt1587310,MALEFICENT,262,2014-09-07,1,14:25,1,8.0
@@ -3118,6 +3113,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 785,tt0089994,SESAME STREET PRESENTS: FOLLOW THAT BIRD (New Parkway Family Classics),270,2013-11-23,1,12:00,1,8.0
 1221,tt0152468,"SLAMNATION, co-presented by The National Poetry Slam and featuring a live poetry performance and a short film (Doc Night) (<a target=”_blank” href=http://brownpapertickets.com/event/764493>Purchase Tickets Online</a>)",270,2014-07-29,2,19:00,1,10.0
 431,tt1245492,THIS IS THE END,270,2013-10-13,2,20:10,1,8.0
+188,tt1398426,STRAIGHT OUTTA COMPTON - MUST END TONIGHT!,270,2015-11-25,2,21:15,1,8.0
 428,tt1453405,MONSTERS UNIVERSITY,270,2013-10-02,1,19:00,1,8.0
 1162,tt1714915,ONLY LOVERS LEFT ALIVE,270,2014-08-09,2,21:45,1,8.0
 245,tt1869716,THE EAST,270,2013-07-26,1,18:15,1,6.0
@@ -3194,6 +3190,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 413,tt2872718,NIGHTCRAWLER,276,2015-02-05,1,21:00,1,8.0
 641,tt2980706,PLANES: FIRE AND RESCUE,276,2014-08-23,2,13:00,1,8.0
 186,tt3152624,TRAINWRECK,276,2015-11-04,1,21:10,1,8.0
+186,tt3152624,TRAINWRECK,276,2015-11-25,1,21:35,1,8.0
 67,tt3850590,KRAMPUS,276,2016-01-03,2,18:30,1,8.0
 384,tt1817273,THE PLACE BEYOND THE PINES (Baby Brigade),277,2013-06-10,1,18:45,1,6.0
 68,tt3076658,CREED (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/278?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),277,2016-02-11,1,18:30,1,8.0
@@ -3205,6 +3202,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 474,tt2073520,Broaklyn Film & Theater Co. Presents: AN OVERSIMPLIFICATION OF HER BEAUTY,278,2013-07-24,1,18:30,1,8.0
 1151,tt2278388,THE GRAND BUDAPEST HOTEL,278,2014-08-10,2,17:10,1,8.0
 487,tt2321549,THE BABADOOK,278,2015-01-18,2,21:30,1,8.0
+36,tt3170832,ROOM,278,2015-11-22,1,18:20,1,8.0
 943,tt0084726,STAR TREK 2: THE WRATH OF KHAN (Nerve Wrackin' Theater) (<a target=”_blank” href=http://brownpapertickets.com/event/724191>Purchase Tickets Online</a>),280,2014-09-06,2,15:00,1,8.0
 742,tt0118715,THE BIG LEBOWSKI (Party at the Parkway)(<a target=”_blank” href=http://brownpapertickets.com/event/501825>Purchase Tickets Online</a>),280,2013-11-24,2,21:20,1,8.0
 1004,tt0203009,"MOULIN ROUGE with the Barely Legal Crowd Pleasers (<a target=""_blank"" href=""http://www.brownpapertickets.com/event/397745"">Purchase Tickets Online</a>)",280,2013-06-15,2,22:30,1,10.0
@@ -3217,6 +3215,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 619,tt1762399,WALKING WITH DINOSAURS,280,2014-01-18,1,12:30,1,8.0
 1080,tt1979320,RUSH,280,2013-12-25,2,18:20,1,8.0
 635,tt1980929,BEGIN AGAIN,280,2014-08-17,1,15:35,1,8.0
+268,tt2015381,GUARDIANS OF THE GALAXY,280,2014-11-28,2,13:15,1,8.0
 485,tt2235108,DEAR WHITE PEOPLE,280,2015-01-25,2,19:00,1,8.0
 1146,tt2281587,MUPPETS MOST WANTED,280,2014-05-21,1,18:30,1,8.0
 295,tt2305051,WILD,280,2015-03-06,2,18:30,1,8.0
@@ -3245,6 +3244,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 242,tt2179116,THE KINGS OF SUMMER,282,2013-08-07,1,19:00,1,8.0
 248,tt2332579,CRYSTAL FAIRY AND THE MAGICAL CACTUS,282,2013-08-08,1,21:45,1,8.0
 64,tt2379713,SPECTRE,282,2015-12-18,1,21:30,1,8.0
+191,tt2554274,CRIMSON PEAK,282,2015-11-22,1,20:50,1,8.0
 121,tt3850214,DOPE,282,2015-08-20,1,19:05,1,8.0
 35,tt1979388,THE GOOD DINOSAUR (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/344?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),283,2016-02-20,1,12:20,1,8.0
 566,tt2306745,SOUND CITY (2 for 1 Wednesday),283,2013-02-20,2,21:45,2,6.0
@@ -3267,6 +3267,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 1163,tt2479800,PALO ALTO,284,2014-06-11,2,19:00,1,8.0
 483,tt2576852,THE TALE OF PRINCESS KAGUYA - In Japanese with English subtitles,284,2015-01-05,1,21:30,1,8.0
 413,tt2872718,NIGHTCRAWLER,284,2015-01-28,1,21:15,1,8.0
+267,tt3169706,PRIDE,284,2014-11-28,2,16:00,1,8.0
 851,tt2347569,FRANCES HA,285,2013-06-28,1,21:45,1,6.0
 156,tt3660770,MONKEY KINGDOM,285,2015-06-06,1,16:40,1,8.0
 45,tt0096283,MY NEIGHBOR TOTORO (dubbed) (<a target=”_blank” href=*https://ticketing.us.veezi.com/purchase/408?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3DPurchase Tickets Online</a>),286,2016-03-04,2,16:00,1,8.0
@@ -3277,9 +3278,11 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 672,tt1798709,HER,286,2014-04-06,1,17:30,1,8.0
 187,tt2096673,INSIDE OUT,286,2015-11-18,1,19:20,1,8.0
 199,tt2390361,ENOUGH SAID,286,2013-11-24,1,20:30,1,8.0
+191,tt2554274,CRIMSON PEAK,286,2015-11-21,1,21:55,1,8.0
 413,tt2872718,NIGHTCRAWLER,286,2015-01-21,2,19:00,1,8.0
 637,tt2910274,OBVIOUS CHILD,286,2014-08-27,2,19:00,1,8.0
 119,tt3079380,SPY,286,2015-07-23,1,18:30,1,8.0
+140,tt3397884,SICARIO,286,2015-11-25,2,18:40,1,8.0
 667,tt0087995,"REPO MAN, a benefit for 924 Gilman (<a target=”_blank” href=http://brownpapertickets.com/event/1443700>Purchase Tickets Online</a>)",287,2015-05-10,2,12:30,1,8.0
 305,tt1972571,A MOST WANTED MAN,287,2014-10-05,1,17:55,1,8.0
 109,tt0095016,DIE HARD (Blockbuster Night) (<a target=”_blank” href=http://brownpapertickets.com/event/2491643>Purchase Tickets Online</a>),288,2016-02-18,1,21:30,1,8.0
@@ -3320,6 +3323,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 513,tt0454876,LIFE OF PI (2 for 1 Wednesday),290,2013-01-16,2,19:00,2,6.0
 580,tt1535108,ELYSIUM,290,2013-10-30,1,19:00,1,8.0
 1145,tt2316411,ENEMY,290,2014-04-23,2,21:30,1,8.0
+990,tt2920540,"20,000 DAYS ON EARTH (Doc Night) (<a target=”_blank” href=http://brownpapertickets.com/event/976320>Purchase Tickets Online</a>)",290,2014-12-09,1,19:00,1,8.0
 1174,tt1441395,UNDER THE SKIN,291,2014-06-11,1,20:50,1,8.0
 635,tt1980929,BEGIN AGAIN,291,2014-08-23,2,17:00,1,8.0
 213,tt2024544,12 YEARS A SLAVE,291,2014-01-02,2,17:45,1,8.0
@@ -3417,10 +3421,12 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 1191,tt1959490,NOAH,300,2014-05-09,2,19:30,1,8.0
 136,tt2076220,Holy Motors,300,2013-01-01,2,19:30,1,6.0
 242,tt2179116,THE KINGS OF SUMMER,300,2013-08-10,1,18:30,1,8.0
+138,tt2340650,EAST SIDE SUSHI,300,2015-11-20,1,20:00,1,8.0
 1074,tt2404181,BELLE,300,2014-07-17,1,19:00,1,8.0
 1074,tt2404181,BELLE,300,2014-07-24,2,18:30,1,8.0
 151,tt2788716,WELCOME TO ME,300,2015-05-12,2,21:30,1,8.0
 117,tt2991472,"CALIFORNIA HIGH, co-presented by the Video Project and featuring a post-film discussion (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/373?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>)",300,2016-03-22,2,19:00,1,10.0
+36,tt3170832,ROOM,300,2015-11-20,2,19:10,1,8.0
 664,tt3235888,IT FOLLOWS,300,2015-04-26,2,20:40,1,8.0
 395,tt1229340,ANCHORMAN 2,301,2014-01-23,1,21:30,1,8.0
 1174,tt1441395,UNDER THE SKIN,301,2014-06-05,2,19:00,1,8.0
@@ -3432,7 +3438,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 340,tt1588173,WARM BODIES,302,2013-03-16,2,21:45,1,6.0
 825,tt2132285,THE BLING RING,302,2013-07-05,1,20:15,1,6.0
 202,tt2229499,DON JON,302,2013-11-18,2,21:15,1,8.0
-265,tt2267998,GONE GIRL,302,2014-12-03,1,21:00,1,8.0
+265,tt2267998,GONE GIRL,302,2014-12-10,1,21:00,1,8.0
 295,tt2305051,WILD,302,2015-02-26,2,18:45,1,8.0
 165,tt2395427,AVENGERS: AGE OF ULTRON,302,2015-07-19,1,15:00,1,8.0
 284,tt2872732,LUCY,302,2014-09-04,1,19:00,1,8.0
@@ -3513,6 +3519,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 64,tt2379713,SPECTRE,310,2016-01-15,2,18:20,1,8.0
 329,tt4163020,TALES OF HALLOWEEN,310,2015-10-28,1,19:30,1,8.0
 305,tt1972571,A MOST WANTED MAN,311,2014-09-28,2,20:05,1,8.0
+670,tt2713180,FURY,311,2014-11-30,1,21:00,1,8.0
 339,tt0443272,LINCOLN,312,2013-03-23,2,18:00,1,6.0
 513,tt0454876,LIFE OF PI,312,2013-01-23,2,19:15,2,6.0
 122,tt0470752,EX MACHINA,312,2015-06-30,1,21:30,1,8.0
@@ -3546,6 +3553,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 219,tt0093779,THE PRINCESS BRIDE,315,2014-02-18,2,21:30,1,8.0
 119,tt3079380,SPY,315,2015-07-09,1,21:00,1,8.0
 506,tt0086856,THE ADVENTURES OF BUCKAROO BANZAI (<a target=”_blank” href=http://brownpapertickets.com/event/451895>Purchase Tickets Online</a>) (Parkway Classics),316,2013-09-12,1,21:15,1,8.0
+991,tt0088846,BRAZIL (Parkway Classics) (<a target=”_blank” href=http://brownpapertickets.com/event/956565>Purchase Tickets Online</a>),316,2014-12-11,2,21:30,1,8.0
 606,tt0816442,THE BOOK THIEF,316,2014-01-12,1,18:55,1,8.0
 266,tt1065073,BOYHOOD,316,2015-01-06,1,18:15,1,8.0
 188,tt1398426,STRAIGHT OUTTA COMPTON,316,2015-11-18,2,21:00,1,8.0
@@ -3562,10 +3570,12 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 390,tt0087957,PURPLE RAIN,318,2013-03-22,2,22:15,1,6.0
 424,tt0166924,MULHOLLAND DRIVE (Parkway Classics) (<a target=”_blank” href=http://brownpapertickets.com/event/588932>Purchase Tickets Online</a>),318,2014-03-13,2,21:15,1,8.0
 823,tt1300854,IRON MAN 3,318,2013-07-13,2,18:15,1,6.0
+188,tt1398426,STRAIGHT OUTTA COMPTON,318,2015-11-21,2,21:00,1,8.0
 135,tt1659337,The Perks of Being a Wallflower,318,2013-01-01,1,19:00,1,6.0
 614,tt1758830,THIS IS 40,318,2013-01-20,1,20:30,1,6.0
 817,tt1907668,FLIGHT,318,2013-01-10,2,19:00,1,6.0
 558,tt2094064,MUCH ADO ABOUT NOTHING,318,2013-08-13,2,21:15,1,6.0
+36,tt3170832,ROOM,318,2015-11-25,1,19:05,1,8.0
 298,tt1109624,PADDINGTON,319,2015-03-15,2,15:00,1,8.0
 935,tt0049408,THE KING AND I (Party at the Parkway) (<a target=”_blank” href=http://brownpapertickets.com/event/2479178>Purchase Tickets Online</a>),320,2015-12-27,2,13:00,1,8.0
 941,tt0058182,A HARD DAY'S NIGHT (Staff Pick Night) (<a target=”_blank” href=http://brownpapertickets.com/event/808066>Purchase Tickets Online</a>),320,2014-09-05,1,22:30,1,8.0
@@ -3632,6 +3642,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 679,tt1490017,THE LEGO MOVIE,326,2014-04-12,1,12:30,1,8.0
 283,tt2194328,"FINDING FELA, co-presented by Broaklyn Film and Theater Company (<a target=”_blank” href=http://brownpapertickets.com/event/854161>Purchase Tickets Online</a>)",326,2014-09-07,2,15:30,1,8.0
 1171,tt2582846,THE FAULT IN OUR STARS,326,2014-06-28,2,17:15,2,8.0
+36,tt3170832,ROOM,326,2015-11-21,2,18:25,1,8.0
 53,tt0054215,PSYCHO (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/330?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),327,2016-03-08,1,20:55,1,8.0
 350,tt0120669,"FEAR AND LOATHING IN LAS VEGAS (Parkway Classics)  <a target=""_blank"" href=""http://www.brownpapertickets.com/event/356479"">Purchase Tickets Online</a>",327,2013-03-21,1,21:15,1,6.0
 138,tt2340650,EAST SIDE SUSHI,327,2015-12-11,2,20:00,1,8.0
@@ -3642,6 +3653,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 906,tt0312004,WALLACE AND GROMIT: THE CURSE OF THE WERE-RABBIT (New Parkway Family Classics),328,2013-10-19,2,12:30,1,8.0
 488,tt0319343,ELF,328,2015-12-18,2,19:55,2,8.0
 1170,tt0831387,GODZILLA,328,2014-06-29,1,18:50,1,8.0
+266,tt1065073,BOYHOOD (Baby Brigade),328,2014-11-29,1,12:15,1,8.0
 431,tt1245492,THIS IS THE END,328,2013-10-01,2,21:15,1,8.0
 909,tt1327773,THE BUTLER,328,2013-10-19,1,18:00,1,8.0
 20,tt1596363,THE BIG SHORT (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/503?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),328,2016-03-21,2,18:25,1,8.0
@@ -3719,6 +3731,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 63,tt2452042,THE PEANUTS MOVIE,336,2015-12-28,1,12:30,1,8.0
 329,tt4163020,TALES OF HALLOWEEN,336,2015-10-24,2,21:55,2,8.0
 124,tt2268016,MAGIC MIKE XXL,337,2015-08-09,1,20:25,1,8.0
+941,tt0058182,A HARD DAY'S NIGHT (Party at the Parkway) (<a target=”_blank” href=http://brownpapertickets.com/event/1017438>Purchase Tickets Online</a>),338,2014-12-07,2,21:00,1,8.0
 56,tt0094517,MYSTERY MYSTERY SCIENCE THEATER 3000 (<a target=”_blank” href=http://brownpapertickets.com/event/740749>Purchase Tickets Online</a>),338,2014-07-11,2,22:30,1,8.0
 535,tt1045658,SILVER LININGS PLAYBOOK (2 for 1 Wednesday),338,2013-04-24,2,18:30,3,6.0
 286,tt1706620,SNOWPIERCER,338,2014-08-27,1,20:40,1,8.0
@@ -3758,6 +3771,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 246,tt0770828,MAN OF STEEL,342,2013-08-11,2,17:40,2,7.0
 614,tt1758830,THIS IS 40,342,2013-01-21,1,21:30,2,6.0
 818,tt1764234,KILLING THEM SOFTLY,342,2013-01-09,2,19:30,1,6.0
+138,tt2340650,EAST SIDE SUSHI,342,2015-11-22,2,17:20,1,8.0
 559,tt2545118,BLACK FISH,342,2013-08-31,2,17:40,2,7.0
 328,tt3086442,GOODNIGHT MOMMY,342,2015-10-25,1,18:25,1,8.0
 120,tt1392190,MAD MAX: FURY ROAD,343,2015-07-28,1,18:30,1,8.0
@@ -3864,7 +3878,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 188,tt1398426,STRAIGHT OUTTA COMPTON,355,2015-11-05,1,20:40,1,8.0
 162,tt2848292,PITCH PERFECT 2,355,2015-06-26,2,19:15,1,8.0
 1172,tt0133093,THE MATRIX (Parkway Classics) (<a target=”_blank” href=http://brownpapertickets.com/event/697929>Purchase Tickets Online</a>),356,2014-07-10,1,21:30,1,8.0
-269,tt1571249,THE SKELETON TWINS,356,2014-11-30,1,18:45,1,8.0
+269,tt1571249,THE SKELETON TWINS,356,2014-12-07,2,18:45,1,8.0
 287,tt1605717,FRANK,356,2014-09-12,1,21:30,1,8.0
 1159,tt1935156,JODOROWSKY'S DUNE,356,2014-05-20,2,21:30,1,8.0
 268,tt2015381,GUARDIANS OF THE GALAXY,356,2014-11-19,2,21:15,1,8.0
@@ -4028,6 +4042,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 434,tt2724064,SHARKNADO (<a target=”_blank” href=http://brownpapertickets.com/event/471654>Purchase Tickets Online</a>),381,2013-09-28,1,22:30,1,8.0
 62,tt3659388,THE MARTIAN (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/298?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),381,2016-02-13,2,18:10,1,8.0
 79,tt0091369,LABYRINTH (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/153?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),382,2016-01-25,2,21:30,1,8.0
+268,tt2015381,GUARDIANS OF THE GALAXY,382,2014-12-11,2,18:50,1,8.0
 389,tt2245223,"THE SOURCE FAMILY (Doc Night at The New Parkway) <a target=""_blank"" href=""http://www.brownpapertickets.com/event/393688"">Purchase Tickets Online</a>",382,2013-06-11,1,19:00,1,8.0
 229,tt2464812,LICKS,382,2013-12-28,1,22:15,1,8.0
 36,tt3170832,ROOM,382,2016-01-01,2,16:00,1,8.0
@@ -4037,6 +4052,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 266,tt1065073,BOYHOOD,383,2014-10-19,2,20:45,1,8.0
 1174,tt1441395,UNDER THE SKIN,383,2014-06-03,1,20:30,1,8.0
 88,tt2446980,JOY (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/251?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),383,2016-02-05,2,18:45,1,8.0
+543,tt0245429,SPIRITED AWAY - In English,384,2014-12-06,1,14:25,1,8.0
 214,tt0790636,DALLAS BUYERS CLUB,384,2014-04-12,2,21:15,1,8.0
 581,tt1213663,THE WORLD'S END,384,2013-10-30,2,20:50,1,8.0
 288,tt1587310,MALEFICENT,384,2014-08-20,1,18:30,1,8.0
@@ -4137,6 +4153,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 666,tt0299658,CHICAGO (Party at the Parkway) (<a target=”_blank” href=http://brownpapertickets.com/event/1414402>Purchase Tickets Online</a>),400,2015-05-10,1,21:00,1,8.0
 1136,tt0388473,TOKYO GODFATHERS (Animation KO) (<a target=”_blank” href=http://brownpapertickets.com/event/2466486>Purchase Tickets Online</a>),400,2015-12-03,2,21:30,1,8.0
 1174,tt1441395,UNDER THE SKIN,400,2014-06-04,2,21:10,1,8.0
+269,tt1571249,THE SKELETON TWINS,400,2014-12-05,2,20:20,1,8.0
 288,tt1587310,MALEFICENT (Baby Brigade),400,2014-08-11,1,18:30,1,8.0
 288,tt1587310,MALEFICENT,400,2014-08-27,1,18:30,1,8.0
 426,tt1727388,THE WAY WAY BACK,400,2013-10-02,2,20:45,1,8.0
@@ -4194,7 +4211,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 1151,tt2278388,THE GRAND BUDAPEST HOTEL,408,2014-07-13,1,19:10,1,8.0
 64,tt2379713,SPECTRE,408,2015-12-27,1,14:20,1,8.0
 1163,tt2479800,PALO ALTO (Baby Brigade),408,2014-05-31,2,12:45,2,8.0
-483,tt2576852,THE TALE OF PRINCESS KAGUYA - Dubbed,408,2014-11-30,1,13:00,1,8.0
+483,tt2576852,THE TALE OF PRINCESS KAGUYA - In English,408,2014-12-07,2,13:00,1,8.0
 1167,tt2925642,"KIDS FOR CA$H, co-presented by Active Voice and The Burns Institute (Doc Night) (<a target=”_blank” href=http://brownpapertickets.com/event/688163>Purchase Tickets Online</a>)",408,2014-06-17,2,19:00,1,8.0
 313,tt3549508,NAS: TIME IS ILLMATIC (<a target=”_blank” href=http://brownpapertickets.com/event/887880>Purchase Tickets Online</a>),408,2014-10-03,2,22:20,1,8.0
 750,tt3659388,THE MARTIAN,408,2015-12-16,1,20:30,1,8.0
@@ -4269,12 +4286,13 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 565,tt1560747,THE MASTER,424,2013-02-17,1,20:15,1,6.0
 430,tt1714206,THE SPECTACULAR NOW,424,2013-09-28,2,19:20,1,8.0
 1159,tt1935156,JODOROWSKY'S DUNE,424,2014-05-26,2,17:30,1,8.0
-265,tt2267998,GONE GIRL,424,2014-11-30,2,20:00,1,8.0
+265,tt2267998,GONE GIRL,424,2014-12-07,1,17:15,1,8.0
 525,tt2334649,FRUITVALE STATION,424,2013-10-13,2,13:00,2,8.0
 198,tt2334873,BLUE JASMINE,424,2013-11-13,1,19:00,1,8.0
 198,tt2334873,BLUE JASMINE,424,2014-01-08,2,18:30,1,8.0
 164,tt2415458,THE WOLFPACK,424,2015-07-15,2,19:30,1,8.0
 80,tt2452042,THE PEANUTS MOVIE,424,2015-12-20,1,14:25,1,8.0
+483,tt2576852,THE TALE OF PRINCESS KAGUYA - Dubbed,424,2014-11-28,1,15:00,1,8.0
 149,tt3416742,WHAT WE DO IN THE SHADOWS,424,2015-05-23,2,21:10,1,8.0
 121,tt3850214,DOPE,424,2015-09-07,1,20:30,1,8.0
 517,tt1800266,BROOKLYN CASTLE (Doc Night at The New Parkway),425,2013-01-29,1,19:15,1,8.0
@@ -4309,6 +4327,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 1174,tt1441395,UNDER THE SKIN,432,2014-05-17,2,21:00,1,8.0
 679,tt1490017,THE LEGO MOVIE,432,2014-04-26,2,15:30,1,8.0
 1162,tt1714915,ONLY LOVERS LEFT ALIVE,432,2014-06-14,1,21:00,1,8.0
+270,tt2262227,BOOK OF LIFE,432,2014-11-28,1,12:45,1,8.0
 851,tt2347569,FRANCES HA,432,2013-07-03,2,21:30,1,6.0
 351,tt2562232,BIRDMAN,432,2015-03-27,2,21:30,1,8.0
 123,tt2582496,ME AND EARL AND THE DYING GIRL,432,2015-08-07,2,20:15,1,8.0
@@ -4382,6 +4401,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 637,tt2910274,THE OBVIOUS CHILD,444,2014-07-27,1,18:40,1,8.0
 555,tt2935476,FAR FROM THE MADDING CROWD - MUST END TONIGHT!,444,2015-07-02,2,19:00,1,8.0
 149,tt3416742,WHAT WE DO IN THE SHADOWS,444,2015-05-24,2,16:30,1,8.0
+269,tt1571249,THE SKELETON TWINS,446,2014-11-30,1,18:45,1,8.0
 1146,tt2281587,MUPPETS MOST WANTED,446,2014-05-24,2,17:45,1,8.0
 268,tt2015381,GUARDIANS OF THE GALAXY,447,2014-10-24,2,16:00,2,8.0
 214,tt0790636,DALLAS BUYERS CLUB,448,2014-02-16,1,21:40,1,8.0
@@ -4410,12 +4430,15 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 487,tt2321549,THE BABADOOK,452,2015-01-14,2,21:30,1,8.0
 411,tt2326554,A GIRL WALKS HOME ALONE AT NIGHT,452,2015-02-14,1,21:55,1,8.0
 80,tt2452042,THE PEANUTS MOVIE,452,2016-01-24,1,14:50,1,8.0
+670,tt2713180,FURY,452,2014-11-29,2,21:45,1,8.0
 172,tt2870648,AMY,452,2015-08-23,1,20:35,1,8.0
+265,tt2267998,GONE GIRL,453,2014-12-03,1,21:00,1,8.0
 172,tt2870648,AMY,453,2015-09-16,2,18:20,1,8.0
 121,tt3850214,DOPE,453,2015-08-07,1,19:30,1,8.0
 188,tt1398426,STRAIGHT OUTTA COMPTON,454,2015-10-28,2,20:45,1,8.0
 284,tt2872732,LUCY,454,2014-09-03,2,19:00,1,8.0
 309,tt2872732,LUCY,454,2014-09-24,2,19:00,1,8.0
+267,tt3169706,PRIDE,454,2014-11-30,2,17:15,1,8.0
 171,tt3824458,TANGERINE,454,2015-09-06,2,19:15,1,8.0
 216,tt2042568,INSIDE LLEWYN DAVIS,455,2014-02-21,1,21:20,1,8.0
 509,tt2125467,"CHARLES BRADLEY: SOUL OF AMERICA (<a target=”_blank” href=http://brownpapertickets.com/event/446747>Purchase Tickets Online</a>), presented by Broaklyn Film and Theater Company",455,2013-09-06,1,22:30,2,8.0
@@ -4461,6 +4484,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 198,tt2334873,BLUE JASMINE,462,2013-11-10,2,17:10,1,8.0
 138,tt2340650,EAST SIDE SUSHI,462,2015-11-08,1,18:20,1,8.0
 595,tt1951265,THE HUNGER GAMES: MOCKINGJAY PART 1,463,2015-01-11,1,17:50,1,8.0
+268,tt2015381,GUARDIANS OF THE GALAXY,463,2014-11-30,1,16:00,1,8.0
 62,tt3659388,THE MARTIAN,463,2016-01-08,2,21:10,1,8.0
 219,tt0093779,THE PRINCESS BRIDE,464,2014-04-19,1,21:00,1,8.0
 56,tt0094517,MYSTERY MYSTERY SCIENCE THEATER 3000 (<a target=”_blank” href=http://brownpapertickets.com/event/783983>Purchase Tickets Online</a>),464,2014-08-08,2,22:30,1,8.0
@@ -4492,6 +4516,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 368,tt0993846,THE WOLF OF WALL STREET,470,2014-03-15,1,21:00,1,8.0
 668,tt1152399,"GHOST BIRD, co-presented by The Berkeley FILM Foundation and featuring a post-film Q&A with director Scott Crocker (Doc Night) (<a target=”_blank” href=http://brownpapertickets.com/event/1447257>Purchase Tickets Online</a>)",470,2015-05-12,2,19:00,1,10.0
 1162,tt1714915,ONLY LOVERS LEFT ALIVE,471,2014-07-03,1,21:15,1,8.0
+265,tt2267998,GONE GIRL,471,2014-11-30,2,20:00,1,8.0
 78,tt0206634,CHILDREN OF MEN (Parkway Classics) (<a target=”_blank” href=http://brownpapertickets.com/event/2475338>Purchase Tickets Online</a>),472,2016-01-14,1,21:30,1,8.0
 1022,tt0862856,TRICK 'R TREAT (Staff Pick Night) (<a target=”_blank” href=http://brownpapertickets.com/event/2253238>Purchase Tickets Online</a>),472,2015-10-02,1,22:30,1,8.0
 120,tt1392190,MAD MAX: FURY ROAD,472,2015-07-31,1,21:50,1,8.0
@@ -4504,6 +4529,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 66,tt4594834,CHI-RAQ,472,2016-01-09,2,21:55,1,8.0
 120,tt1392190,MAD MAX: FURY ROAD,473,2015-08-23,2,21:15,1,8.0
 635,tt1980929,BEGIN AGAIN,473,2014-08-02,1,21:30,1,8.0
+138,tt2340650,"EAST SIDE SUSHI, featuring a post film Q&A with director Anthony Lucero (<a target=”_blank” href=http://brownpapertickets.com/event/2465861>Purchase Tickets Online</a>)",473,2015-11-21,1,19:00,1,10.0
 246,tt0770828,MAN OF STEEL,474,2013-07-31,2,18:30,1,6.0
 826,tt1343092,THE GREAT GATSBY,474,2013-07-20,2,18:30,2,6.0
 672,tt1798709,HER,474,2014-04-02,1,20:55,1,8.0
@@ -4515,6 +4541,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 1170,tt0831387,GODZILLA,476,2014-07-02,2,18:50,1,8.0
 580,tt1535108,ELYSIUM,476,2013-10-18,2,20:10,1,8.0
 602,tt1731141,ENDER'S GAME,476,2014-01-11,1,16:45,1,8.0
+268,tt2015381,GUARDIANS OF THE GALAXY,476,2014-11-29,1,15:30,1,8.0
 485,tt2235108,DEAR WHITE PEOPLE,476,2015-01-28,1,18:45,1,8.0
 235,tt2278871,BLUE IS THE WARMEST COLOR,476,2014-01-03,1,21:00,1,8.0
 235,tt2278871,BLUE IS THE WARMEST COLOR,476,2014-01-11,1,13:00,1,8.0
@@ -4583,9 +4610,11 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 286,tt1706620,SNOWPIERCER,494,2014-09-03,1,20:40,1,8.0
 294,tt1791528,INHERENT VICE,494,2015-03-13,2,21:00,1,8.0
 80,tt2452042,THE PEANUTS MOVIE,494,2015-12-21,1,13:30,1,8.0
+266,tt1065073,BOYHOOD,495,2014-11-28,2,18:40,1,8.0
 119,tt3079380,SPY,495,2015-08-01,1,16:35,1,8.0
 1177,tt0082694,THE ROAD WARRIOR (Staff Pick Night) (FNL) (<a target=”_blank” href=http://brownpapertickets.com/event/693123>Purchase Tickets Online</a>),496,2014-06-06,1,22:30,1,8.0
 627,tt0094517,MYSTERY MYSTERY SCIENCE THEATER 3000 (FNL) (<a target=”_blank” href=http://brownpapertickets.com/event/2461584>Purchase Tickets Online</a>),496,2015-11-13,1,22:30,1,8.0
+543,tt0245429,SPIRITED AWAY (Animation KO!) (<a target=”_blank” href=http://brownpapertickets.com/event/970082>Purchase Tickets Online</a>),496,2014-12-04,2,21:30,1,8.0
 511,tt0491587,R. KELLY TRAPPED IN THE CLOSET SING-A-LONG (FNL) (<a target=”_blank” href=http://brownpapertickets.com/event/684154>Purchase Tickets Online</a>),496,2014-05-23,1,22:30,1,8.0
 214,tt0790636,DALLAS BUYERS CLUB,496,2014-03-14,1,18:30,1,8.0
 214,tt0790636,DALLAS BUYERS CLUB,496,2014-03-15,1,18:10,2,8.0
@@ -4667,7 +4696,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 1162,tt1714915,ONLY LOVERS LEFT ALIVE,513,2014-06-01,1,20:30,1,8.0
 294,tt1791528,INHERENT VICE,513,2015-02-20,2,21:35,1,8.0
 286,tt1706620,SNOWPIERCER,514,2014-08-03,1,20:35,1,8.0
-670,tt2713180,FURY,515,2014-11-29,2,21:45,1,8.0
+670,tt2713180,FURY,515,2014-12-06,2,21:00,1,8.0
 597,tt4044364,CITIZENFOUR,515,2015-01-04,2,16:00,1,8.0
 607,tt2440910,ONE COUCH AT A TIME (<a target=”_blank” href=http://brownpapertickets.com/event/458642>Purchase Tickets Online</a>),516,2013-09-26,1,19:00,1,8.0
 637,tt2910274,OBVIOUS CHILD,516,2014-08-16,2,19:45,1,8.0
@@ -4692,6 +4721,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 213,tt2024544,12 YEARS A SLAVE,524,2014-02-01,1,18:15,1,8.0
 229,tt2464812,LICKS (<a target=”_blank” href=http://brownpapertickets.com/event/535721>Purchase Tickets Online</a>),524,2013-12-18,1,21:20,1,8.0
 56,tt0094517,MYSTERY MYSTERY SCIENCE THEATER 3000 (FNL) (<a target=”_blank” href=http://brownpapertickets.com/event/1069104>Purchase Tickets Online</a>),525,2015-01-09,2,22:30,1,8.0
+458,tt0248845,HEDWIG AND THE ANGRY INCH (Staff Pick Night) (FNL) (<a target=”_blank” href=http://brownpapertickets.com/event/923004>Purchase Tickets Online</a>),525,2014-12-05,2,22:30,1,8.0
 120,tt1392190,MAD MAX: FURY ROAD,525,2015-07-16,2,19:00,1,8.0
 242,tt2179116,THE KINGS OF SUMMER,525,2013-07-19,2,20:15,3,6.0
 110,tt3242930,"ANGEL AZUL, co-presented by the Berkeley FILM Foundation and featuring a post-film Q & A (Doc Night) (<a target=”_blank” href=http://brownpapertickets.com/event/2490097>Purchase Tickets Online</a>)",525,2016-02-16,2,19:00,1,10.0
@@ -4724,6 +4754,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 121,tt3850214,DOPE,532,2015-07-23,2,19:00,1,8.0
 120,tt1392190,MAD MAX: FURY ROAD,533,2015-08-01,1,21:30,1,8.0
 595,tt1951265,THE HUNGER GAMES: MOCKINGJAY PART 1,533,2015-01-10,2,20:45,1,8.0
+140,tt3397884,SICARIO,533,2015-11-22,2,19:50,1,8.0
 616,tt0057197,JASON AND THE ARGONAUTS (Thrillville Theater),534,2013-01-20,1,18:00,1,6.0
 556,tt0923811,EVANGELION 1.11 - YOU ARE (NOT) ALONE (Animation K.O.) (<a target=”_blank” href=http://brownpapertickets.com/event/1756621>Purchase Tickets Online</a>),534,2015-07-02,2,21:30,1,8.0
 188,tt1398426,STRAIGHT OUTTA COMPTON,534,2015-11-07,2,21:00,1,8.0
@@ -4739,6 +4770,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 1159,tt1935156,JODOROWSKY'S DUNE,536,2014-05-21,2,19:00,1,8.0
 64,tt2379713,SPECTRE,536,2015-12-20,2,17:20,1,8.0
 229,tt2464812,LICKS,536,2014-01-01,1,21:15,1,8.0
+483,tt2576852,THE TALE OF PRINCESS KAGUYA - In English,536,2014-12-06,1,17:05,1,8.0
 119,tt3079380,SPY,536,2015-07-19,1,18:00,1,8.0
 214,tt0790636,DALLAS BUYERS CLUB,538,2014-03-09,2,20:00,1,8.0
 46,tt0119698,PRINCESS MONONOKE (subtitled) (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/410?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),540,2016-03-04,2,21:50,1,8.0
@@ -4784,6 +4816,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 64,tt2379713,SPECTRE,552,2015-12-28,1,20:15,1,8.0
 62,tt3659388,THE MARTIAN,552,2015-12-26,1,20:30,1,8.0
 121,tt3850214,DOPE,552,2015-08-12,2,19:05,1,8.0
+196,tt1935156,JODOROWSKY'S DUNE (Doc Night) (<a target=”_blank” href=http://brownpapertickets.com/event/2444508>Purchase Tickets Online</a>),553,2015-11-24,1,19:00,1,8.0
 1152,tt1631867,THE EDGE OF TOMORROW,554,2014-07-23,1,19:00,1,8.0
 423,tt2375605,THE ACT OF KILLING (Doc Night) (<a target=”_blank” href=http://brownpapertickets.com/event/588418>Purchase Tickets Online</a>),554,2014-03-11,2,18:15,1,10.0
 36,tt3170832,ROOM,555,2016-01-16,1,14:10,1,8.0
@@ -4798,7 +4831,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 90,tt0089885,"RE-ANIMATOR, hosted by Mistress Persephone (<a target=”_blank” href=http://brownpapertickets.com/event/2477190>Purchase Tickets Online</a>)",560,2016-01-29,2,22:30,1,8.0
 219,tt0093779,THE PRINCESS BRIDE,560,2014-02-15,2,22:10,1,8.0
 419,tt1126590,BIG EYES,560,2015-02-08,1,18:40,1,8.0
-265,tt2267998,GONE GIRL,560,2014-11-28,1,18:00,1,8.0
+265,tt2267998,GONE GIRL,560,2014-12-05,1,21:15,1,8.0
 413,tt2872718,NIGHTCRAWLER,560,2014-12-29,2,20:30,1,8.0
 1147,tt2013293,THE WIND RISES,562,2014-04-30,1,20:55,1,5.0
 487,tt2321549,THE BABADOOK--MUST END TONIGHT!!,562,2015-02-04,1,21:10,1,8.0
@@ -4848,7 +4881,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 795,tt0100935,"WILD AT HEART - author Barry Gifford in person! (Parkway Classics) <a target=""_blank"" href=""http://www.brownpapertickets.com/event/378064"">Purchase Tickets Online</a>",576,2013-05-09,1,21:00,1,8.0
 122,tt0470752,EX MACHINA,576,2015-06-17,2,21:30,1,8.0
 266,tt1065073,BOYHOOD,576,2014-10-17,1,21:30,1,8.0
-266,tt1065073,BOYHOOD (Baby Brigade),576,2014-11-29,1,12:15,1,8.0
+266,tt1065073,BOYHOOD,576,2014-12-06,1,20:15,1,8.0
 120,tt1392190,MAD MAX: FURY ROAD,576,2015-08-29,1,21:25,1,8.0
 1174,tt1441395,UNDER THE SKIN,576,2014-05-18,1,20:15,1,8.0
 341,tt1790885,ZERO DARK THIRTY,576,2013-03-16,1,19:30,1,6.0
@@ -4866,6 +4899,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 687,tt0088763,BACK TO THE FUTURE (New Parkway Cult Night) (<a target=”_blank” href=http://brownpapertickets.com/event/1172379>Purchase Tickets Online</a>),577,2015-02-20,1,22:30,1,8.0
 852,tt1935179,MUD,578,2013-06-23,1,21:30,2,6.0
 1151,tt2278388,THE GRAND BUDAPEST HOTEL,578,2014-07-11,2,20:20,1,8.0
+267,tt3169706,PRIDE,578,2014-11-29,1,18:15,1,8.0
 274,tt0083658,BLADE RUNNER - THE FINAL CUT (New Parkway Cult Night) (FNL) (<a target=”_blank” href=http://brownpapertickets.com/event/933156>Purchase Tickets Online</a>),580,2014-11-21,2,22:30,1,8.0
 296,tt1865505,SONG OF THE SEA,580,2015-05-10,1,12:15,1,8.0
 790,tt2119463,"LET THE FIRE BURN, presented by Broaklyn Film and Theater Company(<a target=”_blank” href=http://brownpapertickets.com/event/512501>Purchase Tickets Online</a>)",580,2013-11-26,2,18:30,1,10.0
@@ -4935,6 +4969,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 426,tt1727388,THE WAY WAY BACK,608,2013-09-28,1,20:00,2,8.0
 672,tt1798709,HER,608,2014-03-22,1,18:00,1,8.0
 327,tt2096673,INSIDE OUT,608,2015-10-24,2,16:55,2,8.0
+270,tt2262227,BOOK OF LIFE,608,2014-11-30,2,15:00,1,8.0
 413,tt2872718,NIGHTCRAWLER,608,2014-12-26,2,19:55,1,8.0
 175,tt3172532,DIARY OF A TEENAGE GIRL,608,2015-09-18,2,20:15,1,8.0
 1151,tt2278388,THE GRAND BUDAPEST HOTEL,609,2014-07-18,2,20:15,1,8.0
@@ -4975,7 +5010,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 1238,tt0093437,THE LOST BOYS (Parkway Classics) (<a target=”_blank” href=http://brownpapertickets.com/event/596359>Purchase Tickets Online</a>) (This showtime is subject to change),624,2014-04-24,2,21:15,1,8.0
 596,tt0816692,INTERSTELLAR,624,2015-01-07,1,18:15,1,10.0
 213,tt2024544,12 YEARS A SLAVE,624,2014-03-01,1,15:20,1,8.0
-265,tt2267998,GONE GIRL,624,2014-11-29,1,21:00,1,8.0
+265,tt2267998,GONE GIRL,624,2014-12-06,2,17:45,1,8.0
 171,tt3824458,TANGERINE,624,2015-08-14,2,20:30,1,8.0
 1146,tt2281587,MUPPETS MOST WANTED,625,2014-05-11,2,15:45,1,8.0
 455,tt1853728,DJANGO UNCHAINED,627,2013-03-09,2,19:45,1,6.0
@@ -5115,6 +5150,9 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 286,tt1706620,SNOWPIERCER,696,2014-08-10,2,19:30,2,8.0
 430,tt1714206,THE SPECTACULAR NOW,696,2013-09-13,2,20:15,1,8.0
 202,tt2229499,DON JON,696,2013-11-09,1,19:30,1,8.0
+265,tt2267998,GONE GIRL,696,2014-11-28,1,18:00,1,8.0
+269,tt1571249,THE SKELETON TWINS,698,2014-11-29,2,19:30,1,8.0
+265,tt2267998,GONE GIRL,698,2014-11-29,1,21:00,1,8.0
 409,tt2245084,BIG HERO 6,700,2015-02-16,2,12:30,1,8.0
 577,tt2258858,WADJDA,700,2013-11-02,2,19:10,2,8.0
 612,tt2381957,"LET'S STAY TOGETHER, presented by filmmaker Joshua Bee Alafia) (<a target=”_blank” href=http://www.brownpapertickets.com/event/510207>Purchase Tickets Online</a>)",700,2013-11-10,1,20:30,1,10.0
@@ -5296,6 +5334,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 406,tt0071517,"FOXY BROWN, featuring a post film discussuion with filmmaker Cheryl Dunye (The Bechdel Test Movie Night) (<a target=”_blank” href=http://brownpapertickets.com/event/2222262>Purchase Tickets Online</a>)",830,2015-11-08,2,17:00,1,8.0
 269,tt1571249,THE SKELETON TWINS,830,2014-11-08,2,19:20,1,8.0
 56,tt0094517,MYSTERY MYSTERY SCIENCE THEATER 3000 (<a target=”_blank” href=http://brownpapertickets.com/event/2483186>Purchase Tickets Online</a>),834,2016-01-08,1,22:30,1,8.0
+483,tt2576852,THE TALE OF PRINCESS KAGUYA - Dubbed,834,2014-11-30,1,13:00,1,8.0
 216,tt2042568,INSIDE LLEWYN DAVIS,838,2014-03-01,2,19:30,2,8.0
 596,tt0816692,INTERSTELLAR,840,2014-12-26,1,18:10,1,8.0
 294,tt1791528,INHERENT VICE,840,2015-04-03,2,21:30,1,8.0
@@ -5351,12 +5390,14 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 121,tt3850214,DOPE,926,2015-07-18,2,21:30,1,8.0
 33,tt3460252,THE HATEFUL EIGHT (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/391?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),927,2016-02-27,2,20:15,1,8.0
 596,tt0816692,INTERSTELLAR,932,2015-01-03,2,17:30,1,8.0
+270,tt2262227,BOOK OF LIFE,933,2014-11-29,2,17:10,2,8.0
 33,tt3460252,THE HATEFUL EIGHT (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/418?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),934,2016-03-05,1,20:00,1,8.0
 270,tt2262227,BOOK OF LIFE,936,2014-11-22,1,16:55,2,8.0
 21,tt2267968,KUNG FU PANDA 3 (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/462?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),936,2016-03-13,2,14:50,1,8.0
 315,tt0081505,THE SHINING (Parkway Classics) (<a target=”_blank” href=http://brownpapertickets.com/event/785609>Purchase Tickets Online</a>),938,2014-10-09,1,21:30,1,8.0
 558,tt2094064,MUCH ADO ABOUT NOTHING,938,2013-08-10,2,15:00,2,7.0
 121,tt3850214,DOPE,945,2015-07-29,1,18:30,1,8.0
+194,tt0118715,THE BIG LEBOWSKI (New Parkway Cult Night) (FNL) (<a target=”_blank” href=http://brownpapertickets.com/event/2412298>Purchase Tickets Online</a>),948,2015-11-20,1,22:30,1,8.0
 366,tt0112697,CLUELESS (Blast from the Past) (<a target=”_blank” href=http://brownpapertickets.com/event/1856835>Purchase Tickets Online</a>),949,2015-08-27,1,21:30,1,8.0
 45,tt0096283,MY NEIGHBOR TOTORO (dubbed) (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/384?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),951,2016-02-27,2,15:50,1,8.0
 268,tt2015381,GUARDIANS OF THE GALAXY,952,2014-11-01,2,18:00,1,8.0
@@ -5462,6 +5503,7 @@ id,imdb_id,name,gross,date,theater,time,num_of_shows,ticket_price
 363,tt0119116,"THE FIFTH ELEMENT, SOLD OUT, no calls or e-mails, please! (New Parkway Cult Night)",1848,2015-08-21,2,21:30,2,8.0
 491,tt2788710,THE INTERVIEW (<a target=”_blank” href=http://brownpapertickets.com/event/1093084>Purchase Tickets Online</a>),1864,2014-12-28,1,20:15,2,10.0
 475,tt2064713,"Broaklyn Film & Theater Co. presents A BAND CALLED DEATH (<a target=""_blank"" href=""http://www.brownpapertickets.com/event/396497"">Purchase Tickets Online</a>)",1920,2013-07-05,2,22:30,2,10.0
+197,tt0087182,DUNE (<a target=”_blank” href=http://brownpapertickets.com/event/2468834>Purchase Tickets Online</a>),2000,2015-11-24,2,21:20,2,8.0
 92,tt0347149,HOWL'S MOVING CASTLE (In Japanese with English Subtitles) (<a target=”_blank” href=https://ticketing.us.veezi.com/purchase/240?siteToken=P5WXdOEJ3Eq2eHbZHTAtbg%3D%3D>Purchase Tickets Online</a>),2028,2016-02-06,2,21:55,2,8.0
 79,tt0091369,LABYRINTH (FNL) (<a target=”_blank” href=http://brownpapertickets.com/event/1796339>Purchase Tickets Online</a>),2048,2015-06-26,2,21:50,2,8.0
 48,tt0073629,"THE ROCKY HORROR PICTURE SHOW, hosted by Misery Ann Mayhem - THIS SHOW IS SOLD OUT! NO CALLS OR E-MAILS, PLEASE!",2081,2015-10-23,2,22:00,2,8.0
