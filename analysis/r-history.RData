@@ -1,0 +1,512 @@
+y
+z <- c(1.1,9,3.14)
+?c
+z
+c(z,555,z)
+z*2 + 100
+my_sqrt <- sqrt(z-1)
+my_sqrt
+my_div <- z / my_sqrt
+my_div
+c(1,2,3,4) + c(0,10)
+c(1, 2, 3, 4) + c(0, 10, 100)
+c(1, 2, 3, 4) + c(0, 10, 100)
+z*2 + 100
+(z * 2 + 100)
+z * 2 + 100
+(z * 2 + 100)
+z * 2 + 100
+info()
+skip()
+my_sqrt
+my_div
+getwd()
+ls()
+x <- 9
+ls()
+dir()
+?list.files()
+?list.files
+args(list.files)
+old.dir <- getwd()
+dir.create('testdir')
+setwd('testdir')
+file.create('mytest.R')
+dir()
+file.exists('mytest.r')
+file.exists('mytest.R')
+file.info('mytest.R')
+file.rename('mytest.R', 'mytest2.R')
+file.copy
+file.copy('mytest2.R', 'mytest3.R')
+file.path('mytest3.R')
+args(file.path)
+file.path('folder1', 'folder2')
+?dir.create
+dir.create(file.path('testdir2', 'testdir3'))
+dir.create(file.path('testdir2', 'testdir3'), TRUE,TRUE)
+dir.delete(file.path('testdir2', 'testdir3'), TRUE,TRUE)
+play()
+?unlink
+nxt()
+unlink()
+unlink('testdir2', TRUE)
+setwd('/home/sabman/')
+setwd(old.dir)
+unlink('testdir/')
+unlink('testdir', TRUE)
+1:20
+pi:10
+15:1
+?:
+?`:`
+seq(1,20)
+seq(0,10,by=0.5)
+seq(5,10,lenght=30)
+seq(5,10,length=30)
+my_sq <- seq(5,10,length=30)
+my_seq <- seq(5,10,length=30)
+length(my_seq)
+seq(1,length(my_seq))
+1:length(my_seq)
+seq(along.with=my_seq)
+my_seq
+seq_along(my_seq)
+rep(0, times=40)
+rep(c*(0,1,2))
+rep(c(0,1,2))
+rep(c(0,1,2), times=10)
+rep(c(0,1,2), each=10)
+num_vect <- c(0.5,55,-10,6)
+tf <- num_vect < 1
+tf
+tf <- num_vect >= 1
+tf <- num_vect >= 6
+num_vect >= 6
+my_char <- c('My', 'name', 'is')
+my_char
+paste(my_char, collapse = " ")
+c(my_char, ' saby')
+c(my_char, 'saby')
+my_name = c(my_char, 'saby')
+my_name
+paste(my_char, collapse = " ")
+paste(my_name, collapse = " ")
+paste("Hello","world!", sep = " ")
+paste(1:3, c("X","Y","Z"), sep = " ")
+paste(1:3, c("X","Y","Z"), sep = "")
+paste(LETTERS, 1:4, sep = "-")
+x <- c(44, NA, 5, NA)
+x * 3
+y <- rnorm(1000)
+z <- rep(NA, 1000)
+my_data <- sample(c(y,z), 100)
+my_na <- is.na(my_data)
+my_na
+my_data
+my_data == NA
+sum(my_na)
+length(my_na)
+my_data
+0/0
+Inf-Inf
+x
+x[1:10]
+x[is.na(x)]
+y <- x[!is.na(x)]
+y
+y[y>0]
+x[x>0]
+x[!is.na(x) & x >0]
+x[3,5,7]
+x[c(3,5,7)]
+x[0]
+x[3000]
+x[c(-2,-10)]
+x[-\c(2,10)]
+x[-c(2,10)]
+vect <-
+| c(foo = 11, bar = 2, norf = NA)
+vect <- c(foo = 11, bar = 2, norf = NA)
+vect
+names(vect)
+vect2 <- c(11,2,NA)
+names(vect2)
+names(vect2) <- c("foo", "bar", "norf")
+identical(vect,vect2)
+vect['bar']
+vect[c('foo;',bar')]
+vect[c('foo;',bar')]
+vect[c('foo','bar')]
+my_vector <- c(1:20)
+my_vector <- 1:20
+my_vector
+dim(my_vector)
+length(my_vector)
+dim(my_vector) <- c(4, 5)
+length(my_vector)
+dim(my_vector)
+attributes(my_vector)
+my_vector
+class(my_vector)
+my_matrix <- my_vector
+?matrix
+matrix(1:20,4,5)
+my_matrix2 <- matrix(1:20,4,5)
+identical(my_matrix,my_matrix2)
+patients<- c('Bill', 'Gina', 'Kelly')
+patients<- c('Bill', 'Gina', 'Kelly','Sean')
+cbind(patients,my_matrix)
+my_data <- data.frame(patients,my_matrix)
+my_data
+class(my_data)
+cnames <- ("patient", "age", "weight", "bp",
+"rating", "test")
+cnames <- ("patient", "age", "weight", "bp",rating", "test")
+cnames <- ("patient", "age", "weight", "bp","rating", "test")
+cnames <- c("patient", "age", "weight", "bp","rating", "test")
+colnames(my_data)
+colnames(my_data) <- cnames
+my_data
+skip()
+skip()
+skip()
+skip()
+skip()
+skip()
+skip()
+main()
+main()
+Sys.Date()
+mean
+mean(c(2,4,5))
+submit()
+boring_function("My first function!")
+boring_function
+submit()
+my_mean(c(2,4,5))
+my_mean(c(4,5,10))
+submit()
+submit()
+remainder(5)
+remainder(11,5)
+remainder(divisor = 11, num = 5)
+remainder(4, div = 2)
+skip()
+submit()
+evaluate(stddev, c(1.4, 3.6, 7.9,8.8))
+evaluate(, c(1.4, 3.6, 7.9,8.8))
+evaluate(sd, c(1.4, 3.6, 7.9,8.8))
+evaluate(function(x){x+1}, 6)
+evaluate(function(v){v[1]}, c(8,4,0))
+evaluate(function(v){v[-1]}, c(8,4,0))
+?paste
+paste("Programming", "is", "fun!")
+submit()
+skip()
+submit()
+submit()
+play()
+?list
+next()
+nxt()
+mad_libs('asd','123','asdad')
+submit()
+skip()
+main()
+head(flags)
+dim(flags)
+class(flags)
+cls_list <- lapply(flags,class)
+cls_list
+class(cls_list)
+length(cls_list)
+as.character(cls_list)
+?sapply
+?sapply
+skip()
+class(cls_list)
+class(cls_vect)
+sum(flags$orange)
+flag_colors <- flags[, 11:17]
+flag_colors
+head(flag_colors)
+lapply(flag_colors, sum)
+sapply(flag_colors, sum)
+sapply(flag_colors, mean)
+flag_shapes <- flags [19"23"]
+flag_shapes <- flags [19:23]
+flag_shapes <- flags[19:23]
+flag_shapes <- flags[,19:23]
+lapply(flag_shapes,range)
+shape_mat <- sapply(flag_shapes,range)
+shape_mat
+skip()
+skip()
+unique_vals <- sapply(flag_shapes,unique)
+unique_vals <- lapply(flag_shapes,unique)
+unique_vals <- lapply(flags,unique)
+unique_vals
+lapply(unique_vals,length)
+sapply(unique_vals,length)
+sapply(flags,unique)
+lapply(unique_vals, function(elem) elem[2])
+main()
+sapply(flags,unique)
+vapply(flags,unique,numeric(1))
+?numeric
+ok()
+sapply(flags, class)
+vapply(flags, class,character(1))
+?tapply
+table(flags$landmass)
+table(flags$animate)
+tappl(flags$animate, mean)
+tapply(flags$animate, mean)
+tapply(flags$animate, flags$landmass, mean)
+tapply(flags$population, flags$red, summary)
+tapply(flags$population, flags$landmass, summary)
+ls()
+class(plants)
+dim(plants)
+skip()
+skip()
+object.size(plants)
+names(plants)
+names(plants)
+head(plants)
+main()
+exit()
+quit()
+parkway <- read.csv("parkway-movie-data-for-analysis.csv")
+parkway <- read.csv("/home/sabman/Projects/box-office/data/parkway-movie-data-for-analysis.csv")
+head(parkway)
+num_of_attendees <- parkway$gross/parkway$ticket_price
+num_of_attendees
+parkway$num_of_attendees <- num_of_attendees
+head(parkway)
+parkway$num_of_attendees
+summary(parkway)
+parkway$num_of_attendees <- round(parkway$num_of_attendees,2)
+head(parkway)
+parkway$num_of_attendees
+parkway[parkway$ticket_price < 13]
+parkway[parkway$ticket_price < 13,]
+corrected_parkway <- parkway[parkway$ticket_price < 13,]
+head(corrected_parkway)
+tail(corrected_parkway)
+summary(corrected_parkway)
+sd(parkway$num_of_attendees)
+dim(corrected_parkway)
+corrected_parkway$num_of_attendees <- corrected_parkway$num_of_attendees/corrected_parkway$num_of_shows
+summary(corrected_parkway)
+sd(parkway$num_of_attendees)
+questionable_data <- corrected_parkway[corrected_parkway$num_of_attendees > 120,]
+dim(questionable_data)
+questionable_data
+questionable_data <- corrected_parkway[corrected_parkway$num_of_attendees > 150,]
+dim(questionable_data)
+questionable_data$name
+questionable_data$name, questionable_data$date
+questionable_data$date
+parkway <- read.csv("/home/sabman/Projects/box-office/data/parkway-data-for-analysis.csv")
+parkway <- read.csv("/home/sabman/Projects/box-office/data/parkway-movie-data-for-analysis.csv")
+dim(parkway)
+head(parkway)
+summary(parkway)
+parkway$day <- (weekdays(as.Date(parkway$date)))
+summary(parkway)
+class(parkway$imdb_id)
+class(parkway$name)
+parkway$imdb_id <- as.character(parkway$imdb_id)
+parkway$name <- as.character(parkway$name)
+summary(parkway)
+parkway$day
+parkway$day <- as.factor(parkway$day)
+summary(parkway)
+attach(parkway)
+plot(date,gorss)
+plot(date,gross)
+sd(num_of_attendees)
+boxplot(num_of_attendees)
+?subset
+subset(parkway,num_of_attendees>49)
+summary(parkway)
+sd(num_of_attendees)
+26 * 2
+52 + 37
+best_performers <- subset(parkway,num_of_attendees>89)
+summary(best_performers)
+parkway$date <- as.Date(parkway$date)
+summary(parkway)
+best_performers <- subset(parkway,num_of_attendees>89)
+attach(parkway)
+View(parkway)
+attach(parkway)
+parkway_in_2013 <- subset(parkway,parkway$date < '2014-01-01')
+summary(parkway_in_2013)
+parkway_in_2014 <- subset(parkway,parkway$date > '2013-12-31' & parkway$date < '2015-01-01' )
+summary(parkway_in_2014)
+parkway_in_2015 <- subset(parkway,parkway$date > '2014-12-31')
+summary(parkway_in_2015)
+save.image("~/Projects/box-office/analysis/r-session.RData")
+get_best_perfomers <- function(df) {}
+get_best_perfomers <- function(df) {
+return subset(df, df$num_of_attendees >= (2 * sd(df$num_of_attendeers) + mean(df$num_of_attendeers)))
+get_best_perfomers <- function(df) {
+return subset(df, df$num_of_attendees >= (2 * sd(df$num_of_attendeers) + mean(df$num_of_attendeers)))}
+get_best_perfomers <- function(df) {
+return subset(df, df$num_of_attendees >= (2 * sd(df$num_of_attendeers) + mean(df$num_of_attendeers)));}
+get_best_perfomers <- function(df) {
+m <- mean(df$num_of_attendees);
+s <- sd(df$num_of_attendeers);
+return(df, df$num_of_atten)
+}
+get_best_perfomers <- function(df) {
+return(df, df$num_of_atten)
+}
+parkway[names('num_of_attendeers')]
+parkway[names('num_of_attendees')]
+names(parkway)
+parkway[,'num_of_attendees']
+class(parkway[,'num_of_attendees'])
+sd(parkway[,'num_of_attendees'])
+mean(parkway[,'num_of_attendees'])
+get_best_perfomers <- function(df) {
+col <- 'num_of_attendees';
+s <- sd(df[,col]);
+m <- mean(df[,col]);
+return(subset(df,df[,col] >= 2*s + m));
+}
+best_performers <- get_best_perfomers(parkway)
+summary(best_performers)
+best_performers <- get_best_perfomers(parkway_in_2013)
+best_performers <- get_best_perfomers(parkway)
+best_performers_in_2013 <- get_best_perfomers(parkway_in_2013)
+best_performers_in_2014 <- get_best_perfomers(parkway_in_2014)
+best_performers_in_2015 <- get_best_perfomers(parkway_in_2015)
+summary(best_performers_in_2013)
+summary(best_performers_in_2014)
+summary(best_performers_in_2015)
+pwd
+wd
+setwd("/home/sabman/Projects/box-office/")
+movie_info <- read.csv('data/movie_info.csv')
+summary(movie_info)
+class(movie_info$actors)
+class(movie_info$actors) <- as.character(movie_info$actors)
+movie_info$actors <- as.character(movie_info$actors)
+movie_info$imdb_id <- as.character(movie_info$imdb_id)
+movie_info$tmdb_id <- as.character(movie_info$tmdb_id)
+movie_info$release_date <- as.Date(movie_info$release_date)
+class(movie_info$revenue)
+summary(movie_info)
+class(movie_info$metascore)
+movie_info$metascore <- as.numeric(movie_info$metascore)
+summary(movie_info)
+movie_info$imdb_rating <- as.numeric(movie_info$imdb_rating)
+movie_info$imdb_votes <- as.numeric(movie_info$imdb_votes)
+movie_info$tomato_critic_rating <- as.numeric(movie_info$tomato_critic_rating)
+movie_info$tomato_user_rating <- as.numeric(movie_info$tomato_user_rating)
+movie_info$tomato_user_votes <- as.numeric(movie_info$tomato_user_votes)
+movie_info$tomato_critic_votes <- as.numeric(movie_info$tomato_critic_votes)
+movie_info$tomato_fresh_reviews <- as.numeric(movie_info$tomato_fresh_reviews)
+movie_info$tomato_rotten_reviews <- as.numeric(movie_info$tomato_rotten_reviews)
+movie_info$tomato_user_meter <- as.numeric(movie_info$tomato_user_meter)
+movie_info$tomato_critic_meter <- as.numeric(movie_info$tomato_critic_meter)
+summary(movie_info)
+save.image("~/Projects/box-office/analysis/r-session.RData")
+require(plyr)
+?merge
+merge(parkway, movie_info)
+parkway_with_movie_info <- merge(parkway, movie_info)
+summary(parkway_with_movie_info)
+parkway_in_2013_with_movie_info <- merge(parkway_in_2013, movie_info, all.x = FALSE)
+dim(parkway_in_2013_with_movie_info)
+dim(parkway_in_2013)
+parkway_in_2014_with_movie_info <- merge(parkway_in_2014, movie_info, all.x = FALSE)
+parkway_in_2015_with_movie_info <- merge(parkway_in_2015, movie_info, all.x = FALSE)
+best_performers_with_movie_info <- merge(best_performers, movie_info, all.x = FALSE)
+best_performers_in_2013_with_movie_info <- merge(best_performers_in_2013, movie_info, all.x = FALSE)
+best_performers_in_2014_with_movie_info <- merge(best_performers_in_2014, movie_info, all.x = FALSE)
+best_performers_in_2015_with_movie_info <- merge(best_performers_in_2015, movie_info, all.x = FALSE)
+save.image("~/Projects/box-office/analysis/r-session.RData")
+summary(best_performers_with_movie_info)
+summary(movie_info)
+movie_info <- read.csv('data/movie_info.csv')
+summary(movie_info)
+as.numeric(movie_info$imdb_rating)
+head(movie_info$imdb_rating)
+as.numeric(as.character(movie_info$imdb_rating)
+)
+summary(movie_info)
+movie_info$actors <- as.character(movie_info$actors)
+movie_info$imdb_id <- as.character(movie_info$imdb_id)
+movie_info$tmdb_id <- as.character(movie_info$tmdb_id)
+movie_info$release_date <- as.Date(movie_info$release_date)
+movie_info$tomato_critic_rating <- as.numeric(as.character(movie_info$tomato_critic_rating))
+movie_info$tomato_user_rating <- as.numeric(as.character(movie_info$tomato_user_rating))
+movie_info$tomato_user_votes <- as.numeric(as.character(movie_info$tomato_user_votes))
+movie_info$tomato_critic_votes <- as.numeric(as.character(movie_info$tomato_critic_votes))
+movie_info$tomato_fresh_reviews <- as.numeric(as.character(movie_info$tomato_fresh_reviews))
+movie_info$tomato_rotten_reviews <- as.numeric(as.character(movie_info$tomato_rotten_reviews))
+movie_info$tomato_user_meter <- as.numeric(as.character(movie_info$tomato_user_meter))
+movie_info$tomato_critic_meter <- as.numeric(as.character(movie_info$tomato_critic_meter))
+summary(movie_info)
+raw_movie_info <- read.csv('data/movie_info.csv')
+movie_info$imdb_rating <- as.numeric(as.character(raw_movie_info$imdb_rating))
+movie_info$imdb_votes <- as.numeric(as.character(raw_movie_info$imdb_votes))
+summary(movie_info)
+parkway_with_movie_info <- merge(parkway, movie_info)
+summary(parkway_with_movie_info)
+parkway_with_movie_info <- merge(parkway, movie_info, all.x = FALSE)
+summary(parkway_with_movie_info)
+parkway_in_2013_with_movie_info <- merge(parkway_in_2013, movie_info, all.x = FALSE)
+parkway_in_2014_with_movie_info <- merge(parkway_in_2014, movie_info, all.x = FALSE)
+parkway_in_2015_with_movie_info <- merge(parkway_in_2015, movie_info, all.x = FALSE)
+best_performers_with_movie_info <- merge(best_performers, movie_info, all.x = FALSE)
+best_performers_in_2013_with_movie_info <- merge(best_performers_in_2013, movie_info, all.x = FALSE)
+best_performers_in_2014_with_movie_info <- merge(best_performers_in_2014, movie_info, all.x = FALSE)
+best_performers_in_2015_with_movie_info <- merge(best_performers_in_2015, movie_info, all.x = FALSE)
+savehistory("~/Projects/box-office/analysis/r-session.RData")
+summary(best_performers_with_movie_info)
+movie_info$metascore <- as.numeric(as.character(raw_movie_info$metascore))
+parkway_with_movie_info <- merge(parkway, movie_info, all.x = FALSE)
+parkway_in_2013_with_movie_info <- merge(parkway_in_2013, movie_info, all.x = FALSE)
+parkway_in_2014_with_movie_info <- merge(parkway_in_2014, movie_info, all.x = FALSE)
+parkway_in_2015_with_movie_info <- merge(parkway_in_2015, movie_info, all.x = FALSE)
+best_performers_with_movie_info <- merge(best_performers, movie_info, all.x = FALSE)
+best_performers_in_2013_with_movie_info <- merge(best_performers_in_2013, movie_info, all.x = FALSE)
+best_performers_in_2014_with_movie_info <- merge(best_performers_in_2014, movie_info, all.x = FALSE)
+best_performers_in_2015_with_movie_info <- merge(best_performers_in_2015, movie_info, all.x = FALSE)
+summary(best_performers_with_movie_info)
+save.image("~/Projects/box-office/analysis/r-session.RData")
+savehistory("~/Projects/box-office/analysis/r-history.RData")
+View(get_best_perfomers)
+View(get_best_perfomers)
+View(get_best_perfomers)
+View(get_best_perfomers)
+View(get_best_perfomers)
+get_poor_performers <- function(df) {
+col <- 'num_of_attendees';
+s <- sd(df[,col]);
+m <- mean(df[,col]);
+return(subset(df, df[,col] <= (m - s), ));
+}
+poor_performers <- get_poor_perfomers(parkway)
+poor_performers <- get_poor_performers(parkway)
+summary(poor_performers)
+poor_performers_in_2013 <- get_poor_perfomers(parkway_in_2013)
+poor_performers_in_2013 <- get_poor_performers(parkway_in_2013)
+dim(poor_performers)
+poor_performers_in_2014 <- get_poor_performers(parkway_in_2014)
+poor_performers_in_2015 <- get_poor_performers(parkway_in_2015)
+poor_performers_with_movie_info <- merge(poor_performers, movie_info, all.x = FALSE)
+poor_performers_in_2013_with_movie_info <- merge(poor_performers_in_2013, movie_info, all.x = FALSE)
+poor_performers_in_2014_with_movie_info <- merge(poor_performers_in_2014, movie_info, all.x = FALSE)
+poor_performers_in_2015_with_movie_info <- merge(poor_performers_in_2015, movie_info, all.x = FALSE)
+summary(poor_performers_with_movie_info)
+unique(best_performers$imdb_id)
+unique(poor_performers$imdb_id)
+intersect(unique(best_performers$imdb_id), unique(poor_performers$imdb_id))
+savehistory("~/Projects/box-office/analysis/r-history.RData")
