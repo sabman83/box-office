@@ -108,7 +108,8 @@ def get_ratings imdb_id
 end
 
 #get list of imdb ids
-movies = $db.execute('SELECT DISTINCT imdb_id from parkway_movies')
+#movies = $db.execute('SELECT DISTINCT imdb_id from parkway_movies')
+movies = $db.execute('select distinct s.imdb_id from parkway_daily_shows as s where s.imdb_id not in (select distinct imdb_id from movie_info) and s.imdb_id like "tt_______" order by s.imdb_id')
 movies = movies.flatten
 
 result = {}
