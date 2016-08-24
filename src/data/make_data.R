@@ -1,0 +1,36 @@
+install.packages('plyr')
+library('plyr')
+library(data.table)
+setwd('~/Projects/box-office/data/')
+
+parkway <- read.csv('parkway-shows-by-performance.csv')
+parkway <- data.table(parkway)
+parkway$date <- as.Date(parkway$date)
+keep_columns = c('imdb_id','gross','date','num_of_shows','ticket_price')
+parkway <- subset(parkway,select = keep_columns)
+parkway$day <- weekdays(parkway$date)
+parkway$day <- as.factor(parkway$day)
+summary(parkway)
+
+summarized_parkway <- ddply(parkway, c('imdb_id'), summarise, avg_num_of_attendees = mean(num_of_attendees), num_of_shows=sum(num_of_shows))
+View(summarized_parkway)
+
+movie_info <- read.csv('movie_info.csv')
+movie_info$tmdb_id <- NULL
+movie_info$imdb_id.1 <- NULL
+movie_info$release_date <- as.Date(movie_info$release_date)
+movie_info$tomato_critic_rating <- as.numeric(as.character(movie_info$tomato_critic_rating))
+movie_info$tomato_user_rating <- as.numeric(as.character(movie_info$tomato_user_rating))
+movie_info$tomato_user_votes <- as.numeric(as.character(movie_info$tomato_user_votes))
+movie_info$tomato_critic_votes <- as.numeric(as.character(movie_info$tomato_critic_votes))
+movie_info$tomato_fresh_reviews <- as.numeric(as.character(movie_info$tomato_fresh_reviews))
+movie_info$tomato_rotten_reviews <- as.numeric(as.character(movie_info$tomato_rotten_reviews))
+movie_info$tomato_user_meter <- as.numeric(as.character(movie_info$tomato_user_meter))
+movie_info$tomato_critic_meter <- as.numeric(as.character(movie_info$tomato_critic_meter))
+movie_info$imdb_rating <- as.numeric(as.character(movie_info$imdb_rating))
+movie_info$metascore <- as.numeric(as.character(movie_info$metascore))
+movie_info  <- data.table(movie_info)
+summary(movie_info)
+
+summarized_parkway_with_info <- join(summarized_parkway,movie_info, by="imdb_id")
+View(summarized_parkway_with_info)
