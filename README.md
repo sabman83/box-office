@@ -37,3 +37,7 @@ contains data set from 2012 to current
 
 `summarized_parkway_with_movie_info` : a join of the 2 data tables above but with the num_of_attendees averaged across all the shows.
 
+`parkway_in_` : parkway data broken down by 2012-13, 2014, 2015-16. Since we have only few rows of data for 2012 and 2016, they are merged with 2013 and 2015 respectively
+
+`parkway_by_the_years` : parkway data summarized by 2012-13, 2014, 2015-2016
+.

@@ -34,3 +34,19 @@ summary(movie_info)
 
 summarized_parkway_with_info <- join(summarized_parkway,movie_info, by="imdb_id")
 View(summarized_parkway_with_info)
+
+parkway_in_2013 = parkway[parkway$date <= as.Date("2013-12-31")]
+parkway_in_2014 = parkway[(parkway$date >= as.Date("2014-01-01") & parkway$date <= as.Date("2014-12-31"))]
+parkway_in_2015 = parkway[(parkway$date >= as.Date("2015-01-01"))]
+parkway_by_the_years <- data.table(c('year','num_of_shows', 'num_of_attendees'))
+parkway_by_the_years[1,1] <- 2013
+parkway_by_the_years[1,2] <- sum(parkway_in_2013$num_of_shows)
+parkway_by_the_years[1,3] <- sum(parkway_in_2013$num_of_attendees)
+parkway_by_the_years[2,2] <- sum(parkway_in_2014$num_of_shows)
+parkway_by_the_years[2,3] <- sum(parkway_in_2014$num_of_attendees)
+parkway_by_the_years[2,1] <- 2014
+parkway_by_the_years[3,1] <- 2015
+parkway_by_the_years[3,3] <- sum(parkway_in_2015$num_of_attendees)
+parkway_by_the_years[3,2] <- sum(parkway_in_2015$num_of_shows)
+parkway_by_the_years[,avg_num_of_attendees := num_of_attendees/num_of_shows]
+View(parkway_by_the_years)
