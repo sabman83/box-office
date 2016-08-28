@@ -50,3 +50,14 @@ parkway_by_the_years[3,3] <- sum(parkway_in_2015$num_of_attendees)
 parkway_by_the_years[3,2] <- sum(parkway_in_2015$num_of_shows)
 parkway_by_the_years[,avg_num_of_attendees := num_of_attendees/num_of_shows]
 View(parkway_by_the_years)
+
+opening_dates = parkway[,.(opening_date = min(date)), by='imdb_id']
+parkway <- join(parkway, opening_dates, by="imdb_id")
+transform(parkway, nth_day = date-opening_date)
+parkway_with_movie_info <- join(parkway, movie_info, by='imdb_id')
+parkway_with_movie_info <- transform(parkway_with_movie_info, day_since_release = opening_date-release_date)
+
+
+best_overall_performers = parkway[parkway$num_of_attendees >= (mean(parkway$num_of_attendees) + (2 * sd(parkway$num_of_attendees))),]
+summarized_best_overall_performers <- ddply(best_overall_performers, c('imdb_id'), summarise, num_of_shows = sum(num_of_shows), avg_num_of_attendees = mean(num_of_attendees))
+summarized_best_overall_performers <- join(summarized_best_overall_performers, movie_info, by="imdb_id")
