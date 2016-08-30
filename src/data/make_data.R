@@ -1,6 +1,7 @@
-install.packages('plyr')
 library('plyr')
 library(data.table)
+library(tidyr)
+library(plyr)
 setwd('~/Projects/box-office/data/')
 
 parkway <- read.csv('parkway-shows-by-performance.csv')
@@ -30,6 +31,10 @@ movie_info$tomato_critic_meter <- as.numeric(as.character(movie_info$tomato_crit
 movie_info$imdb_rating <- as.numeric(as.character(movie_info$imdb_rating))
 movie_info$metascore <- as.numeric(as.character(movie_info$metascore))
 movie_info  <- data.table(movie_info)
+wins_col <- sapply(as.character(movie_info$awards), num_of_awards, type="wins")
+nmns_col <- sapply(as.character(movie_info$awards), num_of_awards, type="nominations")
+movie_info$award_wins <- wins_col
+movie_info$award_nominations <- nmns_col
 summary(movie_info)
 
 summarized_parkway_with_info <- join(summarized_parkway,movie_info, by="imdb_id")
@@ -53,10 +58,13 @@ View(parkway_by_the_years)
 
 opening_dates = parkway[,.(opening_date = min(date)), by='imdb_id']
 parkway <- join(parkway, opening_dates, by="imdb_id")
-transform(parkway, nth_day = date-opening_date)
+parkway <- transform(parkway, nth_day = date-opening_date)
 parkway_with_movie_info <- join(parkway, movie_info, by='imdb_id')
 parkway_with_movie_info <- transform(parkway_with_movie_info, day_since_release = opening_date-release_date)
-
+parkway_with_movie_info <- mutate(parkway_with_movie_info, actor = strsplit(as.character(actors), ","))
+parkway_with_movie_info <- unnest(parkway_with_movie_info, actor)
+parkway_with_movie_info <- mutate(tt2, keyword = strsplit(as.character(keywords), ","))
+parkway_with_movie_info <- unnest(parkway_with_movie_info, keyword)
 
 best_overall_performers = parkway[parkway$num_of_attendees >= (mean(parkway$num_of_attendees) + (2 * sd(parkway$num_of_attendees))),]
 summarized_best_overall_performers <- ddply(best_overall_performers, c('imdb_id'), summarise, num_of_shows = sum(num_of_shows), avg_num_of_attendees = mean(num_of_attendees))
