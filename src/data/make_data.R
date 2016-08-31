@@ -11,6 +11,7 @@ keep_columns = c('imdb_id','gross','date','num_of_shows','ticket_price')
 parkway <- subset(parkway,select = keep_columns)
 parkway$day <- weekdays(parkway$date)
 parkway$day <- as.factor(parkway$day)
+parkway$attendees_per_show <- parkway[parkway$gross/parkway$num_of_shows/parkway$ticket_price]
 summary(parkway)
 
 summarized_parkway <- ddply(parkway, c('imdb_id'), summarise, avg_num_of_attendees = mean(num_of_attendees), num_of_shows=sum(num_of_shows))
@@ -63,8 +64,16 @@ parkway_with_movie_info <- join(parkway, movie_info, by='imdb_id')
 parkway_with_movie_info <- transform(parkway_with_movie_info, day_since_release = opening_date-release_date)
 parkway_with_movie_info <- mutate(parkway_with_movie_info, actor = strsplit(as.character(actors), ","))
 parkway_with_movie_info <- unnest(parkway_with_movie_info, actor)
-parkway_with_movie_info <- mutate(tt2, keyword = strsplit(as.character(keywords), ","))
+parkway_with_movie_info <- mutate(parkway_with_movie_info, keyword = strsplit(as.character(keywords), ","))
 parkway_with_movie_info <- unnest(parkway_with_movie_info, keyword)
+
+best_overall_performers = parkway_with_movie_info[parkway_with_movie_info$attendees_per_show >= (mean(parkway_with_movie_info$attendees_per_show) + (2 * sd(parkway_with_movie_info$attendees_per_show))),]
+best_recent_movie_peformers <- best_overall_performers[best_overall_performers$day_since_release < 365]
+best_recent_movie_peformers_summarized <- summarise(group_by(best_recent_movie_peformers, imdb_id, date), num_of_shows= mean(num_of_shows), attendees_per_show=mean(attendees_per_show), avg_nth_day = mean(nth_day))
+best_recent_movie_peformers_summarized <- summarise(group_by(best_recent_movie_peformers_summarized, imdb_id), num_of_shows= sum(num_of_shows), attendees_per_show=mean(attendees_per_show), avg_nth_day = mean(nth_day))
+best_recent_movie_peformers_summarized <- join(best_recent_movie_peformers_summarized, movie_info)
+
+
 
 best_overall_performers = parkway[parkway$num_of_attendees >= (mean(parkway$num_of_attendees) + (2 * sd(parkway$num_of_attendees))),]
 summarized_best_overall_performers <- ddply(best_overall_performers, c('imdb_id'), summarise, num_of_shows = sum(num_of_shows), avg_num_of_attendees = mean(num_of_attendees))
