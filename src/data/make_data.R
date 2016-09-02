@@ -90,9 +90,3 @@ poor_recent_movie_peformers <- poor_overall_performers[poor_overall_performers$d
 poor_recent_movie_peformers_summarized <- summarise(group_by(poor_recent_movie_peformers, imdb_id, date), num_of_shows= mean(num_of_shows), attendees_per_show=mean(attendees_per_show), avg_nth_day = mean(nth_day))
 poor_recent_movie_peformers_summarized <- summarise(group_by(poor_recent_movie_peformers_summarized, imdb_id), num_of_shows= sum(num_of_shows), attendees_per_show=mean(attendees_per_show), avg_nth_day = mean(avg_nth_day))
 poor_recent_movie_peformers_summarized <- join(poor_recent_movie_peformers_summarized, movie_info)
-
-
-
-best_overall_performers = parkway[parkway$num_of_attendees >= (mean(parkway$num_of_attendees) + (2 * sd(parkway$num_of_attendees))),]
-summarized_best_overall_performers <- ddply(best_overall_performers, c('imdb_id'), summarise, num_of_shows = sum(num_of_shows), avg_num_of_attendees = mean(num_of_attendees))
-summarized_best_overall_performers <- join(summarized_best_overall_performers, movie_info, by="imdb_id")
