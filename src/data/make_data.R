@@ -11,11 +11,8 @@ keep_columns = c('imdb_id','gross','date','num_of_shows','ticket_price')
 parkway <- subset(parkway,select = keep_columns)
 parkway$day <- weekdays(parkway$date)
 parkway$day <- as.factor(parkway$day)
-parkway$attendees_per_show <- parkway[parkway$gross/parkway$num_of_shows/parkway$ticket_price]
+parkway$attendees_per_show <- parkway$gross/parkway$num_of_shows/parkway$ticket_price
 summary(parkway)
-
-summarized_parkway <- ddply(parkway, c('imdb_id'), summarise, avg_num_of_attendees = mean(num_of_attendees), num_of_shows=sum(num_of_shows))
-View(summarized_parkway)
 
 movie_info <- read.csv('movie_info.csv')
 movie_info$tmdb_id <- NULL
@@ -47,12 +44,12 @@ parkway_in_2015 = parkway[(parkway$date >= as.Date("2015-01-01"))]
 parkway_by_the_years <- data.table(c('year','num_of_shows', 'num_of_attendees'))
 parkway_by_the_years[1,1] <- 2013
 parkway_by_the_years[1,2] <- sum(parkway_in_2013$num_of_shows)
-parkway_by_the_years[1,3] <- sum(parkway_in_2013$num_of_attendees)
+parkway_by_the_years[1,3] <- sum(parkway_in_2013$attendees_per_show)
 parkway_by_the_years[2,2] <- sum(parkway_in_2014$num_of_shows)
-parkway_by_the_years[2,3] <- sum(parkway_in_2014$num_of_attendees)
+parkway_by_the_years[2,3] <- sum(parkway_in_2014$attendees_per_shows)
 parkway_by_the_years[2,1] <- 2014
 parkway_by_the_years[3,1] <- 2015
-parkway_by_the_years[3,3] <- sum(parkway_in_2015$num_of_attendees)
+parkway_by_the_years[3,3] <- sum(parkway_in_2015$attendees_per_show)
 parkway_by_the_years[3,2] <- sum(parkway_in_2015$num_of_shows)
 parkway_by_the_years[,avg_num_of_attendees := num_of_attendees/num_of_shows]
 View(parkway_by_the_years)

@@ -1,0 +1,367 @@
+                 Marketing Report                                                                                                                        The New Parkway
+
+REPORT DATE RANGE                      VALUE TYPE                                                                                                                          SITE ADDRESS
+Saturday, November 26, 2016 -          N                                                                                                                                        474 24th St
+
+Saturday, November 26, 2016                                                                                                                                              Oakland CA 94612
+
+
+                                                                                      Base Information
+
+                           Box Office                                                  Concessions                                                      Other
+
+
+ Box Office Sales                                     4,069.00 Concession Sales                                     4,155.59 Voucher Sales                                         145.00
+
+ Box Office Admits incl Comps                             519 Quantity of Items Sold                                    756 Redemptions vs Sales                                     0.00
+
+ Comps                                                     29 Transactions with Concessions                             280 Box Office Sundries                                     84.00
+
+
+ Paid Admits                                              490
+
+ Transactions with Tickets                                249
+
+ Redemptions Value                                        0.00
+
+
+ Redemptions %                                            0.00
+
+
+                                                                                   Performance Indicators
+
+ Occupancy Rate %                                        33.16 Spend per Admit                                          8.01
+
+ Average Ticket Price incl Comps                          7.84 Spend per Paid Admit                                     8.48
+
+
+ Average Ticket Price not incl Comps                      8.30 Admissions Strike Rate %                               53.95
+
+                                                               Transaction Strike Rate %                             112.45
+
+
+                                                               Average Value per Concession Trans.                    14.84
+
+
+                                                                                        Box Office
+
+ Film                                                         Opening Date  Week of Play     Shows     Admits     Comps              Net          Gross     Occupancy %   Avg. Ticket Price
+
+ The Princess Bride                                              1/20/2017            -7          1        87          0          810.00         810.00            47.03             9.31
+
+ The Handmaiden                                                 10/21/2016             6          1        84          9          740.00         740.00            52.50             9.87
+
+ Don't Think Twice                                              10/21/2016             6          1        71          2          672.00         672.00            38.38             9.74
+
+ Miss Peregrine's Home for Peculiar Children                     9/30/2016             9          1        54          9          428.00         428.00            33.75             9.51
+ The Secret Life of Pets                                         10/7/2016             8          1        70          3          427.00         427.00            37.84             6.37
+
+ Howl's Moving Castle (Japanese w/English Subs.)                 1/29/2016            44          1        38          3          317.00         317.00            20.54             9.06
+
+ Kubo and the Two Strings                                        10/8/2016             8          1        45          0          297.00         297.00            28.13             6.60
+
+ Queen of Katwe                                                  9/23/2016            10          1        46          0          288.00         288.00            24.86             6.26
+
+ American Honey                                                  9/30/2016             9          1        24          3           90.00          90.00            15.00             4.29
+
+
+
+
+
+
+
+
+8:27 PM Tuesday, December 13, 2016                       # 680                        Page 1 of 5                                                         © Vista Entertainment Solutions Ltd                 Marketing Report                                                                                                                        The New Parkway
+
+                                Payment Method Analysis - Box Office                                                        Payment Method Analysis - Concessions
+
+
+ Payment Type                                                                       Value       %                         Payment Type                                     Value       %
+
+ Credit Card                                                                     2,108.00    48.36 Credit Card                                                          3,301.50    72.39
+ Internet Ticket                                                                 1,279.00    29.34 CASH                                                                 1,164.50    25.53
+
+ CASH                                                                              840.00    19.27 Internet Ticket                                                         90.00     1.97
+
+ Online GCs                                                                        125.00     2.87 Gift Card                                                                5.00     0.11
+
+ Gift Card                                                                           7.00     0.16
+
+ Total                                                                           4,359.00          Total                                                                4,561.00
+
+
+                                       Top 10 Vouchers Sold                                                                      Top 10 Vouchers Redeemed
+
+ Voucher Type                                                          Admits                Value                     Voucher Type                             Admits              Value
+
+ Gift Card Sale                                                             4               145.00 Online Gift Cards                                                 2             125.00
+
+                                                                                                   STAFF PASS                                                        3               0.00
+
+                                                                                                   MOVIE TOKEN                                                      28               0.00
+
+                                                                                                   DEAL TIX                                                         14               0.00
+
+ Total                                                                      4               145.00 Total                                                            47             125.00
+
+
+                                                                                    Top 20 Ticket Types
+
+ Ticket Type                                                                Average Price                 Admits      % mix                       Net                   Gross      % mix
+
+ $10 SHOW                                                                          10.00                     248      46.88                  2,480.00                 2,480.00      59.90
+
+ $7 SHOW                                                                            7.00                     113      21.36                    791.00                   791.00      19.11
+
+ STUDENT                                                                            7.16                      95      17.96                    680.00                   680.00      16.43
+
+ SENIOR CITIZEN                                                                     6.47                      17       3.21                    110.00                   110.00       2.66
+
+ Single Ticket (Fast 50)                                                           10.00                       6       1.13                     60.00                    60.00       1.45
+ $5 SHOW                                                                            5.00                       2       0.38                     10.00                    10.00       0.24
+
+ BIKE HELMET DISCOUNT                                                               9.00                       1       0.19                      9.00                     9.00       0.22
+
+ STAFF PASS                                                                         0.00                       3       0.57                      0.00                     0.00       0.00
+
+ MOVIE TOKEN                                                                        0.00                      28       5.29                      0.00                     0.00       0.00
+
+ DEAL TIX                                                                           0.00                      14       2.65                      0.00                     0.00       0.00
+
+ ANNUAL/LIFETIME MEMBER                                                             0.00                       2       0.38                      0.00                     0.00       0.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8:27 PM Tuesday, December 13, 2016                       # 680                        Page 2 of 5                                                         © Vista Entertainment Solutions Ltd                Marketing Report                                                                                                                      The New Parkway
+
+                                                                                Sales Channel Analysis
+
+
+                                             POS Sales                Internet Ticketing                                                                             Total
+
+Film                                      Admits            GBO      Admits           GBO                                                                      Admits            GBO
+
+The Princess Bride                           61           570.00         26         240.00         0          0.00       0        0.00      0       0.00          87           810.00
+
+The Handmaiden                               63           530.00         21         210.00         0          0.00       0        0.00      0       0.00          84           740.00
+
+Don't Think Twice                            53           502.00         18         170.00         0          0.00       0        0.00      0       0.00          71           672.00
+
+Miss Peregrine's Home for Peculiar           40           296.00         14         132.00         0          0.00       0        0.00      0       0.00          54           428.00
+Children
+
+The Secret Life of Pets                      51           299.00         19         128.00         0          0.00       0        0.00      0       0.00          70           427.00
+Howl's Moving Castle (Japanese               29           235.00          9          82.00         0          0.00       0        0.00      0       0.00          38           317.00
+
+w/English Subs.)
+Kubo and the Two Strings                     28           184.00         17         113.00         0          0.00       0        0.00      0       0.00          45           297.00
+
+Queen of Katwe                               43           267.00          3          21.00         0          0.00       0        0.00      0       0.00          46           288.00
+
+American Honey                               21            69.00          3          21.00         0          0.00       0        0.00      0       0.00          24            90.00
+
+Total                                       389          2952.00        130        1117.00         0          0.00       0        0.00      0       0.00         519          4069.00
+
+%                                          74.95           72.55      25.05          27.45      0.00          0.00    0.00        0.00   0.00       0.00
+
+                                                                            Ticket Sales by Film and Showtime
+
+
+                                                                                                                              Same Day
+
+Film                                                     >4 Days       2-4 Days     Day Before        >2 Hrs        1-2 Hrs     15-60 Mins        Last 15     After Start        Total
+
+The Princess Bride                                             0              0             0             24              0            20             32            11             87
+
+The Handmaiden                                                 0              0             0             15              4            32             22            11             84
+
+Don't Think Twice                                              0              0             0             14              0            37              9            11             71
+
+The Secret Life of Pets                                        0              0             0             12              7            30             17             4             70
+
+Miss Peregrine's Home for Peculiar Children                    0              0             0              7              4            15             16            12             54
+
+Queen of Katwe                                                 0              0             0              0              3            19             19             5             46
+
+Kubo and the Two Strings                                       0              0             0             13              5            15             11             1             45
+
+Howl's Moving Castle (Japanese w/English Subs.)                0              2             0              7              0            14              9             6             38
+
+American Honey                                                 0              0             0              0              3             9              8             4             24
+
+Total                                                          0              2             0             92             26           191            143            65            519
+
+%                                                            0.00          0.39           0.00         17.73           5.01         36.80          27.55          12.52        100.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8:27 PM Tuesday, December 13, 2016                      # 680                       Page 3 of 5                                                        © Vista Entertainment Solutions Ltd                Marketing Report                                                                                                                    The New Parkway
+
+                                                                         Ticket Sales by Channel and Showtime
+
+
+                                                                                                                            Same Day
+
+Sales Channel                                           >4 Days       2-4 Days     Day Before        >2 Hrs        1-2 Hrs    15-60 Mins       Last 15     After Start        Total
+
+POS Sales                                                     0              0             0             3              3           175           143             65           389
+
+Internet Ticketing                                            0              2             0            89             23            16             0              0           130
+
+Total                                                         0              2             0            92             26           191           143             65           519
+
+%                                                           0.00          0.39          0.00          17.73          5.01         36.80          27.55         12.52        100.00
+
+
+                                                                             Group Size Analysis By Film
+
+Film                                                                        Single              2               3              4              >4             Total         Families
+
+The Princess Bride (PG)                                                        12              14               3              3               4               87
+
+The Handmaiden (NR)                                                            21              26               1              2               0               84
+
+Don't Think Twice (R)                                                           3              22               5              1               1               71
+
+The Secret Life of Pets (PG)                                                    5              12               7              2               2               70
+
+Miss Peregrine's Home for Peculiar Children (PG-13)                            13              11               5              1               0               54
+
+Queen of Katwe (PG)                                                             3               6               3              3               2               46
+Kubo and the Two Strings (PG)                                                   3               7               4              1               2               45
+
+Howl's Moving Castle (Japanese w/English Subs.) (PG)                           13              11               1              0               0               38
+
+American Honey (R)                                                              8               3               2              1               0               24
+
+Total                                                                          81             112             31              14              11              519
+
+%                                                                           32.53           44.98           12.45            5.62           4.42
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8:27 PM Tuesday, December 13, 2016                     # 680                       Page 4 of 5                                                      © Vista Entertainment Solutions Ltd                 Marketing Report                                                                                                                             The New Parkway
+
+                                   Concession Class Analysis
+
+
+ Class                                                    Value             %         Per Admit
+
+ Beer                                                   1035.34         24.91              1.96
+
+ Popcorn                                                 494.85         11.91              0.94
+ Sandwiches                                              438.35         10.55              0.83
+
+ Starters                                                411.45           9.90             0.78
+
+ Pizza                                                   333.26           8.02             0.63
+
+ Wine                                                    316.88           7.63             0.60
+
+ Entrees                                                 308.66           7.43             0.58
+
+ Drinks - Non-Alcoholic                                  253.00           6.09             0.48
+
+ Drinks - Alcoholic                                      187.20           4.50             0.35
+
+ Kids Meals                                              149.78           3.60             0.28
+
+ Surcharges                                               70.99           1.71             0.13
+
+ Candy                                                    62.15           1.50             0.12
+ Other - Food                                             54.78           1.32             0.10
+
+ Sides a La Carte                                         52.06           1.25             0.10
+
+ Hot Drinks                                               48.48           1.17             0.09
+
+ Sweets                                                   45.67           1.10             0.09
+
+ Modifications - Charge                                   11.84           0.28             0.02
+
+ Discounts                                               -40.64          -0.98            -0.08
+
+ Promotions                                              -78.51          -1.89            -0.15
+
+ Total                                                  4155.59        100.00              7.86
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8:27 PM Tuesday, December 13, 2016                        # 680                         Page 5 of 5                                                           © Vista Entertainment Solutions Ltd

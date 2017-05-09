@@ -1,0 +1,136 @@
+                     Posting Journal
+                                                                                                                                              The New Parkway
+
+REPORT DATE RANGE                                     SHOW TAX SEPARATELY                                                                                          474 24th St
+Saturday, November 26, 2016 -                         N                                                                                                     Oakland CA 94612
+Saturday, November 26, 2016
+
+
+           GL Code           GL Description            Ref 1                Ref 2                Ref 3             Ref 4             Report Code                       Value
+
+
+Cinema Name: The New Parkway              Cinema Code: 9999
+
+
+   Credits
+
+      Revenue
+
+        Advance Bookings
+
+           BOADVANCE         Advance Sales                                                                                                                            114.00
+
+                                                                                                      Total Advance Bookings                                         114.00
+
+        Concessions
+
+           CONCREVENUE       Concession Revenue        Box Office & Kitchen                                                                                          4,461.00
+
+           CONCREVENUE       Concession Revenue        Internet Ticketing                                                                                              90.00
+
+                                                                                                      Total Concessions                                             4,551.00
+
+        Other Sales
+
+           BOSUNDRY          Box Office Sundry         Box Office & Kitchen GC Sale                                                                                   145.00
+           BOSUNDRY          Box Office Sundry         Internet Ticketing   56                                                                                         84.00
+
+                                                                                                      Total Other Sales                                              229.00
+
+        Box Office
+
+           BOREVENUE         Box Office Revenue        BoxOffice                                                                                                     4,069.00
+
+                                                                                                      Total Box Office                                              4,069.00
+
+        Tax Payable
+
+           TAXOUTPUT         Tax Output                Sales Tax            State Tax                                                                                   0.00
+                                                       (Concessions)
+                                                                                                      Total Tax Payable                                                 0.00
+
+
+                                                                                                    Total Revenue                                                   8,963.00
+
+                                                                                                  Total Credits                                                    8,963.00
+
+   Debits
+
+
+      Expenses
+
+        Maturing Sales
+
+           BOMATURE          Box Office Maturing Sales                                                                                                                 43.00
+                                                                                                      Total Maturing Sales                                             43.00
+
+
+
+8:18 PM Tuesday, December 13, 2016                                    # 830               Page 1 of 2                                          © Vista Entertainment Solutions Ltd                    Posting Journal                                                                                                         The New Parkway
+
+                                                                                                                                                                 474 24th St
+REPORT DATE RANGE                                     SHOW TAX SEPARATELY
+Saturday, November 26, 2016 -                         N                                                                                                    Oakland CA 94612
+Saturday, November 26, 2016
+
+
+                                                                                                   Total Expenses                                                    43.00
+
+      Banking
+
+        Sales
+
+           BANKABLE          Deposits                 Cash                                                                                                         2,004.50
+           BANKABLE          Deposits                 Gift Card                                                                                                      12.00
+
+           BANKABLE          Deposits                 Online Gift Cards                                                                                             125.00
+
+           CREDIT/DEBIT      Banking - Credit/Debit   Credit Card                                                                                                  5,409.50
+
+           INTERNET          Internet Ticketing Receivable Internet Ticketing                                                                                      1,369.00
+                                                                                                    Total Sales                                                   8,920.00
+
+                                                                                                   Total Banking                                                  8,920.00
+
+
+                                                                                                 Total Debits                                                    8,963.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8:18 PM Tuesday, December 13, 2016                                    # 830              Page 2 of 2                                         © Vista Entertainment Solutions Ltd
