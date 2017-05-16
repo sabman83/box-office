@@ -1,12 +1,47 @@
+
+require(data.table)
+library(tidyr)
+install.packages("splitstackshape")
+library(splitstackshape)
+require(dplyr)
+library(stringr)
+library(foreach)
+
+
+num_of_awards <- function(str, type) {
+  if (type == 'wins') {
+    pattern <- "Won (\\d+)|won (\\d+)|(\\d+) win|(\\d+) Win"
+  } else if (type == 'nominations') {
+    pattern <-
+      "Nominated for (\\d+)|nominated for (\\d+)|(\\d+) Nominations|(\\d+) nominations"
+  } else {
+    stop('invalid award type')
+  }
+  str <- toString(str)
+  awards <- 0
+  if (nchar(str) == 0) {
+    return(awards)
+  }
+  matches <- str_match_all(str, pattern)
+  mtrx <- matches[[1]]
+  if ((nrow(mtrx) == 0) | (ncol(mtrx) == 0)) {
+    return(awards)
+  }
+  for (i in 1:nrow(mtrx)) {
+    for (j in 2:ncol(mtrx)) {
+      if (nchar(mtrx[i, j]) > 0) {
+        print(mtrx[i, j])
+        awards <- awards + as.numeric(mtrx[i, j])
+      }
+    }
+  }
+  return (awards)
+}
+
 parkway <-
   read.csv("/home/sabman/Projects/box-office/data/parkway-shows-by-performance.csv")
-movie_info <-
-  read.csv("/home/sabman/Projects/box-office/data/movie_info.csv")
-require(data.table)
 parkway <- data.table(parkway)
-movie_info <- data.table(movie_info)
 parkway$imdb_id  <- as.factor(parkway$imdb_id)
-require(dplyr)
 parkway$num_of_attendees <- parkway$gross / parkway$ticket_price
 parkway$num_of_attendees <- round(parkway$num_of_attendees)
 parkway$date <- as.Date(parkway$date)
@@ -33,14 +68,9 @@ parkway_for_random_forest <-
   parkway %>% select(imdb_id, day, num_of_shows, num_of_attendees)
 
 
-library(tidyr)
-install.packages("splitstackshape")
-library(splitstackshape)
-concat.split.expanded(parkway_summarized_by_movie,
-                      "genres",
-                      ",",
-                      type = "character",
-                      fill = "0")
+movie_info <-
+  read.csv("/home/sabman/Projects/box-office/data/movie_info.csv")
+movie_info <- data.table(movie_info)
 movie_info[imdb_id == 'tt2440910']$genres = "Documentary,Adventure"
 movie_info[imdb_id == 'tt3385334']$genres = "Adventure,Comedy,Drama,Romance"
 movie_info[imdb_id == 'tt3385334']$genres = "Documentary,Crime"
@@ -93,56 +123,15 @@ movie_country <- data.table(movie_country)
 movie_info <- merge(movie_info, movie_country, by = 'imdb_id')
 movie_info$foreign <- ifelse(grepl('USA', movie_info$country), 0, 1)
 movie_info$foreign <- as.factor(movie_info$foreign)
-num_of_awards <- function(str, type) {
-  if (type == 'wins') {
-    pattern <- "Won (\\d+)|won (\\d+)|(\\d+) win|(\\d+) Win"
-  } else if (type == 'nominations') {
-    pattern <-
-      "Nominated for (\\d+)|nominated for (\\d+)|(\\d+) Nominations|(\\d+) nominations"
-  } else {
-    stop('invalid award type')
-  }
-  str <- toString(str)
-  awards <- 0
-  if (nchar(str) == 0) {
-    return(awards)
-  }
-  matches <- str_match_all(str, pattern)
-  mtrx <- matches[[1]]
-  if ((nrow(mtrx) == 0) | (ncol(mtrx) == 0)) {
-    return(awards)
-  }
-  for (i in 1:nrow(mtrx)) {
-    for (j in 2:ncol(mtrx)) {
-      if (nchar(mtrx[i, j]) > 0) {
-        print(mtrx[i, j])
-        awards <- awards + as.numeric(mtrx[i, j])
-      }
-    }
-  }
-  return (awards)
-}
-library(stringr)
-wins_col <-
-  sapply(as.character(movie_info$awards), num_of_awards, type = "wins")
-nmns_col <-
-  sapply(as.character(movie_info$awards), num_of_awards, type = "nominations")
+
+wins_col <- sapply(as.character(movie_info$awards), num_of_awards, type = "wins")
+nmns_col <- sapply(as.character(movie_info$awards), num_of_awards, type = "nominations")
 movie_info$award_wins <- wins_col
 movie_info$award_nominations <- nmns_col
-concat.split.expanded(movie_info,
-                      "genres",
-                      sep = ",",
-                      type = "character",
-                      fill = 0)
-movie_info <-
-  concat.split.expanded(movie_info,
-                        "genres",
-                        sep = ",",
-                        type = "character",
-                        fill = 0)
+
+
 movie_info$metascore <-
   (as.numeric(as.character(movie_info$metascore)))
-mean(movie_info_for_random_forest$tomato_critic_meter[!is.na(movie_info_for_random_forest$tomato_critic_meter)])
 movie_info$tomato_critic_rating <-
   (as.numeric(as.character(movie_info$tomato_critic_rating)))
 movie_info$tomato_user_rating <-
@@ -159,59 +148,12 @@ movie_info$tomato_user_meter <-
   (as.numeric(as.character(movie_info$tomato_user_meter)))
 movie_info$tomato_critic_meter <-
   (as.numeric(as.character(movie_info$tomato_critic_meter)))
-movie_info_for_random_forest <-
-  movie_info %>% select(
-    imdb_id,
-    budget,
-    tmdb_popularity,
-    revenue,
-    runtime,
-    tmdb_rating,
-    tmdb_votes,
-    metascore,
-    genres_Western,
-    genres_War,
-    `genres_TV Movie`,
-    genres_Thriller,
-    genres_Sport,
-    genres_Short,
-    `genres_Science Fiction`,
-    genres_Romance,
-    genres_News,
-    genres_Mystery,
-    genres_Musical,
-    genres_Music,
-    genres_Horror,
-    genres_History,
-    genres_Foreign,
-    genres_Fantasy,
-    genres_Family,
-    genres_Drama,
-    genres_Documentary,
-    genres_Crime,
-    genres_Comedy,
-    genres_Biography,
-    genres_Animation,
-    genres_Adventure,
-    genres_Action,
-    award_nominations,
-    award_wins,
-    foreign,
-    tomato_critic_meter,
-    tomato_user_meter,
-    tomato_rotten_reviews,
-    tomato_fresh_reviews,
-    tomato_critic_votes,
-    tomato_user_votes,
-    tomato_user_rating,
-    tomato_critic_rating,
-    imdb_votes,
-    imdb_rating
-  )
 movie_info$imdb_rating <-
   (as.numeric(as.character(movie_info$imdb_rating)))
 movie_info$imdb_votes <-
   (as.numeric(as.character(movie_info$imdb_votes)))
+
+
 movie_info_for_random_forest <-
   movie_info %>% select(
     imdb_id,
@@ -220,109 +162,115 @@ movie_info_for_random_forest <-
     tmdb_rating,
     tmdb_votes,
     metascore,
-    genres_Western,
-    genres_War,
-    `genres_TV Movie`,
-    genres_Thriller,
-    genres_Sport,
-    genres_Short,
-    `genres_Science Fiction`,
-    genres_Romance,
-    genres_News,
-    genres_Mystery,
-    genres_Musical,
-    genres_Music,
-    genres_Horror,
-    genres_History,
-    genres_Foreign,
-    genres_Fantasy,
-    genres_Family,
-    genres_Drama,
-    genres_Documentary,
-    genres_Crime,
-    genres_Comedy,
-    genres_Biography,
-    genres_Animation,
-    genres_Adventure,
-    genres_Action,
     award_nominations,
     award_wins,
     foreign,
+    genres,
+    keywords,
     tomato_critic_votes,
     tomato_user_votes,
     tomato_user_rating,
     tomato_critic_rating,
     imdb_rating
   )
-movie_info_for_random_forest$metascore[is.na(movie_info_for_random_forest$metascore)] <-
-  mean(movie_info_for_random_forest$metascore[!is.na(movie_info_for_random_forest$metascore)])
-movie_info_for_random_forest$tomato_critic_votes[is.na(movie_info_for_random_forest$tomato_critic_votes)] <-
-  0
-movie_info_for_random_forest$tomato_user_votes[is.na(movie_info_for_random_forest$tomato_user_votes)] <-
-  0
-movie_info_for_random_forest$tomato_critic_rating[is.na(movie_info_for_random_forest$tomato_critic_rating)] <-
-  mean(movie_info_for_random_forest$tomato_critic_rating[!is.na(movie_info_for_random_forest$tomato_critic_rating)])
-movie_info_for_random_forest$tomato_user_rating[is.na(movie_info_for_random_forest$tomato_user_rating)] <-
-  mean(movie_info_for_random_forest$tomato_user_rating[!is.na(movie_info_for_random_forest$tomato_user_rating)])
-movie_info_for_random_forest$imdb_rating[is.na(movie_info_for_random_forest$imdb_rating)] <-
-  mean(movie_info_for_random_forest$imdb_rating[!is.na(movie_info_for_random_forest$imdb_rating)])
-movie_info_for_random_forest$genres_War <-
-  as.factor(movie_info_for_random_forest$genres_War)
-movie_info_for_random_forest$genres_Western <-
-  as.factor(movie_info_for_random_forest$genres_Western)
-movie_info_for_random_forest$genres_News <-
-  as.factor(movie_info_for_random_forest$genres_News)
-movie_info_for_random_forest$genres_Sport <-
-  as.factor(movie_info_for_random_forest$genres_Sport)
-movie_info_for_random_forest$genres_Short <-
-  as.factor(movie_info_for_random_forest$genres_Short)
-movie_info_for_random_forest$genres_Short <-
-  as.factor(movie_info_for_random_forest$`genres_Science Fiction`)
-movie_info_for_random_forest$genres_Short <-
-  as.factor(movie_info$genres_Short)
-movie_info_for_random_forest$`genres_Science Fiction` <-
-  as.factor(movie_info_for_random_forest$`genres_Science Fiction`)
-movie_info_for_random_forest$genres_Romance <-
-  as.factor(movie_info_for_random_forest$genres_Romance)
-movie_info_for_random_forest$genres_News <-
-  as.factor(movie_info_for_random_forest$genres_News)
-movie_info_for_random_forest$genres_Mystery <-
-  as.factor(movie_info_for_random_forest$genres_Mystery)
-movie_info_for_random_forest$genres_Musical <-
-  as.factor(movie_info_for_random_forest$genres_Musical)
-movie_info_for_random_forest$genres_Music <-
-  as.factor(movie_info_for_random_forest$genres_Music)
-movie_info_for_random_forest$genres_Horror <-
-  as.factor(movie_info_for_random_forest$genres_Horror)
-movie_info_for_random_forest$genres_History <-
-  as.factor(movie_info_for_random_forest$genres_History)
-movie_info_for_random_forest$genres_Foreign <-
-  as.factor(movie_info_for_random_forest$genres_Foreign)
-movie_info_for_random_forest$genres_Fantasy <-
-  as.factor(movie_info_for_random_forest$genres_Fantasy)
-movie_info_for_random_forest$genres_Family <-
-  as.factor(movie_info_for_random_forest$genres_Family)
-movie_info_for_random_forest$genres_Drama <-
-  as.factor(movie_info_for_random_forest$genres_Drama)
-movie_info_for_random_forest$genres_Documentary <-
-  as.factor(movie_info_for_random_forest$genres_Documentary)
-movie_info_for_random_forest$genres_Crime <-
-  as.factor(movie_info_for_random_forest$genres_Crime)
-movie_info_for_random_forest$genres_Comedy <-
-  as.factor(movie_info_for_random_forest$genres_Comedy)
-movie_info_for_random_forest$genres_Biography <-
-  as.factor(movie_info_for_random_forest$genres_Biography)
-movie_info_for_random_forest$genres_Animation <-
-  as.factor(movie_info_for_random_forest$genres_Animation)
-movie_info_for_random_forest$genres_Adventure <-
-  as.factor(movie_info_for_random_forest$genres_Adventure)
-movie_info_for_random_forest$genres_Action <-
-  as.factor(movie_info_for_random_forest$genres_Action)
-summary(movie_info_for_random_forest)
-movie_info_for_random_forest$`genres_TV Movie` <-
-  as.factor(movie_info_for_random_forest$`genres_TV Movie`)
-movie_info_for_random_forest$genres_Thriller <-
-  as.factor(movie_info_for_random_forest$genres_Thriller)
+movie_info_for_random_forest <-
+  concat.split.expanded(movie_info_for_random_forest,
+                        "genres",
+                        sep = ",",
+                        type = "character",
+                        fill = 0)
+movie_info_for_random_forest <-
+  concat.split.expanded(
+    movie_info_for_random_forest,
+    "keywords",
+    sep = ",",
+    type = "character",
+    fill = 0
+  )
+
+genre_column_numbers <- grep("genres_.*",names(movie_info_for_random_forest))
+for( i in genre_column_numbers) {
+movie_info_for_random_forest[[i]] <- as.factor(movie_info_for_random_forest[[i]])
+}
+
+keywords_column_numbers <- grep("keywords_.*",names(movie_info_for_random_forest))
+for( i in keywords_column_numbers) {
+  movie_info_for_random_forest[movie_info_for_random_forest$keywords == '', as.numeric(i):= NA]
+}
+for( i in keywords_column_numbers) {
+  movie_info_for_random_forest[[i]] <- as.factor(movie_info_for_random_forest[[i]])
+}
+
+
+# movie_info_for_random_forest$metascore[is.na(movie_info_for_random_forest$metascore)] <-
+#   mean(movie_info_for_random_forest$metascore[!is.na(movie_info_for_random_forest$metascore)])
+# movie_info_for_random_forest$tomato_critic_votes[is.na(movie_info_for_random_forest$tomato_critic_votes)] <-
+#   0
+# movie_info_for_random_forest$tomato_user_votes[is.na(movie_info_for_random_forest$tomato_user_votes)] <-
+#   0
+# movie_info_for_random_forest$tomato_critic_rating[is.na(movie_info_for_random_forest$tomato_critic_rating)] <-
+#   mean(movie_info_for_random_forest$tomato_critic_rating[!is.na(movie_info_for_random_forest$tomato_critic_rating)])
+# movie_info_for_random_forest$tomato_user_rating[is.na(movie_info_for_random_forest$tomato_user_rating)] <-
+#   mean(movie_info_for_random_forest$tomato_user_rating[!is.na(movie_info_for_random_forest$tomato_user_rating)])
+# movie_info_for_random_forest$imdb_rating[is.na(movie_info_for_random_forest$imdb_rating)] <-
+#   mean(movie_info_for_random_forest$imdb_rating[!is.na(movie_info_for_random_forest$imdb_rating)])
+# movie_info_for_random_forest$genres_War <-
+#   as.factor(movie_info_for_random_forest$genres_War)
+# movie_info_for_random_forest$genres_Western <-
+#   as.factor(movie_info_for_random_forest$genres_Western)
+# movie_info_for_random_forest$genres_News <-
+#   as.factor(movie_info_for_random_forest$genres_News)
+# movie_info_for_random_forest$genres_Sport <-
+#   as.factor(movie_info_for_random_forest$genres_Sport)
+# movie_info_for_random_forest$genres_Short <-
+#   as.factor(movie_info_for_random_forest$genres_Short)
+# movie_info_for_random_forest$genres_Short <-
+#   as.factor(movie_info_for_random_forest$`genres_Science Fiction`)
+# movie_info_for_random_forest$genres_Short <-
+#   as.factor(movie_info$genres_Short)
+# movie_info_for_random_forest$`genres_Science Fiction` <-
+#   as.factor(movie_info_for_random_forest$`genres_Science Fiction`)
+# movie_info_for_random_forest$genres_Romance <-
+#   as.factor(movie_info_for_random_forest$genres_Romance)
+# movie_info_for_random_forest$genres_News <-
+#   as.factor(movie_info_for_random_forest$genres_News)
+# movie_info_for_random_forest$genres_Mystery <-
+#   as.factor(movie_info_for_random_forest$genres_Mystery)
+# movie_info_for_random_forest$genres_Musical <-
+#   as.factor(movie_info_for_random_forest$genres_Musical)
+# movie_info_for_random_forest$genres_Music <-
+#   as.factor(movie_info_for_random_forest$genres_Music)
+# movie_info_for_random_forest$genres_Horror <-
+#   as.factor(movie_info_for_random_forest$genres_Horror)
+# movie_info_for_random_forest$genres_History <-
+#   as.factor(movie_info_for_random_forest$genres_History)
+# movie_info_for_random_forest$genres_Foreign <-
+#   as.factor(movie_info_for_random_forest$genres_Foreign)
+# movie_info_for_random_forest$genres_Fantasy <-
+#   as.factor(movie_info_for_random_forest$genres_Fantasy)
+# movie_info_for_random_forest$genres_Family <-
+#   as.factor(movie_info_for_random_forest$genres_Family)
+# movie_info_for_random_forest$genres_Drama <-
+#   as.factor(movie_info_for_random_forest$genres_Drama)
+# movie_info_for_random_forest$genres_Documentary <-
+#   as.factor(movie_info_for_random_forest$genres_Documentary)
+# movie_info_for_random_forest$genres_Crime <-
+#   as.factor(movie_info_for_random_forest$genres_Crime)
+# movie_info_for_random_forest$genres_Comedy <-
+#   as.factor(movie_info_for_random_forest$genres_Comedy)
+# movie_info_for_random_forest$genres_Biography <-
+#   as.factor(movie_info_for_random_forest$genres_Biography)
+# movie_info_for_random_forest$genres_Animation <-
+#   as.factor(movie_info_for_random_forest$genres_Animation)
+# movie_info_for_random_forest$genres_Adventure <-
+#   as.factor(movie_info_for_random_forest$genres_Adventure)
+# movie_info_for_random_forest$genres_Action <-
+#   as.factor(movie_info_for_random_forest$genres_Action)
+# summary(movie_info_for_random_forest)
+# movie_info_for_random_forest$`genres_TV Movie` <-
+#   as.factor(movie_info_for_random_forest$`genres_TV Movie`)
+# movie_info_for_random_forest$genres_Thriller <-
+#   as.factor(movie_info_for_random_forest$genres_Thriller)
 
 parkway_for_random_forest <-
   parkway %>% select(imdb_id, day, avg_attendence)
