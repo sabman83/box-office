@@ -1,4 +1,5 @@
 
+
 require(data.table)
 library(tidyr)
 install.packages("splitstackshape")
@@ -66,7 +67,9 @@ parkway_summarized_by_movie <-
 parkway_summarized_by_movie <- unique(parkway_summarized_by_movie)
 parkway_for_random_forest <-
   parkway %>% select(imdb_id, day, num_of_shows, num_of_attendees)
-
+parkway_for_random_forest <-
+  parkway_for_random_forest %>% mutate(avg_attendence = round(num_of_attendees /
+                                                                num_of_shows)) %>% select(imdb_id, day, avg_attendence)
 
 movie_info <-
   read.csv("/home/sabman/Projects/box-office/data/movie_info.csv")
@@ -124,8 +127,10 @@ movie_info <- merge(movie_info, movie_country, by = 'imdb_id')
 movie_info$foreign <- ifelse(grepl('USA', movie_info$country), 0, 1)
 movie_info$foreign <- as.factor(movie_info$foreign)
 
-wins_col <- sapply(as.character(movie_info$awards), num_of_awards, type = "wins")
-nmns_col <- sapply(as.character(movie_info$awards), num_of_awards, type = "nominations")
+wins_col <-
+  sapply(as.character(movie_info$awards), num_of_awards, type = "wins")
+nmns_col <-
+  sapply(as.character(movie_info$awards), num_of_awards, type = "nominations")
 movie_info$award_wins <- wins_col
 movie_info$award_nominations <- nmns_col
 
@@ -174,11 +179,13 @@ movie_info_for_random_forest <-
     imdb_rating
   )
 movie_info_for_random_forest <-
-  concat.split.expanded(movie_info_for_random_forest,
-                        "genres",
-                        sep = ",",
-                        type = "character",
-                        fill = 0)
+  concat.split.expanded(
+    movie_info_for_random_forest,
+    "genres",
+    sep = ",",
+    type = "character",
+    fill = 0
+  )
 movie_info_for_random_forest <-
   concat.split.expanded(
     movie_info_for_random_forest,
@@ -188,17 +195,21 @@ movie_info_for_random_forest <-
     fill = 0
   )
 
-genre_column_numbers <- grep("genres_.*",names(movie_info_for_random_forest))
-for( i in genre_column_numbers) {
-movie_info_for_random_forest[[i]] <- as.factor(movie_info_for_random_forest[[i]])
+genre_column_numbers <-
+  grep("genres_.*", names(movie_info_for_random_forest))
+for (i in genre_column_numbers) {
+  movie_info_for_random_forest[[i]] <-
+    as.factor(movie_info_for_random_forest[[i]])
 }
 
-keywords_column_numbers <- grep("keywords_.*",names(movie_info_for_random_forest))
-for( i in keywords_column_numbers) {
-  movie_info_for_random_forest[movie_info_for_random_forest$keywords == '', as.numeric(i):= NA]
+keywords_column_numbers <-
+  grep("keywords_.*", names(movie_info_for_random_forest))
+for (i in keywords_column_numbers) {
+  movie_info_for_random_forest[movie_info_for_random_forest$keywords == '', as.numeric(i) := NA]
 }
-for( i in keywords_column_numbers) {
-  movie_info_for_random_forest[[i]] <- as.factor(movie_info_for_random_forest[[i]])
+for (i in keywords_column_numbers) {
+  movie_info_for_random_forest[[i]] <-
+    as.factor(movie_info_for_random_forest[[i]])
 }
 
 
@@ -273,20 +284,12 @@ for( i in keywords_column_numbers) {
 #   as.factor(movie_info_for_random_forest$genres_Thriller)
 
 parkway_for_random_forest <-
-  parkway %>% select(imdb_id, day, avg_attendence)
-parkway_for_random_forest <-
   merge(parkway_for_random_forest, movie_info_for_random_forest, by = "imdb_id")
 require(rpart)
 fit <-
-  rpart(avg_attendence ~ ., method = "anova", data = parkway_for_random_forest[, -1])
+  rpart(avg_attendence ~ ., method = "anova", data = parkway_for_random_forest[,-1])
 require(rpart.plot)
 rpart.plot(fit)
 fit <-
-  rpart(avg_attendence ~ ., method = "anova", data = parkway_for_random_forest[, -c(1, 2)])
+  rpart(avg_attendence ~ ., method = "anova", data = parkway_for_random_forest[,-c(1, 2)])
 rpart.plot(fit)
-movie_info <-
-  concat.split.expanded(movie_info,
-                        "keywords",
-                        sep = ",",
-                        type = "character",
-                        fill = 0)
