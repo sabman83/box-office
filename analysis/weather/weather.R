@@ -27,7 +27,7 @@ d_weather <- weather_details(result)
 parkway_weekend_weather <- rbind(parkway_weekend_weather,d_weather)
 Sys.sleep(7) #limit api calls
 }
-
+parkway_weekend_weather <- read.csv("~/Projects/box-office/analysis/weather/weather.csv",sep = " ")
 summary(parkway_weekend_weather)
 write.table(parkway_weekend_weather, file="~/Projects/box-office/analysis/weather/weather.csv")
 parkway_weekend_weather$date <-  as.Date(parkway_weekend_weather$date)
@@ -38,7 +38,6 @@ parkway_on_weekend_summarized <- parkway_on_weekend %>% group_by(date)  %>%  mut
 parkway_on_weekend_summarized$total_attendees <- round(parkway_on_weekend_summarized$total_attendees)
 parkway_on_weekend_summarized_with_weather <- merge(parkway_on_weekend_summarized,parkway_weekend_weather)
 parkway_on_weekend_summarized_with_weather <- parkway_on_weekend_summarized_with_weather %>% mutate(avg_attendence = round(total_attendees/total_shows))
-require(ggplot2)
 parkway_on_weekend_summarized_with_weather<-unique(parkway_on_weekend_summarized_with_weather)
 
 avg_attendence_on_rain <- parkway_on_weekend_summarized_with_weather %>% filter(rain==1) %>% select(avg_attendence,temp)
@@ -47,5 +46,8 @@ hist(avg_attendence_on_rain[,1])
 hist(avg_attendence_on_no_rain[,1])
 t.test(avg_attendence_on_no_rain$avg_attendence,avg_attendence_on_rain$avg_attendence)
 
+require(ggplot2)
+
 ggplot(parkway_on_weekend_summarized_with_weather, aes(x=temp, y=avg_attendence, color=rain)) + geom_point(shape=1,aes(size=total_shows)) + xlab("Average Temperature in F") + ylab("Average attendence per Show")
 
+ggplot(parkway_on_weekend_summarized_with_weather, aes(x=date, y=avg_attendence, color=rain)) + geom_point(shape=1) + xlab("Date") + ylab("Average attendence per Show")

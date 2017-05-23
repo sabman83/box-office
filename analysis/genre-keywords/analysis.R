@@ -1,13 +1,10 @@
-
-
 require(data.table)
 library(tidyr)
-install.packages("splitstackshape")
 library(splitstackshape)
 require(dplyr)
 library(stringr)
 library(foreach)
-
+require(xgboost)
 
 num_of_awards <- function(str, type) {
   if (type == 'wins') {
@@ -30,7 +27,7 @@ num_of_awards <- function(str, type) {
   }
   for (i in 1:nrow(mtrx)) {
     for (j in 2:ncol(mtrx)) {
-      if (nchar(mtrx[i, j]) > 0) {
+      if (!is.na(mtrx[i, j]) & nchar(mtrx[i, j]) > 0) {
         print(mtrx[i, j])
         awards <- awards + as.numeric(mtrx[i, j])
       }
@@ -48,6 +45,11 @@ parkway$num_of_attendees <- round(parkway$num_of_attendees)
 parkway$date <- as.Date(parkway$date)
 parkway$day  <- weekdays(parkway$date)
 parkway$day <- as.factor(parkway$day)
+
+#data correction: some movies show more than 150 in attendence. 
+#This is not possible and only happends when both theaters showed the same movie at the same time.
+parkway[parkway$avg_attendence>150,]$num_of_shows <- 2
+
 parkway <-
   parkway %>% mutate(avg_attendence = round(num_of_attendees / num_of_shows))
 
@@ -195,101 +197,55 @@ movie_info_for_random_forest <-
     fill = 0
   )
 
-genre_column_numbers <-
-  grep("genres_.*", names(movie_info_for_random_forest))
-for (i in genre_column_numbers) {
-  movie_info_for_random_forest[[i]] <-
-    as.factor(movie_info_for_random_forest[[i]])
-}
+# genre_column_numbers <-
+#   grep("genres_.*", names(movie_info_for_random_forest))
+# for (i in genre_column_numbers) {
+#   movie_info_for_random_forest[[i]] <-
+#     as.factor(movie_info_for_random_forest[[i]])
+# }
+# 
+# keywords_column_numbers <-
+#   grep("keywords_.*", names(movie_info_for_random_forest))
+# for (i in keywords_column_numbers) {
+#   movie_info_for_random_forest[movie_info_for_random_forest$keywords == '', as.numeric(i) := NA]
+# }
+# for (i in keywords_column_numbers) {
+#   movie_info_for_random_forest[[i]] <-
+#     as.factor(movie_info_for_random_forest[[i]])
+# }
 
-keywords_column_numbers <-
-  grep("keywords_.*", names(movie_info_for_random_forest))
-for (i in keywords_column_numbers) {
-  movie_info_for_random_forest[movie_info_for_random_forest$keywords == '', as.numeric(i) := NA]
-}
-for (i in keywords_column_numbers) {
-  movie_info_for_random_forest[[i]] <-
-    as.factor(movie_info_for_random_forest[[i]])
-}
+
+data_for_xgboost <- merge(parkway_for_random_forest, movie_info_for_random_forest, by = "imdb_id")
+data_for_xgboost <- unique(data_for_xgboost)
+
+#remove genres, keywords
+data_for_xgboost <- data_for_xgboost[,-c(12,13)]
+
+#convert columns to numeric for xgboost
+data_for_xgboost[['foreign']] <- as.numeric(levels(data_for_xgboost[['foreign']]))[data_for_xgboost[['foreign']]]
 
 
-# movie_info_for_random_forest$metascore[is.na(movie_info_for_random_forest$metascore)] <-
-#   mean(movie_info_for_random_forest$metascore[!is.na(movie_info_for_random_forest$metascore)])
-# movie_info_for_random_forest$tomato_critic_votes[is.na(movie_info_for_random_forest$tomato_critic_votes)] <-
-#   0
-# movie_info_for_random_forest$tomato_user_votes[is.na(movie_info_for_random_forest$tomato_user_votes)] <-
-#   0
-# movie_info_for_random_forest$tomato_critic_rating[is.na(movie_info_for_random_forest$tomato_critic_rating)] <-
-#   mean(movie_info_for_random_forest$tomato_critic_rating[!is.na(movie_info_for_random_forest$tomato_critic_rating)])
-# movie_info_for_random_forest$tomato_user_rating[is.na(movie_info_for_random_forest$tomato_user_rating)] <-
-#   mean(movie_info_for_random_forest$tomato_user_rating[!is.na(movie_info_for_random_forest$tomato_user_rating)])
-# movie_info_for_random_forest$imdb_rating[is.na(movie_info_for_random_forest$imdb_rating)] <-
-#   mean(movie_info_for_random_forest$imdb_rating[!is.na(movie_info_for_random_forest$imdb_rating)])
-# movie_info_for_random_forest$genres_War <-
-#   as.factor(movie_info_for_random_forest$genres_War)
-# movie_info_for_random_forest$genres_Western <-
-#   as.factor(movie_info_for_random_forest$genres_Western)
-# movie_info_for_random_forest$genres_News <-
-#   as.factor(movie_info_for_random_forest$genres_News)
-# movie_info_for_random_forest$genres_Sport <-
-#   as.factor(movie_info_for_random_forest$genres_Sport)
-# movie_info_for_random_forest$genres_Short <-
-#   as.factor(movie_info_for_random_forest$genres_Short)
-# movie_info_for_random_forest$genres_Short <-
-#   as.factor(movie_info_for_random_forest$`genres_Science Fiction`)
-# movie_info_for_random_forest$genres_Short <-
-#   as.factor(movie_info$genres_Short)
-# movie_info_for_random_forest$`genres_Science Fiction` <-
-#   as.factor(movie_info_for_random_forest$`genres_Science Fiction`)
-# movie_info_for_random_forest$genres_Romance <-
-#   as.factor(movie_info_for_random_forest$genres_Romance)
-# movie_info_for_random_forest$genres_News <-
-#   as.factor(movie_info_for_random_forest$genres_News)
-# movie_info_for_random_forest$genres_Mystery <-
-#   as.factor(movie_info_for_random_forest$genres_Mystery)
-# movie_info_for_random_forest$genres_Musical <-
-#   as.factor(movie_info_for_random_forest$genres_Musical)
-# movie_info_for_random_forest$genres_Music <-
-#   as.factor(movie_info_for_random_forest$genres_Music)
-# movie_info_for_random_forest$genres_Horror <-
-#   as.factor(movie_info_for_random_forest$genres_Horror)
-# movie_info_for_random_forest$genres_History <-
-#   as.factor(movie_info_for_random_forest$genres_History)
-# movie_info_for_random_forest$genres_Foreign <-
-#   as.factor(movie_info_for_random_forest$genres_Foreign)
-# movie_info_for_random_forest$genres_Fantasy <-
-#   as.factor(movie_info_for_random_forest$genres_Fantasy)
-# movie_info_for_random_forest$genres_Family <-
-#   as.factor(movie_info_for_random_forest$genres_Family)
-# movie_info_for_random_forest$genres_Drama <-
-#   as.factor(movie_info_for_random_forest$genres_Drama)
-# movie_info_for_random_forest$genres_Documentary <-
-#   as.factor(movie_info_for_random_forest$genres_Documentary)
-# movie_info_for_random_forest$genres_Crime <-
-#   as.factor(movie_info_for_random_forest$genres_Crime)
-# movie_info_for_random_forest$genres_Comedy <-
-#   as.factor(movie_info_for_random_forest$genres_Comedy)
-# movie_info_for_random_forest$genres_Biography <-
-#   as.factor(movie_info_for_random_forest$genres_Biography)
-# movie_info_for_random_forest$genres_Animation <-
-#   as.factor(movie_info_for_random_forest$genres_Animation)
-# movie_info_for_random_forest$genres_Adventure <-
-#   as.factor(movie_info_for_random_forest$genres_Adventure)
-# movie_info_for_random_forest$genres_Action <-
-#   as.factor(movie_info_for_random_forest$genres_Action)
-# summary(movie_info_for_random_forest)
-# movie_info_for_random_forest$`genres_TV Movie` <-
-#   as.factor(movie_info_for_random_forest$`genres_TV Movie`)
-# movie_info_for_random_forest$genres_Thriller <-
-#   as.factor(movie_info_for_random_forest$genres_Thriller)
 
-parkway_for_random_forest <-
-  merge(parkway_for_random_forest, movie_info_for_random_forest, by = "imdb_id")
-require(rpart)
-fit <-
-  rpart(avg_attendence ~ ., method = "anova", data = parkway_for_random_forest[,-1])
-require(rpart.plot)
-rpart.plot(fit)
-fit <-
-  rpart(avg_attendence ~ ., method = "anova", data = parkway_for_random_forest[,-c(1, 2)])
-rpart.plot(fit)
+# require(rpart)
+# fit <-
+#   rpart(avg_attendence ~ ., method = "anova", data = parkway_for_xgboost[,-1])
+# require(rpart.plot)
+# rpart.plot(fit)
+# fit <-
+#   rpart(avg_attendence ~ ., method = "anova", data = parkway_for_xgboost[,-c(1, 2)])
+# rpart.plot(fit)
+
+
+
+#xgboost
+train_indices  <- sample(seq_len(nrow(data_for_xgboost)), size = floor(0.75 * nrow(data_for_xgboost)))
+train <- data_for_xgboost[train_indices,]
+test <- data_for_xgboost[-train_indices,]
+dtrain <- xgb.DMatrix(data.matrix(train[,-c(1,3)]), label=train[,3])
+dtest <- data.matrix(test[,-c(1,3)])
+xgboost_model  <- xgboost(data = dtrain, nrounds = 25, booster="gbtree", max.depth = 5, eta=0.1, objective="reg:linear")
+xgb.plot.importance(xgb.importance(colnames(dtrain),model = xgboost_model))
+
+pred <- predict(xgboost_model, dtest)
+mean(pred - test$avg_attendence)
+
