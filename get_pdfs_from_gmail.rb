@@ -53,8 +53,8 @@ result.messages.each do |msg|
   message.payload.parts.each do |part|
     next if part.body.nil?
     attch = service.get_user_message_attachment(user_id, msg.id, part.body.attachment_id)
-    next unless part.filename.include? 'branch'
-    File.open('data/other_box_office_reports/' + part.filename, 'wb') do |f|
+    #next unless part.filename.include? 'branch'
+    File.open('data/original_parkway_data/2016/' + part.filename, 'wb') do |f|
       f.write(attch.data)
     end
   end

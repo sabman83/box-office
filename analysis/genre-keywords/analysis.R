@@ -247,5 +247,18 @@ xgboost_model  <- xgboost(data = dtrain, nrounds = 25, booster="gbtree", max.dep
 xgb.plot.importance(xgb.importance(colnames(dtrain),model = xgboost_model))
 
 pred <- predict(xgboost_model, dtest)
-mean(pred - test$avg_attendence)
+mean(abs(pred - test$avg_attendence))
+sqrt(mean((pred - test$avg_attendence)^2))
+
+cv_data <- xgb.DMatrix(data.matrix(data_for_xgboost[,-c(1,3)]), label=data_for_xgboost[,3])
+params = list(nrounds = 40, booster="gbtree", max.depth = 5, eta=0.3, objective="reg:linear")
+cv_result  <- xgb.cv(params, cv_data, nrounds = 40,nfold = 5, verbose = TRUE, prediction = TRUE)
+
+#making valid column names
+setnames(data_mlr,names(data_mlr),make.names(names(data_mlr), unique = FALSE, allow_ = TRUE))
+setnames(data_mlr,"keywords.fiancé","keywords.fiance")
+setnames(data_mlr,"keywords.fiancé.fiancée.relationship","keywords.fiance.fiancee.relationship")
+setnames(data_mlr,"keywords.mentor.protégé.relationship","keywords.mentor.protege.relationship")
+setnames(data_mlr,"keywords.pokémon","keywords.pokemon")
+setnames(data_mlr,"keywords.straßenkids","keywords.strabenkids")
 

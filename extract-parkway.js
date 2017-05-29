@@ -5,10 +5,10 @@
  * */
 var XLSX = require('xlsx');
 var fs = require('fs');
-var path = './data/';
+var path = './data/original_parkway_data/2016/tmp/';
 var files =  fs.readdirSync(path);
 files = files.filter(function(name) {
-  return !!name.match('xlsx');
+  return !!name.match('xlsx') && !name.match('~lock');
 } );
 
 //converts the MM.DD.YYYY/ MM.DD.YY to YYYY-MM-DD
@@ -45,12 +45,14 @@ files.forEach(function(name, index, array) {
     var data = XLSX.utils.sheet_to_csv(sheet);
     if(data.length == 0) return;
     data = data.replace(/\$(\d+)/g, '$1'); //remove $ signs
-    data = data.replace(/\"(\d+)\,(\d+)[\s\"]{1,2}/g, '$1$2'); // replace "1,020" with 1020
+    data = data.replace(/\"(\d+)\,(\d+)[\.\d]+[\s\"]{1,2}/g, '$1$2'); // replace "1,020" with 1020
+    debugger;
     data = data.replace(/CLOSED/g,'');
     data = data.replace(/No Shows/g,'');
-    var date = name.match(/\d{1,2}[\.\:]\d{1,2}[\.\:]\d{2,4}/g)[0];
-    date = formattedDateString(date);
-    fs.writeFile(path + 'parkway-'+ date +'.txt', data, function(err){
+    console.log(name);
+    //var date = name.match(/\d{1,2}[\.\:]\d{1,2}[\.\:]\d{2,4}/g)[0];
+    //date = formattedDateString(date);
+    fs.writeFile(path + 'parkway-'+ sheetName +'.txt', data, function(err){
       if(!err) return;
       console.log('Error processing', name);
     });

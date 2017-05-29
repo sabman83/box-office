@@ -1,13 +1,14 @@
 #!/usr/bin/env ruby
 require 'pp'
 require 'sqlite3'
-require 'pry'
+require 'pry-byebug'
 require 'date'
 require 'fileutils'
 
 db = SQLite3::Database.new "box-office"
 
-files = Dir["./data/parkway-*.txt"]
+#files = Dir["./data/parkway-*.txt"]
+files = Dir["./data/original_parkway_data/2016/tmp/*.txt"]
 DATE_RANGE_REGEX = /\d{1,2}\/\d{1,2}\/\d{2,4}[-\s]+\d{1,2}\/\d{1,2}\/\d{2,4}|\d{1,2}\/\d{1,2}[-\s]+\d{1,2}\/\d{1,2}\/\d{2,4}/
 #expects content to be of form: MM/DD/YY-MM/DD/YY or MM/DD/YYYY-MM/DD/YYYY
 #returns a Date object
@@ -81,13 +82,13 @@ files.each do |file_name|
     break if lines_num >= lines.length
   end
   if lines_num >= lines.length
-    FileUtils.mv(file_name, './data/corrected_parkway_data/'+file_name.split('/')[-1])
+    FileUtils.mv(file_name, './data/corrected_parkway_data/parkway-'+ start_date.to_s + '.txt')
     next
   end
   grand_total_from_data = lines[lines_num].chomp.split(',')[-1]
   binding.pry if grand_total_from_data.to_i != grand_total
   raise 'Parse Error on grand total' if grand_total_from_data.to_i != grand_total
-  FileUtils.mv(file_name, './data/corrected_parkway_data/'+file_name.split('/')[-1])
+  FileUtils.mv(file_name, './data/corrected_parkway_data/parkway-'+ start_date.to_s + '.txt')
 end
 db.close
 
