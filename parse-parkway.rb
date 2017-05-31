@@ -69,7 +69,7 @@ files.each do |file_name|
     raise 'Error in row' if data.length > (7+1+1) #7 days of the week, movie name, total
     movie_total =  0
     for index in 1..7 do
-      db.execute('INSERT OR REPLACE INTO parkway_daily_performance_with_pk(movie_id, date, gross) VALUES (?,?,?)', movie_id, (start_date + index -1).to_s, data[index].to_i )
+      db.execute('INSERT OR REPLACE INTO parkway_daily_performance(movie_id, date, gross) VALUES (?,?,?)', movie_id, (start_date + index -1).to_s, data[index].to_i )
       movie_total += data[index].to_i
     end
     binding.pry if data[8].to_i != movie_total
