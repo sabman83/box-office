@@ -53,8 +53,8 @@ IMDB_REGEX = /(tt\d+)/
 PRICE_REGEX = /[\s\S]*Admission Price:.*\$(\d+)/
 
 def get_events cal_id, token=nil
-  start_date  = Time.new(2012,12,22).to_datetime
-  end_date  = Time.new(2016,03,31).to_datetime
+  start_date  = Time.new(2016,04,1).to_datetime
+  end_date  = Time.new(2017,05,30).to_datetime
 
   response = $service.list_events(cal_id,
                                max_results: 2500,
@@ -92,13 +92,13 @@ events.each do |event|
     price = event.description.match(PRICE_REGEX) unless event.description.nil?
     movie_name = event.summary.strip
     if imdb_id.nil?
-      puts "No IMDB id found",event.summary
+      #puts "No IMDB id found for : ", movie_name, event.summary
       imdb_id = movie_name
     else
       imdb_id = imdb_id[1]
     end
     if price.nil?
-      puts 'No Price found for', event.summary
+      #puts 'No Price found for', event.summary
       price = previous_price
     else
       previous_price = price[1]
@@ -116,6 +116,8 @@ events.each do |event|
       movies[imdb_id]['date'] = start.to_s
     end
     movies[imdb_id]['theater'] = event.organizer.email == theater_1_calendar_id ? 1 : 2
+    puts imdb_id, movie_name
+    puts "\n\n\n"
     begin
 
       db.execute('INSERT INTO parkway_daily_shows(imdb_id, name, theater, time,  date, price) VALUES (?,?,?,?,?,?)',
@@ -123,7 +125,7 @@ events.each do |event|
                                                               movies[imdb_id]['time'],
                                                               movies[imdb_id]['date'],
                                                                movies[imdb_id]['price'])
-    rescue
+    rescue Exception => e
       binding.pry
     end
     #puts movies
