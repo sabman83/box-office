@@ -227,6 +227,10 @@ data_for_xgboost <- data_for_xgboost[,-c(12,13)]
 #convert columns to numeric for xgboost
 data_for_xgboost[['foreign']] <- as.numeric(levels(data_for_xgboost[['foreign']]))[data_for_xgboost[['foreign']]]
 
+#columns highly correlated columns
+correlation_matrix <- cor(data_for_xgboost[,-c(1,2)])
+zdf <-  as.data.table(as.table(correlation_matrix))
+View(zdf[N>0.8 & N<1])
 
 
 # require(rpart)
