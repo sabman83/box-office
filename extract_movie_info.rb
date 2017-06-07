@@ -104,16 +104,18 @@ def get_ratings imdb_id
   info['tomato_user_meter'] = response['tomatoUserMeter']
   info['tomato_fresh_reviews'] = response['tomatoFresh']
   info['tomato_rotten_reviews'] = response['tomatoRotten']
+  info['Country'] = response['Country']
   info
 end
 
 #get list of imdb ids
 #movies = $db.execute('SELECT DISTINCT imdb_id from parkway_movies')
-movies = $db.execute('select distinct s.imdb_id from parkway_daily_shows as s where s.imdb_id not in (select distinct imdb_id from movie_info) and s.imdb_id like "tt_______" order by s.imdb_id')
+movies = $db.execute('select distinct s.imdb_id from parkway_daily_shows as s where s.imdb_id not in ' +
+                     + '(select distinct imdb_id from movie_info) and s.imdb_id like "tt_______" order by s.imdb_id')
 movies = movies.flatten
 
 result = {}
-params = Array.new(27){|k| '?'}
+params = Array.new(28){|k| '?'}
 params = params.join(',')
 movies.each do |imdb_id|
   next if imdb_id == nil || imdb_id == ''
@@ -127,8 +129,9 @@ movies.each do |imdb_id|
     keys = ['imdb_id', 'tmdb_id'].concat(result.keys).join(',')
     values = [imdb_id, tmdb_id].concat(result.values)
     $db.execute("INSERT OR REPLACE INTO movie_info (" + keys + ") VALUES (" + params + ")", values)
-  rescue
-    pp "Error processing" + imdb_id.to_s
+    pp "stored " + imdb_id.to_s
+    rescue Exception => e
+      pp "Error processing" + e.to_s + " :   " + imdb_id.to_s
     next
   end
 end

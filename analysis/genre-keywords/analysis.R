@@ -53,14 +53,7 @@ parkway[parkway$avg_attendence>150,]$num_of_shows <- 2
 parkway <-
   parkway %>% mutate(avg_attendence = round(num_of_attendees / num_of_shows))
 
-parkway_summarized_by_movie <-
-  parkway %>% group_by(imdb_id) %>% mutate(total_attendees = (sum(num_of_attendees)),
-                                           total_shows = sum(num_of_shows)) %>% select(imdb_id, total_attendees, total_shows)
-parkway_summarized_by_movie <-
-  merge(parkway_summarized_by_movie, movie_info, by = "imdb_id")
-parkway_summarized_by_movie <-
-  parkway %>% group_by(imdb_id) %>% mutate(total_attendees = (sum(num_of_attendees)),
-                                           total_shows = sum(num_of_shows)) %>% select(imdb_id, total_attendees, total_shows)
+
 parkway_summarized_by_movie <-
   merge(parkway_summarized_by_movie,
         movie_info,
@@ -213,6 +206,16 @@ movie_info_for_random_forest <-
 #   movie_info_for_random_forest[[i]] <-
 #     as.factor(movie_info_for_random_forest[[i]])
 # }
+
+
+parkway_summarized_by_movie <-
+  parkway %>% group_by(imdb_id) %>% mutate(total_attendees = (sum(num_of_attendees)),
+                                           total_shows = sum(num_of_shows)) %>% select(imdb_id, total_attendees, total_shows)
+parkway_summarized_by_movie <-
+  merge(parkway_summarized_by_movie, movie_info, by = "imdb_id")
+parkway_summarized_by_movie <-
+  parkway %>% group_by(imdb_id) %>% mutate(total_attendees = (sum(num_of_attendees)),
+                                           total_shows = sum(num_of_shows)) %>% select(imdb_id, total_attendees, total_shows)
 
 
 data_for_xgboost <- merge(parkway_for_random_forest, movie_info_for_random_forest, by = "imdb_id")
