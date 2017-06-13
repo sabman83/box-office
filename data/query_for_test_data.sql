@@ -9,7 +9,7 @@ inner join parkway_daily_performance as t2
 where t2.gross >0
 order by t1.date desc
 
-select distinct(pm.imdb_id) from parkway_daily_performance as pdp join parkway_movies as pm where pdp.movie_id = pm.id
-and pdp.date > '2016-03-27'
+select * from movie_info where imdb_id in (select distinct(pm.imdb_id) from parkway_daily_performance as pdp join parkway_movies as pm where pdp.movie_id = pm.id
+and pdp.date > '2016-03-27')
 
 

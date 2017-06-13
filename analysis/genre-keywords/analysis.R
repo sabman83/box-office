@@ -54,12 +54,6 @@ parkway <-
   parkway %>% mutate(avg_attendence = round(num_of_attendees / num_of_shows))
 
 
-parkway_summarized_by_movie <-
-  merge(parkway_summarized_by_movie,
-        movie_info,
-        by.x = "imdb_id",
-        by.y = "imdb_id")
-parkway_summarized_by_movie <- unique(parkway_summarized_by_movie)
 parkway_for_random_forest <-
   parkway %>% select(imdb_id, day, num_of_shows, num_of_attendees)
 parkway_for_random_forest <-
@@ -207,6 +201,12 @@ movie_info_for_random_forest <-
 #     as.factor(movie_info_for_random_forest[[i]])
 # }
 
+parkway_summarized_by_movie <-
+  merge(parkway_summarized_by_movie,
+        movie_info,
+        by.x = "imdb_id",
+        by.y = "imdb_id")
+parkway_summarized_by_movie <- unique(parkway_summarized_by_movie)
 
 parkway_summarized_by_movie <-
   parkway %>% group_by(imdb_id) %>% mutate(total_attendees = (sum(num_of_attendees)),
