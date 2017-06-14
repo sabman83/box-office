@@ -23,7 +23,7 @@ end
 
 def get_basic_info (imdb_id)
   imdb_id = imdb_id.to_s
-  params = {api_key: $omdb_api_key, i: imdb_id}
+  params = {apikey: $omdb_api_key, i: imdb_id}
   pp params
   response = get_uri_response($omdb_uri, params)
   pp response
@@ -44,10 +44,10 @@ movies.each do |imdb_id|
   begin
     puts 'getting infor for ' , imdb_id
     basic_info = get_basic_info(imdb_id)
-    pp basic_info
     keys = ['imdb_id','name'].join(',')
     values = [imdb_id,basic_info['Title']]
-    $db.execute("UPDATE movie_info SET name='"+basic_info['Title']+"' WHERE imdb_id='" +imdb_id+ "'")
+    query = "UPDATE movie_info SET name='"+basic_info['Title']+"', Country='"+basic_info['Country']+"' WHERE imdb_id='" +imdb_id+ "'"
+    $db.execute(query)
 
   rescue Exception => e
     pp "Error processing" + imdb_id.to_s + e.to_s
