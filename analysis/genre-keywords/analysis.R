@@ -201,22 +201,22 @@ movie_info_for_random_forest <-
 #     as.factor(movie_info_for_random_forest[[i]])
 # }
 
-parkway_summarized_by_movie <-
-  merge(parkway_summarized_by_movie,
-        movie_info,
-        by.x = "imdb_id",
-        by.y = "imdb_id")
-parkway_summarized_by_movie <- unique(parkway_summarized_by_movie)
-
-parkway_summarized_by_movie <-
-  parkway %>% group_by(imdb_id) %>% mutate(total_attendees = (sum(num_of_attendees)),
-                                           total_shows = sum(num_of_shows)) %>% select(imdb_id, total_attendees, total_shows)
-parkway_summarized_by_movie <-
-  merge(parkway_summarized_by_movie, movie_info, by = "imdb_id")
-parkway_summarized_by_movie <-
-  parkway %>% group_by(imdb_id) %>% mutate(total_attendees = (sum(num_of_attendees)),
-                                           total_shows = sum(num_of_shows)) %>% select(imdb_id, total_attendees, total_shows)
-
+# parkway_summarized_by_movie <-
+#   merge(parkway_summarized_by_movie,
+#         movie_info,
+#         by.x = "imdb_id",
+#         by.y = "imdb_id")
+# parkway_summarized_by_movie <- unique(parkway_summarized_by_movie)
+# 
+# parkway_summarized_by_movie <-
+#   parkway %>% group_by(imdb_id) %>% mutate(total_attendees = (sum(num_of_attendees)),
+#                                            total_shows = sum(num_of_shows)) %>% select(imdb_id, total_attendees, total_shows)
+# parkway_summarized_by_movie <-
+#   merge(parkway_summarized_by_movie, movie_info, by = "imdb_id")
+# parkway_summarized_by_movie <-
+#   parkway %>% group_by(imdb_id) %>% mutate(total_attendees = (sum(num_of_attendees)),
+#                                            total_shows = sum(num_of_shows)) %>% select(imdb_id, total_attendees, total_shows)
+# 
 
 data_for_xgboost <- merge(parkway_for_random_forest, movie_info_for_random_forest, by = "imdb_id")
 data_for_xgboost <- unique(data_for_xgboost)
@@ -245,17 +245,21 @@ View(zdf[N>0.8 & N<1])
 
 
 #xgboost
-train_indices  <- sample(seq_len(nrow(data_for_xgboost)), size = floor(0.75 * nrow(data_for_xgboost)))
-train <- data_for_xgboost[train_indices,]
-test <- data_for_xgboost[-train_indices,]
-dtrain <- xgb.DMatrix(data.matrix(train[,-c(1,3)]), label=train[,3])
-dtest <- data.matrix(test[,-c(1,3)])
+# train_indices  <- sample(seq_len(nrow(data_for_xgboost)), size = floor(0.75 * nrow(data_for_xgboost)))
+# train <- data_for_xgboost[train_indices,]
+# test <- data_for_xgboost[-train_indices,]
+# dtrain <- xgb.DMatrix(data.matrix(train[,-c(1,3)]), label=train[,3])
+# dtest <- data.matrix(test[,-c(1,3)])
+dtrain <- xgb.DMatrix(data.matrix(data_for_xgboost[,-c(1,3)]), label=data_for_xgboost[,3])
 xgboost_model  <- xgboost(data = dtrain, nrounds = 25, booster="gbtree", max.depth = 5, eta=0.1, objective="reg:linear")
 xgb.plot.importance(xgb.importance(colnames(dtrain),model = xgboost_model))
 
-pred <- predict(xgboost_model, dtest)
-mean(abs(pred - test$avg_attendence))
-sqrt(mean((pred - test$avg_attendence)^2))
+# pred <- predict(xgboost_model, dtest)
+# mean(abs(pred - test$avg_attendence))
+# sqrt(mean((pred - test$avg_attendence)^2))
+pred <- predict(xgboost_model, data.matrix(data_test_for_xgboost[,-c(1,3)]))
+mean(abs(pred - data_test_for_xgboost$avg_attendence))
+sqrt(mean((pred - data_test_for_xgboost$avg_attendence)^2))
 
 cv_data <- xgb.DMatrix(data.matrix(data_for_xgboost[,-c(1,3)]), label=data_for_xgboost[,3])
 params = list(nrounds = 40, booster="gbtree", max.depth = 5, eta=0.3, objective="reg:linear")

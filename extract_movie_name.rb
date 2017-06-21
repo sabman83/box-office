@@ -37,6 +37,7 @@ result = {}
 params = Array.new(27){|k| '?'}
 params = params.join(',')
 count  = 1
+upd = $db.prepare('UPDATE movie_info SET name=? WHERE imdb_id=?')
 movies.each do |imdb_id|
   next if imdb_id == nil || imdb_id == ''
   count += 1
@@ -44,10 +45,7 @@ movies.each do |imdb_id|
   begin
     puts 'getting infor for ' , imdb_id
     basic_info = get_basic_info(imdb_id)
-    keys = ['imdb_id','name'].join(',')
-    values = [imdb_id,basic_info['Title']]
-    query = "UPDATE movie_info SET name='"+basic_info['Title']+"', Country='"+basic_info['Country']+"' WHERE imdb_id='" +imdb_id+ "'"
-    $db.execute(query)
+    upd.execute(basic_info['Title'], imdb_id)
 
   rescue Exception => e
     pp "Error processing" + imdb_id.to_s + e.to_s
